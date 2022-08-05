@@ -2,7 +2,7 @@ name: Build Docs
 on:
   push:
     branches:
-      - master
+      - [master, docs-kr]
   pull_request:
     types: [opened, synchronize]
 jobs:
