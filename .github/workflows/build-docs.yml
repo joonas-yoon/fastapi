@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - docs-kr
   pull_request:
     types: [opened, synchronize]
   workflow_dispatch:
@@ -34,9 +33,9 @@ jobs:
       - name: Install docs extras
         if: steps.cache.outputs.cache-hit != 'true'
         run: python3.7 -m flit install --deps production --extras doc
-      - name: Install Material for MkDocs Insiders
-        if: ( github.event_name != 'pull_request' || github.event.pull_request.head.repo.fork == false ) && steps.cache.outputs.cache-hit != 'true'
-        run: pip install git+https://${{ secrets.ACTIONS_TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
+      - name: Install MkDocs
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: pip install mkdocs typer pymdown-extensions
       - name: Build Docs
         run: python3.7 ./scripts/docs.py build-all
       - name: Zip docs
