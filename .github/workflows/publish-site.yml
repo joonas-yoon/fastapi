@@ -52,7 +52,7 @@ jobs:
         run: |
           ls -al
           rm -r .tmp/site/index.html
-          mv .tmp/site/* .
+          cp -r .tmp/site/* .
           rm -rf .tmp docs_build site/
       - name: Prepare to publish
         run: |
