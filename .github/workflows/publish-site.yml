@@ -43,12 +43,13 @@ jobs:
         uses: actions/checkout@v2
         with:
             ref: release
+            clean: false
       - name: Unzip docs
         run: |
           unzip docs.zip -d .tmp
           rm -f docs.zip
           mv .tmp/site/!(index.html) .
-          rm -rf .tmp
+          rm -rf .tmp docs_build site/
           ls -al
       - name: Prepare to publish
         run: |
