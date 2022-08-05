@@ -6,6 +6,10 @@ on:
       - docs-kr
   pull_request:
     types: [opened, synchronize]
+  workflow_dispatch:
+    inputs:
+      update:
+        description: 'Build Docs'
 jobs:
   build-docs:
     runs-on: ubuntu-18.04
