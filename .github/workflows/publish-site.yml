@@ -48,11 +48,15 @@ jobs:
         run: |
           unzip docs.zip -d .tmp
           rm -f docs.zip
-          mv .tmp/site/!(index.html) .
-          rm -rf .tmp docs_build site/
+      - name: Move static files
+        run: |
           ls -al
+          rm -r .tmp/site/index.html
+          mv .tmp/site/* .
+          rm -rf .tmp docs_build site/
       - name: Prepare to publish
         run: |
+          ls -al
           git config --local user.email 'deploy-bot@users.noreply.github.com'
           git config --local user.name '[bot] Deploy'
           git add .
