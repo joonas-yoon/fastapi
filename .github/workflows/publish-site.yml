@@ -54,10 +54,11 @@ jobs:
           rm -r .tmp/site/index.html
           cp -r .tmp/site/* .
           rm -rf .tmp docs_build site/
-      - name: Prepare to publish
+      - name: Commit
         run: |
           ls -al
           git config --local user.email 'deploy-bot@users.noreply.github.com'
           git config --local user.name '[bot] Deploy'
           git add .
           git commit -m "👷 Deploy updates"
+          git push origin release
