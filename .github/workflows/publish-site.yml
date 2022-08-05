@@ -1,0 +1,37 @@
+name: Publish Site
+on:
+  push:
+    branches:
+      - docs-kr
+  workflow_dispatch:
+    inputs:
+      update:
+        description: 'Publish App'
+        required: false
+jobs:
+  publish-docs:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download Artifact Docs
+        uses: dawidd6/action-download-artifact@v2.21.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: build-docs.yml
+          run_id: ${{ github.event.workflow_run.id }}
+          name: docs-zip
+      - name: Checkout release branch
+        uses: actions/checkout@v2
+        with:
+            ref: release
+      - name: Unzip docs
+        run: |
+          unzip docs.zip -d .tmp
+          rm -f docs.zip
+          mv .tmp/site/* .
+      - name: Prepare to publish
+        run: |
+          git config --local user.email 'deploy-bot@users.noreply.github.com'
+          git config --local user.name '[bot] Deploy'
+          git add .
+          git commit -m "👷 Deploy updates"
