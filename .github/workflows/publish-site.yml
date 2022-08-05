@@ -28,7 +28,8 @@ jobs:
         run: |
           unzip docs.zip -d .tmp
           rm -f docs.zip
-          mv .tmp/site/* .
+          mv .tmp/site/!(index.html) .
+          rm -rf .tmp
       - name: Prepare to publish
         run: |
           git config --local user.email 'deploy-bot@users.noreply.github.com'
