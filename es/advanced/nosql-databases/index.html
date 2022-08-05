@@ -2741,11 +2741,10 @@
 <p>For now, don't pay attention to the rest, only the imports:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="hll"><span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="hll"><span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 </span><span class="hll"><span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-</span><span class="hll"><span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-</span><span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
-<span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+</span><span class="hll"><span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
+</span><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 
 <span class="n">USERPROFILE_DOC_TYPE</span> <span class="o">=</span> <span class="s2">&quot;userprofile&quot;</span>
@@ -2753,10 +2752,11 @@
 
 <span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
     <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
     <span class="p">)</span>
-    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
     <span class="k">return</span> <span class="n">bucket</span>
@@ -2798,22 +2798,22 @@
 <p>This is not required by Couchbase, but is a good practice that will help you afterwards.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 <span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-<span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
+<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-<span class="hll">
-</span><span class="n">USERPROFILE_DOC_TYPE</span> <span class="o">=</span> <span class="s2">&quot;userprofile&quot;</span>
 
+<span class="hll"><span class="n">USERPROFILE_DOC_TYPE</span> <span class="o">=</span> <span class="s2">&quot;userprofile&quot;</span>
+</span>
 
 <span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
     <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
     <span class="p">)</span>
-    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
     <span class="k">return</span> <span class="n">bucket</span>
@@ -2871,22 +2871,22 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 <span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-<span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
+<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 
 <span class="n">USERPROFILE_DOC_TYPE</span> <span class="o">=</span> <span class="s2">&quot;userprofile&quot;</span>
 
-<span class="hll">
-</span><span class="hll"><span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
+
+<span class="hll"><span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
 </span><span class="hll">    <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-</span><span class="hll">        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-</span><span class="hll">        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+</span><span class="hll">        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
 </span><span class="hll">    <span class="p">)</span>
-</span><span class="hll">    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+</span><span class="hll">    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+</span><span class="hll">    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+</span><span class="hll">    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
 </span><span class="hll">    <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
 </span><span class="hll">    <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
 </span><span class="hll">    <span class="k">return</span> <span class="n">bucket</span>
@@ -2929,10 +2929,9 @@
 <p>First, let's create a <code>User</code> model:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 <span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-<span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
+<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 
@@ -2941,10 +2940,11 @@
 
 <span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
     <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
     <span class="p">)</span>
-    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
     <span class="k">return</span> <span class="n">bucket</span>
@@ -2988,10 +2988,9 @@
 <p>We don't create it as a subclass of Pydantic's <code>BaseModel</code> but as a subclass of our own <code>User</code>, because it will have all the attributes in <code>User</code> plus a couple more:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 <span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-<span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
+<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 
@@ -3000,10 +2999,11 @@
 
 <span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
     <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
     <span class="p">)</span>
-    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
     <span class="k">return</span> <span class="n">bucket</span>
@@ -3056,10 +3056,9 @@
 <p>By creating a function that is only dedicated to getting your user from a <code>username</code> (or any other parameter) independent of your <em>path operation function</em>, you can more easily re-use it in multiple parts and also add <abbr title="Automated test, written in code, that checks if another piece of code is working correctly.">unit tests</abbr> for it:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 <span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-<span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
+<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 
@@ -3068,10 +3067,11 @@
 
 <span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
     <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
     <span class="p">)</span>
-    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
     <span class="k">return</span> <span class="n">bucket</span>
@@ -3127,10 +3127,9 @@
 <h3 id="create-the-fastapi-app">Create the <code>FastAPI</code> app<a class="headerlink" href="#create-the-fastapi-app" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 <span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-<span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
+<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 
@@ -3139,10 +3138,11 @@
 
 <span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
     <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
     <span class="p">)</span>
-    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
     <span class="k">return</span> <span class="n">bucket</span>
@@ -3184,10 +3184,9 @@
 <p>Also, Couchbase recommends not using a single <code>Bucket</code> object in multiple "<abbr title="A sequence of code being executed by the program, while at the same time, or at intervals, there can be others being executed too.">thread</abbr>s", so, we can just get the bucket directly and pass it to our utility functions:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
 
-<span class="kn">from</span> <span class="nn">couchbase.options</span> <span class="kn">import</span> <span class="n">LockMode</span>
+<span class="kn">from</span> <span class="nn">couchbase</span> <span class="kn">import</span> <span class="n">LOCKMODE_WAIT</span>
 <span class="kn">from</span> <span class="nn">couchbase.bucket</span> <span class="kn">import</span> <span class="n">Bucket</span>
-<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">ClusterOptions</span>
-<span class="kn">from</span> <span class="nn">couchbase.auth</span> <span class="kn">import</span> <span class="n">PasswordAuthenticator</span>
+<span class="kn">from</span> <span class="nn">couchbase.cluster</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">PasswordAuthenticator</span>
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 
@@ -3196,10 +3195,11 @@
 
 <span class="k">def</span> <span class="nf">get_bucket</span><span class="p">():</span>
     <span class="n">cluster</span> <span class="o">=</span> <span class="n">Cluster</span><span class="p">(</span>
-        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span><span class="p">,</span>
-        <span class="n">ClusterOptions</span><span class="p">(</span><span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">))</span>
+        <span class="s2">&quot;couchbase://couchbasehost:8091?fetch_mutation_tokens=1&amp;operation_timeout=30&amp;n1ql_timeout=300&quot;</span>
     <span class="p">)</span>
-    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LockMode</span><span class="o">.</span><span class="n">WAIT</span><span class="p">)</span>
+    <span class="n">authenticator</span> <span class="o">=</span> <span class="n">PasswordAuthenticator</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+    <span class="n">cluster</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">authenticator</span><span class="p">)</span>
+    <span class="n">bucket</span><span class="p">:</span> <span class="n">Bucket</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">open_bucket</span><span class="p">(</span><span class="s2">&quot;bucket_name&quot;</span><span class="p">,</span> <span class="n">lockmode</span><span class="o">=</span><span class="n">LOCKMODE_WAIT</span><span class="p">)</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">bucket</span><span class="o">.</span><span class="n">n1ql_timeout</span> <span class="o">=</span> <span class="mi">300</span>
     <span class="k">return</span> <span class="n">bucket</span>
