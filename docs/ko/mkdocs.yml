@@ -85,6 +85,7 @@ nav:
 - project-generation.md
 - benchmarks.md
 - help-fastapi.md
+- contributing.md
 markdown_extensions:
 - toc:
     permalink: true
