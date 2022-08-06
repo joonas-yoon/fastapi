@@ -72,6 +72,7 @@ nav:
   - tutorial/handling-errors.md
   - tutorial/cors.md
   - tutorial/sql-databases.md
+  - tutorial/testing.md
 markdown_extensions:
 - toc:
     permalink: true
