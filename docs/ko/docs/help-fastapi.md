@@ -1,4 +1,4 @@
-* # FastAPI 지원 - 도움말 받기
+# FastAPI 지원 - 도움말 받기
 
   **FastAPI** 가 마음에 드시나요?
 
