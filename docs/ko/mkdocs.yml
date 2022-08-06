@@ -81,6 +81,7 @@ nav:
 - async.md
 - Deployment:
   - deployment/index.md
+  - deployment/server-workers.md
 markdown_extensions:
 - toc:
     permalink: true
