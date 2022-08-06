@@ -76,6 +76,7 @@ nav:
 - 고급 사용자 안내서:
   - advanced/response-headers.md
   - advanced/sub-applications.md
+  - advanced/behind-a-proxy.md
 markdown_extensions:
 - toc:
     permalink: true
