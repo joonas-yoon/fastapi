@@ -78,6 +78,7 @@ nav:
   - advanced/sub-applications.md
   - advanced/behind-a-proxy.md
   - advanced/events.md
+- async.md
 markdown_extensions:
 - toc:
     permalink: true
