@@ -79,6 +79,8 @@ nav:
   - advanced/behind-a-proxy.md
   - advanced/events.md
 - async.md
+- Deployment:
+  - deployment/index.md
 markdown_extensions:
 - toc:
     permalink: true
