@@ -83,6 +83,7 @@ nav:
   - deployment/index.md
   - deployment/server-workers.md
 - project-generation.md
+- benchmarks.md
 markdown_extensions:
 - toc:
     permalink: true
