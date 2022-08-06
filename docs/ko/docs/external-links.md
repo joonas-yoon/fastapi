@@ -1,13 +1,13 @@
 # 외부 링크와 참고할만한 글
 
-**FastAPI** has a great community constantly growing.
+**FastAPI**는 지속적으로 성장하고 있는 훌륭한 커뮤니티를 가지고 있습니다.
 
-There are many posts, articles, tools, and projects, related to **FastAPI**.
+여기엔 **FastAPI**와 관련된 많은 블로그 글들, 읽을거리, 툴, 그리고 프로젝트들이 있습니다.
 
-Here's an incomplete list of some of them.
+아래 목록 중 일부는 완성되지 않은 것도 있습니다.
 
-!!! tip
-    If you have an article, project, tool, or anything related to **FastAPI** that is not yet listed here, create a <a href="https://github.com/tiangolo/fastapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">Pull Request adding it</a>.
+!!! tip "팁"
+    만약 **FastAPI**와 관련해서 작성하신 글이나, 프로젝트, 툴 혹은 어떤 것이라도 있는데 여기 목록에 아직 없다면, <a href="https://github.com/tiangolo/fastapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">풀 리퀘스트</a>를 통해서 추가하실 수 있습니다.
 
 ## Articles
 
