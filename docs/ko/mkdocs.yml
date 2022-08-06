@@ -84,6 +84,7 @@ nav:
   - deployment/server-workers.md
 - project-generation.md
 - benchmarks.md
+- help-fastapi.md
 markdown_extensions:
 - toc:
     permalink: true
