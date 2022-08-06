@@ -17,7 +17,7 @@
     
     
       
-        <title>SQL (Relational) Databases - FastAPI</title>
+        <title>SQL (관계형) 데이터베이스 - FastAPI</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sql-relational-databases" class="md-skip">
+        <a href="#sql" class="md-skip">
           Skip to content
         </a>
       
@@ -174,7 +174,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SQL (Relational) Databases
+              SQL (관계형) 데이터베이스
             
           </span>
         </div>
@@ -1124,7 +1124,7 @@
   
     <li class="md-nav__item">
       <a href="../handling-errors/" class="md-nav__link">
-        Handling Errors
+        오류 처리
       </a>
     </li>
   
@@ -1138,7 +1138,7 @@
   
     <li class="md-nav__item">
       <a href="../path-operation-configuration/" class="md-nav__link">
-        Path Operation Configuration
+        경로 동작 설정
       </a>
     </li>
   
@@ -1400,7 +1400,7 @@
   
     <li class="md-nav__item">
       <a href="../cors/" class="md-nav__link">
-        CORS (Cross-Origin Resource Sharing)
+        교차 출처 리소스 공유
       </a>
     </li>
   
@@ -1423,12 +1423,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          SQL (Relational) Databases
+          SQL (관계형) 데이터베이스
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        SQL (Relational) Databases
+        SQL (관계형) 데이터베이스
       </a>
       
         
@@ -1447,52 +1447,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#orms" class="md-nav__link">
-    ORMs
+  <a href="#orm" class="md-nav__link">
+    ORM(객체 관계 매핑)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#file-structure" class="md-nav__link">
-    File structure
+  <a href="#_1" class="md-nav__link">
+    파일 구조
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-sqlalchemy-parts" class="md-nav__link">
-    Create the SQLAlchemy parts
+  <a href="#sqlalchemy" class="md-nav__link">
+    SQLAlchemy 부분 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the SQLAlchemy parts">
+    <nav class="md-nav" aria-label="SQLAlchemy 부분 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-the-sqlalchemy-parts" class="md-nav__link">
-    Import the SQLAlchemy parts
+  <a href="#sqlalchemy_1" class="md-nav__link">
+    SQLAlchemy 부분 임포트
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-database-url-for-sqlalchemy" class="md-nav__link">
-    Create a database URL for SQLAlchemy
+  <a href="#sqlalchemy-url" class="md-nav__link">
+    SQLAlchemy을 위한 데이터베이스 URL 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-the-sqlalchemy-engine" class="md-nav__link">
-    Create the SQLAlchemy engine
+  <a href="#sqlalchemy-engine" class="md-nav__link">
+    SQLAlchemy engine 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the SQLAlchemy engine">
+    <nav class="md-nav" aria-label="SQLAlchemy engine 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#note" class="md-nav__link">
-    Note
+  <a href="#_2" class="md-nav__link">
+    참고
   </a>
   
 </li>
@@ -1503,15 +1503,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-sessionlocal-class" class="md-nav__link">
-    Create a SessionLocal class
+  <a href="#sessionlocal" class="md-nav__link">
+    SessionLocal 클래스 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-base-class" class="md-nav__link">
-    Create a Base class
+  <a href="#base" class="md-nav__link">
+    Base 클래스 생성
   </a>
   
 </li>
@@ -1522,30 +1522,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-database-models" class="md-nav__link">
-    Create the database models
+  <a href="#_3" class="md-nav__link">
+    데이터베이스 모델 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the database models">
+    <nav class="md-nav" aria-label="데이터베이스 모델 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-sqlalchemy-models-from-the-base-class" class="md-nav__link">
-    Create SQLAlchemy models from the Base class
+  <a href="#base-sqlalchemy" class="md-nav__link">
+    Base 클래스로부터 SQLAlchemy 모델 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-model-attributescolumns" class="md-nav__link">
-    Create model attributes/columns
+  <a href="#_4" class="md-nav__link">
+    모델 어트리뷰트/열 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-the-relationships" class="md-nav__link">
-    Create the relationships
+  <a href="#_5" class="md-nav__link">
+    관계 생성
   </a>
   
 </li>
@@ -1556,24 +1556,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-pydantic-models" class="md-nav__link">
-    Create the Pydantic models
+  <a href="#pydantic" class="md-nav__link">
+    Pydantic 모델 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the Pydantic models">
+    <nav class="md-nav" aria-label="Pydantic 모델 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-initial-pydantic-models-schemas" class="md-nav__link">
-    Create initial Pydantic models / schemas
+  <a href="#pydantic_1" class="md-nav__link">
+    Pydantic 초기 모델 / 스키마 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create initial Pydantic models / schemas">
+    <nav class="md-nav" aria-label="Pydantic 초기 모델 / 스키마 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sqlalchemy-style-and-pydantic-style" class="md-nav__link">
-    SQLAlchemy style and Pydantic style
+  <a href="#sqlalchemy-pydantic" class="md-nav__link">
+    SQLAlchemy 스타일과 Pydantic 스타일
   </a>
   
 </li>
@@ -1584,23 +1584,23 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-pydantic-models-schemas-for-reading-returning" class="md-nav__link">
-    Create Pydantic models / schemas for reading / returning
+  <a href="#pydantic_2" class="md-nav__link">
+    읽고 반환하기 위한 Pydantic 모델 / 스키마 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-pydantics-orm_mode" class="md-nav__link">
-    Use Pydantic's orm_mode
+  <a href="#pydantic-orm_mode" class="md-nav__link">
+    Pydantic의 orm_mode 사용
   </a>
   
-    <nav class="md-nav" aria-label="Use Pydantic's orm_mode">
+    <nav class="md-nav" aria-label="Pydantic의 orm_mode 사용">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#technical-details-about-orm-mode" class="md-nav__link">
-    Technical Details about ORM mode
+  <a href="#orm_1" class="md-nav__link">
+    ORM 모드에 대한 기술적 세부사항
   </a>
   
 </li>
@@ -1616,23 +1616,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crud-utils" class="md-nav__link">
-    CRUD utils
+  <a href="#crud" class="md-nav__link">
+    CRUD 유틸리티
   </a>
   
-    <nav class="md-nav" aria-label="CRUD utils">
+    <nav class="md-nav" aria-label="CRUD 유틸리티">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#read-data" class="md-nav__link">
-    Read data
+  <a href="#_6" class="md-nav__link">
+    데이터 읽기
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-data" class="md-nav__link">
-    Create data
+  <a href="#_7" class="md-nav__link">
+    데이터 생성
   </a>
   
 </li>
@@ -1643,24 +1643,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#main-fastapi-app" class="md-nav__link">
-    Main FastAPI app
+  <a href="#main-fastapi" class="md-nav__link">
+    Main FastAPI 응용 프로그램
   </a>
   
-    <nav class="md-nav" aria-label="Main FastAPI app">
+    <nav class="md-nav" aria-label="Main FastAPI 응용 프로그램">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-the-database-tables" class="md-nav__link">
-    Create the database tables
+  <a href="#_8" class="md-nav__link">
+    데이터베이스 테이블 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the database tables">
+    <nav class="md-nav" aria-label="데이터베이스 테이블 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#alembic-note" class="md-nav__link">
-    Alembic Note
+  <a href="#alembic" class="md-nav__link">
+    Alembic 참고사항
   </a>
   
 </li>
@@ -1671,22 +1671,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-dependency" class="md-nav__link">
-    Create a dependency
+  <a href="#_9" class="md-nav__link">
+    의존성 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-your-fastapi-path-operations" class="md-nav__link">
-    Create your FastAPI path operations
+  <a href="#fastapi" class="md-nav__link">
+    FastAPI 경로 동작 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#about-def-vs-async-def" class="md-nav__link">
-    About def vs async def
+  <a href="#def-vs-async-def" class="md-nav__link">
+    def vs async def
   </a>
   
 </li>
@@ -1697,58 +1697,58 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#migrations" class="md-nav__link">
-    Migrations
+  <a href="#_10" class="md-nav__link">
+    마이그레이션
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#review-all-the-files" class="md-nav__link">
-    Review all the files
+  <a href="#_11" class="md-nav__link">
+    모든 파일 검토
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-it" class="md-nav__link">
-    Check it
+  <a href="#_12" class="md-nav__link">
+    확인하십시오
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interact-with-the-database-directly" class="md-nav__link">
-    Interact with the database directly
+  <a href="#_13" class="md-nav__link">
+    데이터베이스와 직접적인 상호작용
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#alternative-db-session-with-middleware" class="md-nav__link">
-    Alternative DB session with middleware
+  <a href="#db" class="md-nav__link">
+    미들웨어가 있는 대체 DB 세션
   </a>
   
-    <nav class="md-nav" aria-label="Alternative DB session with middleware">
+    <nav class="md-nav" aria-label="미들웨어가 있는 대체 DB 세션">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-a-middleware" class="md-nav__link">
-    Create a middleware
+  <a href="#_14" class="md-nav__link">
+    미들웨어 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#about-requeststate" class="md-nav__link">
-    About request.state
+  <a href="#requeststate" class="md-nav__link">
+    request.state에 대해
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dependencies-with-yield-or-middleware" class="md-nav__link">
-    Dependencies with yield or middleware
+  <a href="#yield" class="md-nav__link">
+    yield를 사용하는 의존성 또는 미들웨어와
   </a>
   
 </li>
@@ -1830,7 +1830,7 @@
   
     <li class="md-nav__item">
       <a href="../testing/" class="md-nav__link">
-        Testing
+        테스트
       </a>
     </li>
   
@@ -2037,20 +2037,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/response-headers/" class="md-nav__link">
-        Response Headers
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../advanced/response-change-status-code/" class="md-nav__link">
         Response - Change Status Code
       </a>
@@ -2082,18 +2068,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_11" type="checkbox" id="__nav_8_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_10" type="checkbox" id="__nav_8_10" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_11">
+        <label class="md-nav__link" for="__nav_8_10">
           Advanced Security
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Advanced Security" data-md-level="2">
-        <label class="md-nav__title" for="__nav_8_11">
+        <label class="md-nav__title" for="__nav_8_10">
           <span class="md-nav__icon md-icon"></span>
           Advanced Security
         </label>
@@ -2497,6 +2483,54 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          고급 사용자 안내서
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="고급 사용자 안내서" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          고급 사용자 안내서
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-headers/" class="md-nav__link">
+        응답 헤더
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../async/" class="md-nav__link">
         Concurrency and async / await
@@ -2516,18 +2550,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_10">
+        <label class="md-nav__link" for="__nav_11">
           Deployment
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deployment" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
+        <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Deployment
         </label>
@@ -2798,52 +2832,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#orms" class="md-nav__link">
-    ORMs
+  <a href="#orm" class="md-nav__link">
+    ORM(객체 관계 매핑)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#file-structure" class="md-nav__link">
-    File structure
+  <a href="#_1" class="md-nav__link">
+    파일 구조
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-sqlalchemy-parts" class="md-nav__link">
-    Create the SQLAlchemy parts
+  <a href="#sqlalchemy" class="md-nav__link">
+    SQLAlchemy 부분 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the SQLAlchemy parts">
+    <nav class="md-nav" aria-label="SQLAlchemy 부분 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-the-sqlalchemy-parts" class="md-nav__link">
-    Import the SQLAlchemy parts
+  <a href="#sqlalchemy_1" class="md-nav__link">
+    SQLAlchemy 부분 임포트
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-database-url-for-sqlalchemy" class="md-nav__link">
-    Create a database URL for SQLAlchemy
+  <a href="#sqlalchemy-url" class="md-nav__link">
+    SQLAlchemy을 위한 데이터베이스 URL 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-the-sqlalchemy-engine" class="md-nav__link">
-    Create the SQLAlchemy engine
+  <a href="#sqlalchemy-engine" class="md-nav__link">
+    SQLAlchemy engine 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the SQLAlchemy engine">
+    <nav class="md-nav" aria-label="SQLAlchemy engine 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#note" class="md-nav__link">
-    Note
+  <a href="#_2" class="md-nav__link">
+    참고
   </a>
   
 </li>
@@ -2854,15 +2888,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-sessionlocal-class" class="md-nav__link">
-    Create a SessionLocal class
+  <a href="#sessionlocal" class="md-nav__link">
+    SessionLocal 클래스 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-base-class" class="md-nav__link">
-    Create a Base class
+  <a href="#base" class="md-nav__link">
+    Base 클래스 생성
   </a>
   
 </li>
@@ -2873,30 +2907,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-database-models" class="md-nav__link">
-    Create the database models
+  <a href="#_3" class="md-nav__link">
+    데이터베이스 모델 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the database models">
+    <nav class="md-nav" aria-label="데이터베이스 모델 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-sqlalchemy-models-from-the-base-class" class="md-nav__link">
-    Create SQLAlchemy models from the Base class
+  <a href="#base-sqlalchemy" class="md-nav__link">
+    Base 클래스로부터 SQLAlchemy 모델 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-model-attributescolumns" class="md-nav__link">
-    Create model attributes/columns
+  <a href="#_4" class="md-nav__link">
+    모델 어트리뷰트/열 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-the-relationships" class="md-nav__link">
-    Create the relationships
+  <a href="#_5" class="md-nav__link">
+    관계 생성
   </a>
   
 </li>
@@ -2907,24 +2941,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-pydantic-models" class="md-nav__link">
-    Create the Pydantic models
+  <a href="#pydantic" class="md-nav__link">
+    Pydantic 모델 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the Pydantic models">
+    <nav class="md-nav" aria-label="Pydantic 모델 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-initial-pydantic-models-schemas" class="md-nav__link">
-    Create initial Pydantic models / schemas
+  <a href="#pydantic_1" class="md-nav__link">
+    Pydantic 초기 모델 / 스키마 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create initial Pydantic models / schemas">
+    <nav class="md-nav" aria-label="Pydantic 초기 모델 / 스키마 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sqlalchemy-style-and-pydantic-style" class="md-nav__link">
-    SQLAlchemy style and Pydantic style
+  <a href="#sqlalchemy-pydantic" class="md-nav__link">
+    SQLAlchemy 스타일과 Pydantic 스타일
   </a>
   
 </li>
@@ -2935,23 +2969,23 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-pydantic-models-schemas-for-reading-returning" class="md-nav__link">
-    Create Pydantic models / schemas for reading / returning
+  <a href="#pydantic_2" class="md-nav__link">
+    읽고 반환하기 위한 Pydantic 모델 / 스키마 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-pydantics-orm_mode" class="md-nav__link">
-    Use Pydantic's orm_mode
+  <a href="#pydantic-orm_mode" class="md-nav__link">
+    Pydantic의 orm_mode 사용
   </a>
   
-    <nav class="md-nav" aria-label="Use Pydantic's orm_mode">
+    <nav class="md-nav" aria-label="Pydantic의 orm_mode 사용">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#technical-details-about-orm-mode" class="md-nav__link">
-    Technical Details about ORM mode
+  <a href="#orm_1" class="md-nav__link">
+    ORM 모드에 대한 기술적 세부사항
   </a>
   
 </li>
@@ -2967,23 +3001,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crud-utils" class="md-nav__link">
-    CRUD utils
+  <a href="#crud" class="md-nav__link">
+    CRUD 유틸리티
   </a>
   
-    <nav class="md-nav" aria-label="CRUD utils">
+    <nav class="md-nav" aria-label="CRUD 유틸리티">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#read-data" class="md-nav__link">
-    Read data
+  <a href="#_6" class="md-nav__link">
+    데이터 읽기
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-data" class="md-nav__link">
-    Create data
+  <a href="#_7" class="md-nav__link">
+    데이터 생성
   </a>
   
 </li>
@@ -2994,24 +3028,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#main-fastapi-app" class="md-nav__link">
-    Main FastAPI app
+  <a href="#main-fastapi" class="md-nav__link">
+    Main FastAPI 응용 프로그램
   </a>
   
-    <nav class="md-nav" aria-label="Main FastAPI app">
+    <nav class="md-nav" aria-label="Main FastAPI 응용 프로그램">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-the-database-tables" class="md-nav__link">
-    Create the database tables
+  <a href="#_8" class="md-nav__link">
+    데이터베이스 테이블 생성
   </a>
   
-    <nav class="md-nav" aria-label="Create the database tables">
+    <nav class="md-nav" aria-label="데이터베이스 테이블 생성">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#alembic-note" class="md-nav__link">
-    Alembic Note
+  <a href="#alembic" class="md-nav__link">
+    Alembic 참고사항
   </a>
   
 </li>
@@ -3022,22 +3056,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-dependency" class="md-nav__link">
-    Create a dependency
+  <a href="#_9" class="md-nav__link">
+    의존성 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-your-fastapi-path-operations" class="md-nav__link">
-    Create your FastAPI path operations
+  <a href="#fastapi" class="md-nav__link">
+    FastAPI 경로 동작 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#about-def-vs-async-def" class="md-nav__link">
-    About def vs async def
+  <a href="#def-vs-async-def" class="md-nav__link">
+    def vs async def
   </a>
   
 </li>
@@ -3048,58 +3082,58 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#migrations" class="md-nav__link">
-    Migrations
+  <a href="#_10" class="md-nav__link">
+    마이그레이션
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#review-all-the-files" class="md-nav__link">
-    Review all the files
+  <a href="#_11" class="md-nav__link">
+    모든 파일 검토
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-it" class="md-nav__link">
-    Check it
+  <a href="#_12" class="md-nav__link">
+    확인하십시오
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interact-with-the-database-directly" class="md-nav__link">
-    Interact with the database directly
+  <a href="#_13" class="md-nav__link">
+    데이터베이스와 직접적인 상호작용
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#alternative-db-session-with-middleware" class="md-nav__link">
-    Alternative DB session with middleware
+  <a href="#db" class="md-nav__link">
+    미들웨어가 있는 대체 DB 세션
   </a>
   
-    <nav class="md-nav" aria-label="Alternative DB session with middleware">
+    <nav class="md-nav" aria-label="미들웨어가 있는 대체 DB 세션">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-a-middleware" class="md-nav__link">
-    Create a middleware
+  <a href="#_14" class="md-nav__link">
+    미들웨어 생성
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#about-requeststate" class="md-nav__link">
-    About request.state
+  <a href="#requeststate" class="md-nav__link">
+    request.state에 대해
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dependencies-with-yield-or-middleware" class="md-nav__link">
-    Dependencies with yield or middleware
+  <a href="#yield" class="md-nav__link">
+    yield를 사용하는 의존성 또는 미들웨어와
   </a>
   
 </li>
@@ -3123,56 +3157,51 @@
                 
 
 
-<h1 id="sql-relational-databases">SQL (Relational) Databases<a class="headerlink" href="#sql-relational-databases" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The current page still doesn't have a translation for this language.</p>
-<p>But you can help translating it: <a class="internal-link" href="https://fastapi.tiangolo.com/contributing/" target="_blank">Contributing</a>.</p>
-</div>
-<p><strong>FastAPI</strong> doesn't require you to use a SQL (relational) database.</p>
-<p>But you can use any relational database that you want.</p>
-<p>Here we'll see an example using <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a>.</p>
-<p>You can easily adapt it to any database supported by SQLAlchemy, like:</p>
+<h1 id="sql">SQL (관계형) 데이터베이스<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+<p><strong>FastAPI</strong>에서 반드시 SQL(관계형) 데이터베이스를 사용해야하는 것은 아닙니다.</p>
+<p>하지만 원한다면 어떤 관계형 데이터베이스도 사용할 수 있습니다.</p>
+<p>이 문서에서는 <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a>를 사용한 예시를 보게 될 것입니다.</p>
+<p>SQLAlchemy가 지원하는 어느 데이터베이스든 쉽게 적용할 수 있습니다:</p>
 <ul>
 <li>PostgreSQL</li>
 <li>MySQL</li>
 <li>SQLite</li>
 <li>Oracle</li>
-<li>Microsoft SQL Server, etc.</li>
+<li>Microsoft SQL Server 등.</li>
 </ul>
-<p>In this example, we'll use <strong>SQLite</strong>, because it uses a single file and Python has integrated support. So, you can copy this example and run it as is.</p>
-<p>Later, for your production application, you might want to use a database server like <strong>PostgreSQL</strong>.</p>
+<p>하나의 파일을 사용하고 파이썬이 통합된 지원을 제공하기 때문에, 이 예시에서는 <strong>SQLite</strong>를 사용할 것입니다. 따라서 동 예시를 복사해서 그대로 실행할 수 있습니다.</p>
+<p>추후 프로덕션용 응용 프로그램에는 <strong>PostgreSQL</strong>과 같은 데이터베이스 서버를 사용할 수 있습니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>There is an official project generator with <strong>FastAPI</strong> and <strong>PostgreSQL</strong>, all based on <strong>Docker</strong>, including a frontend and more tools: <a href="https://github.com/tiangolo/full-stack-fastapi-postgresql" class="external-link" target="_blank">https://github.com/tiangolo/full-stack-fastapi-postgresql</a></p>
+<p class="admonition-title">팁</p>
+<p><strong>도커</strong>를 기반으로 하고, 프론트엔드와 많은 도구들을 포함한 <strong>FastAPI</strong> 및 <strong>PostgreSQL</strong>을 사용하는 공식적인 프로젝트 생성기가 있습니다: <a href="https://github.com/tiangolo/full-stack-fastapi-postgresql" class="external-link" target="_blank">https://github.com/tiangolo/full-stack-fastapi-postgresql</a></p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Notice that most of the code is the standard <code>SQLAlchemy</code> code you would use with any framework.</p>
-<p>The <strong>FastAPI</strong> specific code is as small as always.</p>
+<p class="admonition-title">참고</p>
+<p>대부분의 코드는 모든 프레임워크에서 사용하는 표준 <code>SQLAlchemy</code> 코드입니다.</p>
+<p><strong>FastAPI</strong> 특정 코드는 언제나 그렇듯 많지 않습니다.</p>
 </div>
-<h2 id="orms">ORMs<a class="headerlink" href="#orms" title="Permanent link">&para;</a></h2>
-<p><strong>FastAPI</strong> works with any database and any style of library to talk to the database.</p>
-<p>A common pattern is to use an "ORM": an "object-relational mapping" library.</p>
-<p>An ORM has tools to convert ("<em>map</em>") between <em>objects</em> in code and database tables ("<em>relations</em>").</p>
-<p>With an ORM, you normally create a class that represents a table in a SQL database, each attribute of the class represents a column, with a name and a type.</p>
-<p>For example a class <code>Pet</code> could represent a SQL table <code>pets</code>.</p>
-<p>And each <em>instance</em> object of that class represents a row in the database.</p>
-<p>For example an object <code>orion_cat</code> (an instance of <code>Pet</code>) could have an attribute <code>orion_cat.type</code>, for the column <code>type</code>. And the value of that attribute could be, e.g. <code>"cat"</code>.</p>
-<p>These ORMs also have tools to make the connections or relations between tables or entities.</p>
-<p>This way, you could also have an attribute <code>orion_cat.owner</code> and the owner would contain the data for this pet's owner, taken from the table <em>owners</em>.</p>
-<p>So, <code>orion_cat.owner.name</code> could be the name (from the <code>name</code> column in the <code>owners</code> table) of this pet's owner.</p>
-<p>It could have a value like <code>"Arquilian"</code>.</p>
-<p>And the ORM will do all the work to get the information from the corresponding table <em>owners</em> when you try to access it from your pet object.</p>
-<p>Common ORMs are for example: Django-ORM (part of the Django framework), SQLAlchemy ORM (part of SQLAlchemy, independent of framework) and Peewee (independent of framework), among others.</p>
-<p>Here we will see how to work with <strong>SQLAlchemy ORM</strong>.</p>
-<p>In a similar way you could use any other ORM.</p>
+<h2 id="orm">ORM(객체 관계 매핑)<a class="headerlink" href="#orm" title="Permanent link">&para;</a></h2>
+<p><strong>FastAPI</strong>는 모든 데이터베이스 및 모든 스타일의 라이브러리에서 동작하며 데이터베이스와 통신합니다.</p>
+<p>흔한 패턴 중 하나는 "객체 관계 매핑(ORM, object-relational mapping 라이브러리)"을 사용하는 것입니다.</p>
+<p>ORM에는 코드의 <em>객체</em>(<em>object</em>)와 데이터베이스 테이블(<em>"관계: relation"</em>)간 변환(<em>"매핑: mapping"</em>)을 하는 도구들이 있습니다.</p>
+<p>ORM을 사용하여, SQL 데이터베이스의 테이블을 나타내는 클래스와, 이름과 형을 가진 열을 나타내는 해당 클래스의 각 속성들을 생성합니다.</p>
+<p>예를들어 클래스 <code>Pet</code> 은 SQL 테이블 <code>pets</code> 을 나타낼 수 있습니다.</p>
+<p>그리고 해당 클래스의 각 인스턴스 객체는 데이터베이스의 행을 나타냅니다.</p>
+<p>예를들어 <code>Pet</code> 의 인스턴스인 <code>orion_cat</code> 객체는 <code>type</code> 열에 대해 <code>orion_cat.type</code> 속성을 가질 수 있습니다. 그리고 속성의 값은 일례로, <code>"cat"</code> 이 될 수 있습니다.</p>
+<p>이러한 ORM에는 테이블 또는 개체 사이의 연결이나 관계를 생성하는 도구들이 있습니다.</p>
+<p>이를 통해  <code>orion_cat.owner</code> 속성을 가질 수 있으며, owner(주인)은 <em>owners</em> 테이블로부터 가져온 pet(반려동물)의 owner(주인)에 대한 데이터를 포함합니다.</p>
+<p>따라서, <code>orion_cat.owner.name</code> 은 <code>owners</code> 테이블의 <code>name</code> 에서 가져온 반려동물 주인의 이름이 될 수 있습니다.</p>
+<p>이는 <code>"Arquilian"</code> 와 같은 값이 될 것입니다.</p>
+<p>그리고 ORM은 반려동물(pet) 객체에서 <em>주인(owners)</em> 테이블로 접근하려고 할 때 해당 테이블로부터 정보를 얻기 위한 모든 작업을 수행합니다.</p>
+<p>많이 사용되는 ORM에는 다음의 것들이 있습니다: Django-ORM (Django 프레임워크의 일부), SQLAlchemy ORM(프레임워크와 독립적인, SQLAlchemy의 일부), Peewee(프레임워크로부터 독립적).</p>
+<p>여기서 우리는 <strong>SQLAlchemy ORM</strong>을 사용해 작업하는 방법을 살펴볼 것입니다.</p>
+<p>비슷한 방법으로 다른 모든 ORM을 사용할 수 있습니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>There's an equivalent article using Peewee here in the docs.</p>
+<p class="admonition-title">팁</p>
+<p>Peewee를 사용하는 문서도 제공되고 있습니다.</p>
 </div>
-<h2 id="file-structure">File structure<a class="headerlink" href="#file-structure" title="Permanent link">&para;</a></h2>
-<p>For these examples, let's say you have a directory named <code>my_super_project</code> that contains a sub-directory called <code>sql_app</code> with a structure like this:</p>
+<h2 id="_1">파일 구조<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>이 예시에서, 다음과 같은 구조를 가진  <code>sql_app</code>을 하위 디렉터리로 갖는  <code>my_super_project</code> 라는 디렉터리가 있다고 가정해보겠습니다:</p>
 <div class="highlight"><pre><span></span><code>.
 └── sql_app
     ├── __init__.py
@@ -3182,11 +3211,11 @@
     ├── models.py
     └── schemas.py
 </code></pre></div>
-<p>The file <code>__init__.py</code> is just an empty file, but it tells Python that <code>sql_app</code> with all its modules (Python files) is a package.</p>
-<p>Now let's see what each file/module does.</p>
-<h2 id="create-the-sqlalchemy-parts">Create the SQLAlchemy parts<a class="headerlink" href="#create-the-sqlalchemy-parts" title="Permanent link">&para;</a></h2>
-<p>Let's refer to the file <code>sql_app/database.py</code>.</p>
-<h3 id="import-the-sqlalchemy-parts">Import the SQLAlchemy parts<a class="headerlink" href="#import-the-sqlalchemy-parts" title="Permanent link">&para;</a></h3>
+<p><code>__init__.py</code> 는 빈 파일이지만, 파이썬에게 <code>sql_app</code>과 이것의 모든 모듈들(파이썬 파일들)이 패키지라는 것을 알려줍니다.</p>
+<p>이제 각각의 파일/모듈이 어떤 일을 하는지 봅시다.</p>
+<h2 id="sqlalchemy">SQLAlchemy 부분 생성<a class="headerlink" href="#sqlalchemy" title="Permanent link">&para;</a></h2>
+<p><code>sql_app/database.py</code> 파일을 봅시다.</p>
+<h3 id="sqlalchemy_1">SQLAlchemy 부분 임포트<a class="headerlink" href="#sqlalchemy_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 </span><span class="hll"><span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
 </span><span class="hll"><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
@@ -3201,7 +3230,7 @@
 
 <span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
 </code></pre></div>
-<h3 id="create-a-database-url-for-sqlalchemy">Create a database URL for SQLAlchemy<a class="headerlink" href="#create-a-database-url-for-sqlalchemy" title="Permanent link">&para;</a></h3>
+<h3 id="sqlalchemy-url">SQLAlchemy을 위한 데이터베이스 URL 생성<a class="headerlink" href="#sqlalchemy-url" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
@@ -3216,20 +3245,20 @@
 
 <span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
 </code></pre></div>
-<p>In this example, we are "connecting" to a SQLite database (opening a file with the SQLite database).</p>
-<p>The file will be located at the same directory in the file <code>sql_app.db</code>.</p>
-<p>That's why the last part is <code>./sql_app.db</code>.</p>
-<p>If you were using a <strong>PostgreSQL</strong> database instead, you would just have to uncomment the line:</p>
+<p>이 예시에서, SQLite 데이터베이스와 "연결"합니다(SQLite 데이터베이스를 사용해 파일 열기).</p>
+<p>해당 파일은 <code>sql_app.db</code> 파일과 동일한 디렉토리에 위치할 것입니다.</p>
+<p>마지막 부분이 <code>./sql_app.db</code> 인 이유입니다.</p>
+<p><strong>PostgreSQL</strong>을 사용하는 경우, 하기 행의 주석 처리를 제거하면 됩니다.</p>
 <div class="highlight"><pre><span></span><code><span class="n">SQLALCHEMY_DATABASE_URL</span> <span class="o">=</span> <span class="s2">&quot;postgresql://user:password@postgresserver/db&quot;</span>
 </code></pre></div>
-<p>...and adapt it with your database data and credentials (equivalently for MySQL, MariaDB or any other).</p>
+<p>그리고 데이터베이스 데이터 및 자격증명(credentials)을 조정하세요(MySQL, MariaDB, 기타 다른 데이터베이스도 동일).</p>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>This is the main line that you would have to modify if you wanted to use a different database.</p>
+<p class="admonition-title">팁</p>
+<p>이것은 다른 데이터베이스를 사용하고자 할 때 수정해야하는 주된 행입니다.</p>
 </div>
-<h3 id="create-the-sqlalchemy-engine">Create the SQLAlchemy <code>engine</code><a class="headerlink" href="#create-the-sqlalchemy-engine" title="Permanent link">&para;</a></h3>
-<p>The first step is to create a SQLAlchemy "engine".</p>
-<p>We will later use this <code>engine</code> in other places.</p>
+<h3 id="sqlalchemy-engine">SQLAlchemy <code>engine</code> 생성<a class="headerlink" href="#sqlalchemy-engine" title="Permanent link">&para;</a></h3>
+<p>첫번째로 해야할 일은 SQLAlchemy "엔진(engine)"을 생성하는 것입니다.</p>
+<p>추후 해당 <code>engine</code> 을 다른 곳에서도 사용할 것입니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
@@ -3244,24 +3273,24 @@
 
 <span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
 </code></pre></div>
-<h4 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h4>
-<p>The argument:</p>
+<h4 id="_2">참고<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p>다음 인수:</p>
 <div class="highlight"><pre><span></span><code><span class="n">connect_args</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;check_same_thread&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
 </code></pre></div>
-<p>...is needed only for <code>SQLite</code>. It's not needed for other databases.</p>
-<div class="admonition info">
-<p class="admonition-title">Technical Details</p>
-<p>By default SQLite will only allow one thread to communicate with it, assuming that each thread would handle an independent request.</p>
-<p>This is to prevent accidentally sharing the same connection for different things (for different requests).</p>
-<p>But in FastAPI, using normal functions (<code>def</code>) more than one thread could interact with the database for the same request, so we need to make SQLite know that it should allow that with <code>connect_args={"check_same_thread": False}</code>.</p>
-<p>Also, we will make sure each request gets its own database connection session in a dependency, so there's no need for that default mechanism.</p>
+<p>는 <code>SQLite</code> 를 사용할 때만 필요합니다. 다른 데이터베이스에서는 필요하지 않습니다.</p>
+<div class="admonition note">
+<p class="admonition-title">기술적 세부사항</p>
+<p>기본적으로 SQLite는 각 스레드가 독립적인 요청을 처리한다고 가정하고, 하나의 스레드만 통신하도록 허용합니다.</p>
+<p>이것은 서로 다른 작업(서로 다른 요청)에 대해 뜻하지 않게 동일한 연결을 공유하는 것을 방지하기 위함입니다.</p>
+<p>하지만 FastAPI에서, 일반적인 함수(<code>def</code>)를 사용하면 둘 이상의 스레드가 동일한 요청에 대해 데이터베이스와 상호작용하는 것이 가능하고, 따라서 <code>connect_args={"check_same_thread": False}</code> 를 사용해 SQLite가 이것을 허용하도록 설정할 필요가 있습니다.</p>
+<p>또한, 각각의 요청은 의존성에서 자체적인 데이터베이스 연결 세션을 가지므로 기본 메커니즘이 필요하지 않습니다.</p>
 </div>
-<h3 id="create-a-sessionlocal-class">Create a <code>SessionLocal</code> class<a class="headerlink" href="#create-a-sessionlocal-class" title="Permanent link">&para;</a></h3>
-<p>Each instance of the <code>SessionLocal</code> class will be a database session. The class itself is not a database session yet.</p>
-<p>But once we create an instance of the <code>SessionLocal</code> class, this instance will be the actual database session.</p>
-<p>We name it <code>SessionLocal</code> to distinguish it from the <code>Session</code> we are importing from SQLAlchemy.</p>
-<p>We will use <code>Session</code> (the one imported from SQLAlchemy) later.</p>
-<p>To create the <code>SessionLocal</code> class, use the function <code>sessionmaker</code>:</p>
+<h3 id="sessionlocal"><code>SessionLocal</code> 클래스 생성<a class="headerlink" href="#sessionlocal" title="Permanent link">&para;</a></h3>
+<p><code>SessionLocal</code> 클래스의 각 인스턴스는 데이터베이스 세션이 될 것입니다. 클래스 자체는 아직 데이터베이스 세션이 아닙니다.</p>
+<p>하지만 <code>SessionLocal</code> 클래스에 인스턴스를 생성하면, 해당 인스턴스는 실질적인 데이터베이스 세션이 됩니다.</p>
+<p>SQLAlchemy로부터 임포트하는 <code>Session</code> 과 구분하기 위해 <code>SessionLocal</code> 이라고 이름을 붙였습니다.</p>
+<p>SQLAlchemy로부터 임포트하는 <code>Session</code> 은 추후 사용할 것입니다.</p>
+<p><code>SessionLocal</code> 클래스를 생성하기 위해, <code>sessionmaker</code> 함수를 사용합니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
@@ -3276,9 +3305,9 @@
 </span>
 <span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
 </code></pre></div>
-<h3 id="create-a-base-class">Create a <code>Base</code> class<a class="headerlink" href="#create-a-base-class" title="Permanent link">&para;</a></h3>
-<p>Now we will use the function <code>declarative_base()</code> that returns a class.</p>
-<p>Later we will inherit from this class to create each of the database models or classes (the ORM models):</p>
+<h3 id="base"><code>Base</code> 클래스 생성<a class="headerlink" href="#base" title="Permanent link">&para;</a></h3>
+<p>이제 클래스를 반환하기 위해 <code>declarative_base()</code> 함수를 사용합니다.</p>
+<p>이후 각각의 데이터베이스 모델 또는 클래스(ORM 모델)를 생성하기 위해 해당 클래스로부터 상속받을 것입니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
@@ -3293,18 +3322,18 @@
 
 <span class="hll"><span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
 </span></code></pre></div>
-<h2 id="create-the-database-models">Create the database models<a class="headerlink" href="#create-the-database-models" title="Permanent link">&para;</a></h2>
-<p>Let's now see the file <code>sql_app/models.py</code>.</p>
-<h3 id="create-sqlalchemy-models-from-the-base-class">Create SQLAlchemy models from the <code>Base</code> class<a class="headerlink" href="#create-sqlalchemy-models-from-the-base-class" title="Permanent link">&para;</a></h3>
-<p>We will use this <code>Base</code> class we created before to create the SQLAlchemy models.</p>
+<h2 id="_3">데이터베이스 모델 생성<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><code>sql_app/models.py</code> 파일을 봅시다.</p>
+<h3 id="base-sqlalchemy"><code>Base</code> 클래스로부터 SQLAlchemy 모델 생성<a class="headerlink" href="#base-sqlalchemy" title="Permanent link">&para;</a></h3>
+<p>SQLAlchemy 모델을 만들기 전에 우리가 생성한 <code>Base</code> 클래스를 사용합니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>SQLAlchemy uses the term "<strong>model</strong>" to refer to these classes and instances that interact with the database.</p>
-<p>But Pydantic also uses the term "<strong>model</strong>" to refer to something different, the data validation, conversion, and documentation classes and instances.</p>
+<p class="admonition-title">팁</p>
+<p>SQLAlchemy에서는 데이터베이스와 상호작용하는 클래스 및 인스턴스를 "<strong>모델</strong>"이라고 지칭합니다.</p>
+<p>하지만 Pydantic 또한 다른 것들을 지칭하기 위해 "<strong>모델</strong>"이라는 용어를 사용하는데, 여기서는 데이터 유효성 검사, 변환, 그리고 클래스 및 인스턴스의 문서화를 의미합니다.</p>
 </div>
-<p>Import <code>Base</code> from <code>database</code> (the file <code>database.py</code> from above).</p>
-<p>Create classes that inherit from it.</p>
-<p>These classes are the SQLAlchemy models.</p>
+<p><code>database</code> (상기 <code>database.py</code> 파일)로부터 <code>Base</code> 를 임포트하십시오.</p>
+<p>이것을 상속받는 클래스들을 생성합니다.</p>
+<p>이 클래스들은 SQLAlchemy 모델들입니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Boolean</span><span class="p">,</span> <span class="n">Column</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span>
 <span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">relationship</span>
 
@@ -3332,12 +3361,12 @@
 
     <span class="n">owner</span> <span class="o">=</span> <span class="n">relationship</span><span class="p">(</span><span class="s2">&quot;User&quot;</span><span class="p">,</span> <span class="n">back_populates</span><span class="o">=</span><span class="s2">&quot;items&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>The <code>__tablename__</code> attribute tells SQLAlchemy the name of the table to use in the database for each of these models.</p>
-<h3 id="create-model-attributescolumns">Create model attributes/columns<a class="headerlink" href="#create-model-attributescolumns" title="Permanent link">&para;</a></h3>
-<p>Now create all the model (class) attributes.</p>
-<p>Each of these attributes represents a column in its corresponding database table.</p>
-<p>We use <code>Column</code> from SQLAlchemy as the default value.</p>
-<p>And we pass a SQLAlchemy class "type", as <code>Integer</code>, <code>String</code>, and <code>Boolean</code>, that defines the type in the database, as an argument.</p>
+<p><code>__tablename__</code> 속성은 각각의 모델들에 대한 데이터베이스 테이블 이름을 SQLAlchemy에게 알려줍니다.</p>
+<h3 id="_4">모델 어트리뷰트/열 생성<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>이제 모든 모델 (클래스) 어트리뷰트를 생성합니다.</p>
+<p>각 속성들은 해당 데이터베이스 테이블의 열을 나타냅니다.</p>
+<p>SQLAlchemy의 <code>Column</code> 을 기본값으로 사용합니다.</p>
+<p>그리고 <code>Integer</code> , <code>String</code> , <code>Boolean</code> 과 같이 데이터베이스에서 유형을 정의하는 SQLAlchemy 클래스 "형(type)"을 매개변수로 전달합니다.</p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Boolean</span><span class="p">,</span> <span class="n">Column</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span>
 </span><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">relationship</span>
 
@@ -3365,10 +3394,10 @@
 </span>
     <span class="n">owner</span> <span class="o">=</span> <span class="n">relationship</span><span class="p">(</span><span class="s2">&quot;User&quot;</span><span class="p">,</span> <span class="n">back_populates</span><span class="o">=</span><span class="s2">&quot;items&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="create-the-relationships">Create the relationships<a class="headerlink" href="#create-the-relationships" title="Permanent link">&para;</a></h3>
-<p>Now create the relationships.</p>
-<p>For this, we use <code>relationship</code> provided by SQLAlchemy ORM.</p>
-<p>This will become, more or less, a "magic" attribute that will contain the values from other tables related to this one.</p>
+<h3 id="_5">관계 생성<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>이제 관계를 생성합니다.</p>
+<p>이를 위해 SQLAlchemy ORM에서 제공하는 <code>relationship</code> 을 사용합니다.</p>
+<p>이것은 이와 관계가 있는 다른 테이블의 값을 포함하는 "마법"과도 같은 속성이 될 것입니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Boolean</span><span class="p">,</span> <span class="n">Column</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span>
 <span class="hll"><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">relationship</span>
 </span>
@@ -3396,25 +3425,22 @@
 
 <span class="hll">    <span class="n">owner</span> <span class="o">=</span> <span class="n">relationship</span><span class="p">(</span><span class="s2">&quot;User&quot;</span><span class="p">,</span> <span class="n">back_populates</span><span class="o">=</span><span class="s2">&quot;items&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p>When accessing the attribute <code>items</code> in a <code>User</code>, as in <code>my_user.items</code>, it will have a list of <code>Item</code> SQLAlchemy models (from the <code>items</code> table) that have a foreign key pointing to this record in the <code>users</code> table.</p>
-<p>When you access <code>my_user.items</code>, SQLAlchemy will actually go and fetch the items from the database in the <code>items</code> table and populate them here.</p>
-<p>And when accessing the attribute <code>owner</code> in an <code>Item</code>, it will contain a <code>User</code> SQLAlchemy model from the <code>users</code> table. It will use the <code>owner_id</code> attribute/column with its foreign key to know which record to get from the <code>users</code> table.</p>
-<h2 id="create-the-pydantic-models">Create the Pydantic models<a class="headerlink" href="#create-the-pydantic-models" title="Permanent link">&para;</a></h2>
-<p>Now let's check the file <code>sql_app/schemas.py</code>.</p>
+<p><code>my_user.items</code> 로  <code>User</code> 의 <code>items</code> 속성에 접근하면, 이것은 <code>users</code> 테이블의 해당 레코드를 가리키는 외래키를 갖는 SQLAlchemy 모델인 (<code>items</code> 테이블의) <code>Item</code> 의 리스트를 갖게 됩니다.</p>
+<p><code>my_user.items</code> 에 접근하면, SQLAlchemy는 실제로 데이터베이스로부터 <code>items</code> 테이블의 항목을 가져와 이 리스트에 그들을 넣습니다. </p>
+<p>그리고 <code>Item</code> 의 <code>owner</code> 속성에 접근하면, 이것은 <code>users</code> 테이블의 <code>User</code> SQLAlchemy 모델을 포함하게 됩니다. 이것은 <code>users</code> 테이블에서 어느 레코드를 가져올지 판단하기 위해 <code>owner_id</code> 어트리뷰트/열과 그것의 외래키를 사용합니다.</p>
+<h2 id="pydantic">Pydantic 모델 생성<a class="headerlink" href="#pydantic" title="Permanent link">&para;</a></h2>
+<p>이제 <code>sql_app/schemas.py</code> 파일을 봅니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To avoid confusion between the SQLAlchemy <em>models</em> and the Pydantic <em>models</em>, we will have the file <code>models.py</code> with the SQLAlchemy models, and the file <code>schemas.py</code> with the Pydantic models.</p>
-<p>These Pydantic models define more or less a "schema" (a valid data shape).</p>
-<p>So this will help us avoiding confusion while using both.</p>
+<p class="admonition-title">팁</p>
+<p>SQLAlchemy의 <em>모델</em>과 Pydantic의 <em>모델</em> 사이의 혼란을 방지하기 위해, <code>models.py</code> 파일에서 SQLAlchemy 모델을, <code>schemas.py</code> 에서 Pydantic 모델을 관리합니다.</p>
+<p>이 Pydantic 모델들은 유효한 데이터 형태인 "스키마(schema)"를 정의합니다.</p>
+<p>따라서 이는 이는 이 둘을 사용할 때 오는 혼란을 방지할 수 있습니다.</p>
 </div>
-<h3 id="create-initial-pydantic-models-schemas">Create initial Pydantic <em>models</em> / schemas<a class="headerlink" href="#create-initial-pydantic-models-schemas" title="Permanent link">&para;</a></h3>
-<p>Create an <code>ItemBase</code> and <code>UserBase</code> Pydantic <em>models</em> (or let's say "schemas") to have common attributes while creating or reading data.</p>
-<p>And create an <code>ItemCreate</code> and <code>UserCreate</code> that inherit from them (so they will have the same attributes), plus any additional data (attributes) needed for creation.</p>
-<p>So, the user will also have a <code>password</code> when creating it.</p>
-<p>But for security, the <code>password</code> won't be in other Pydantic <em>models</em>, for example, it won't be sent from the API when reading a user.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python 3.6 and above</label><label for="__tabbed_1_2">Python 3.9 and above</label><label for="__tabbed_1_3">Python 3.10 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h3 id="pydantic_1">Pydantic 초기 <em>모델</em> / 스키마 생성<a class="headerlink" href="#pydantic_1" title="Permanent link">&para;</a></h3>
+<p>데이터를 생성하거나 읽을 때 공통적인 속성을 갖도록 <code>ItemBase</code> 과 <code>UserBase</code> Pydantic <em>모델</em>(또는 "스키마")을 생성합니다.</p>
+<p>그리고 그들과 같은 속성을 갖도록 그들로부터 상속받은 <code>ItemCreate</code> 과 <code>UserCreate</code> 을 만들고, 생성을 위해 필요한 추가적인 데이터 (어트리뷰트)를 추가합니다.</p>
+<p>사용자는 생성될 때 <code>password</code> 도 갖게 될 것입니다.</p>
+<p>하지만 보안상의 문제로, <code>password</code> 는 다른 Pydantic <em>모델</em>에는 존재하지 않을 것입니다. 예를들어, 사용자 데이터를 읽는 API로부터 전송되지는 않습니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Union</span>
 
 <span class="hll"><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -3453,103 +3479,19 @@
     <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
         <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
-
-<span class="hll"><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-</span>
-
-<span class="hll"><span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-</span><span class="hll">    <span class="n">description</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-</span>
-
-<span class="hll"><span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="k">pass</span>
-</span>
-
-<span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-</span>
-
-<span class="hll"><span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-</span>
-
-<span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="hll"><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-</span>
-
-<span class="hll"><span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-</span><span class="hll">    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-</span>
-
-<span class="hll"><span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="k">pass</span>
-</span>
-
-<span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-</span>
-
-<span class="hll"><span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-</span>
-
-<span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<h4 id="sqlalchemy-style-and-pydantic-style">SQLAlchemy style and Pydantic style<a class="headerlink" href="#sqlalchemy-style-and-pydantic-style" title="Permanent link">&para;</a></h4>
-<p>Notice that SQLAlchemy <em>models</em> define attributes using <code>=</code>, and pass the type as a parameter to <code>Column</code>, like in:</p>
+<h4 id="sqlalchemy-pydantic">SQLAlchemy 스타일과 Pydantic 스타일<a class="headerlink" href="#sqlalchemy-pydantic" title="Permanent link">&para;</a></h4>
+<p>SQLAlchemy <em>모델</em>은 <code>=</code> 을 사용해서 속성을 정의하고, <code>Column</code> 매개변수에 형을 전달합니다:</p>
 <div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
 </code></pre></div>
-<p>while Pydantic <em>models</em> declare the types using <code>:</code>, the new type annotation syntax/type hints:</p>
+<p>한편 Pydantic <em>모델</em>은 새로운 형 어노테이션 구문/형식 힌트인 <code>:</code>을 사용해 형을 선언합니다: </p>
 <div class="highlight"><pre><span></span><code><span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
 </code></pre></div>
-<p>Have it in mind, so you don't get confused when using <code>=</code> and <code>:</code> with them.</p>
-<h3 id="create-pydantic-models-schemas-for-reading-returning">Create Pydantic <em>models</em> / schemas for reading / returning<a class="headerlink" href="#create-pydantic-models-schemas-for-reading-returning" title="Permanent link">&para;</a></h3>
-<p>Now create Pydantic <em>models</em> (schemas) that will be used when reading data, when returning it from the API.</p>
-<p>For example, before creating an item, we don't know what will be the ID assigned to it, but when reading it (when returning it from the API) we will already know its ID.</p>
-<p>The same way, when reading a user, we can now declare that <code>items</code> will contain the items that belong to this user.</p>
-<p>Not only the IDs of those items, but all the data that we defined in the Pydantic <em>model</em> for reading items: <code>Item</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python 3.6 and above</label><label for="__tabbed_2_2">Python 3.9 and above</label><label for="__tabbed_2_3">Python 3.10 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p><code>=</code> 과 <code>:</code> 을 헷갈리지 않기 위해 이것을 기억하십시오.</p>
+<h3 id="pydantic_2">읽고 반환하기 위한 Pydantic <em>모델</em> / 스키마 생성<a class="headerlink" href="#pydantic_2" title="Permanent link">&para;</a></h3>
+<p>이제 데이터를 읽고 API를 통해 반환할 때 사용되는 Pydantic <em>모델</em>(스키마)를 생성합니다.</p>
+<p>예를 들어, 항목을 생성하기 전에는 어떤 ID를 할당해야할지 모르지만, 해당 항목을 읽을 때(API를 통해 반환할 때) 우리는 그것의 ID를 알고 있을 것입니다.</p>
+<p>같은 방식으로, 사용자를 읽을 때, 우리는 해당 사용자에 속한 아이템을 포함하는 <code>items</code>를 선언할 수 있습니다.</p>
+<p>해당 아이템들의 ID뿐 아니라 아이템을 읽기 위해 정의한 모든 Pydantic <em>모델</em>의 데이터를 선언할 수 있습니다: <code>Item</code> .</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Union</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -3588,98 +3530,14 @@
     <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
         <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
-
-<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-
-
-<span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">description</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-
-
-<span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-</span><span class="hll">    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-</span>
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-
-
-<span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-</span><span class="hll">    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-</span><span class="hll">    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-</span>
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-
-
-<span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-
-
-<span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-</span><span class="hll">    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-</span>
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-
-
-<span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-</span><span class="hll">    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-</span><span class="hll">    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-</span><span class="hll">    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-</span>
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</code></pre></div>
-</div>
-</div>
-</div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Notice that the <code>User</code>, the Pydantic <em>model</em> that will be used when reading a user (returning it from the API) doesn't include the <code>password</code>.</p>
+<p class="admonition-title">팁</p>
+<p>API로부터 반환되어 사용자를 읽기 위해 사용되는 Pydantic <em>모델</em> <code>User</code> 은 <code>password</code> 를 포함하지 않는다는 것을 주의하십시오.</p>
 </div>
-<h3 id="use-pydantics-orm_mode">Use Pydantic's <code>orm_mode</code><a class="headerlink" href="#use-pydantics-orm_mode" title="Permanent link">&para;</a></h3>
-<p>Now, in the Pydantic <em>models</em> for reading, <code>Item</code> and <code>User</code>, add an internal <code>Config</code> class.</p>
-<p>This <a href="https://pydantic-docs.helpmanual.io/usage/model_config/" class="external-link" target="_blank"><code>Config</code></a> class is used to provide configurations to Pydantic.</p>
-<p>In the <code>Config</code> class, set the attribute <code>orm_mode = True</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Python 3.6 and above</label><label for="__tabbed_3_2">Python 3.9 and above</label><label for="__tabbed_3_3">Python 3.10 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h3 id="pydantic-orm_mode">Pydantic의 <code>orm_mode</code> 사용<a class="headerlink" href="#pydantic-orm_mode" title="Permanent link">&para;</a></h3>
+<p>이제, 읽기위한 Pydantic <em>모델</em>들인 <code>Item</code> 과 <code>User</code> 에 내부적인 <code>Config</code> 클래스를 추가합니다.</p>
+<p>이 <a href="https://pydantic-docs.helpmanual.io/#config" class="external-link" target="_blank"><code>Config</code></a> 클래스는 Pydantic 환경 설정을 위해 사용됩니다.</p>
+<p><code>Config</code> 에서, <code>orm_mode = True</code> 로 설정합니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Union</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -3718,126 +3576,45 @@
 <span class="hll">    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
 </span><span class="hll">        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
-
-<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-
-
-<span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">description</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-
-
-<span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-</span>    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-
-<span class="hll">    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-</span><span class="hll">        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</span>
-
-<span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-</span>    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="hll">    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-</span><span class="hll">        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-
-
-<span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-
-
-<span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-</span>    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-
-<span class="hll">    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-</span><span class="hll">        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</span>
-
-<span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-</span>    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="hll">    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-</span><span class="hll">        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Notice it's assigning a value with <code>=</code>, like:</p>
+<p class="admonition-title">팁</p>
+<p><code>=</code> 를 사용해 다음과 같이 값을 할당한다는 것에 주의하십시오:</p>
 <p><code>orm_mode = True</code></p>
-<p>It doesn't use <code>:</code> as for the type declarations before.</p>
-<p>This is setting a config value, not declaring a type.</p>
+<p>형 선언 때처럼 <code>:</code>를 사용하지 않습니다.</p>
+<p>이것은 설정값을 할당하는 것이지, 형을 선언하는 것이 아닙니다.</p>
 </div>
-<p>Pydantic's <code>orm_mode</code> will tell the Pydantic <em>model</em> to read the data even if it is not a <code>dict</code>, but an ORM model (or any other arbitrary object with attributes).</p>
-<p>This way, instead of only trying to get the <code>id</code> value from a <code>dict</code>, as in:</p>
+<p>Pydantic의 <code>orm_mode</code> 는 Pydantic <em>모델</em>에게 <code>dict</code> 가 아닌 ORM 모델(또는 다른 속성이 있는 임의의 객체)이어도 데이터를 읽을 것을 지시합니다.</p>
+<p>이 방법으로, <code>dict</code> 에서 <code>id</code> 값을 가져오기 위해 다음을 사용하는 대신:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">id</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span>
 </code></pre></div>
-<p>it will also try to get it from an attribute, as in:</p>
+<p>다음과 같은 방법으로 속성으로부터 값을 가져올 수 있습니다:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">id</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">id</span>
 </code></pre></div>
-<p>And with this, the Pydantic <em>model</em> is compatible with ORMs, and you can just declare it in the <code>response_model</code> argument in your <em>path operations</em>.</p>
-<p>You will be able to return a database model and it will read the data from it.</p>
-<h4 id="technical-details-about-orm-mode">Technical Details about ORM mode<a class="headerlink" href="#technical-details-about-orm-mode" title="Permanent link">&para;</a></h4>
-<p>SQLAlchemy and many others are by default "lazy loading".</p>
-<p>That means, for example, that they don't fetch the data for relationships from the database unless you try to access the attribute that would contain that data.</p>
-<p>For example, accessing the attribute <code>items</code>:</p>
+<p>이로써 Pydantic <em>모델</em>이 ORM과 호환되며, <em>경로 작동</em>의 <code>response_model</code> 인자로 선언할 수 있습니다.</p>
+<p>데이터베이스 모델을 반환받고 이로부터 데이터를 읽을 수 있습니다.</p>
+<h4 id="orm_1">ORM 모드에 대한 기술적 세부사항<a class="headerlink" href="#orm_1" title="Permanent link">&para;</a></h4>
+<p>SQLAlchemy와 많은 다른 ORM들은 자동적으로 "지연 로딩(lazy loading)"을 합니다.</p>
+<p>이는 당신이 해당 데이터가 포함된 어트리뷰트에 접근하지 않는 한 데이터베이스에서 관계에 관한 데이터를 가져오지 않는다는 것을 의미합니다. </p>
+<p>예를 들어, <code>items</code> 속성에 접근하면:</p>
 <div class="highlight"><pre><span></span><code><span class="n">current_user</span><span class="o">.</span><span class="n">items</span>
 </code></pre></div>
-<p>would make SQLAlchemy go to the <code>items</code> table and get the items for this user, but not before.</p>
-<p>Without <code>orm_mode</code>, if you returned a SQLAlchemy model from your <em>path operation</em>, it wouldn't include the relationship data.</p>
-<p>Even if you declared those relationships in your Pydantic models.</p>
-<p>But with ORM mode, as Pydantic itself will try to access the data it needs from attributes (instead of assuming a <code>dict</code>), you can declare the specific data you want to return and it will be able to go and get it, even from ORMs.</p>
-<h2 id="crud-utils">CRUD utils<a class="headerlink" href="#crud-utils" title="Permanent link">&para;</a></h2>
-<p>Now let's see the file <code>sql_app/crud.py</code>.</p>
-<p>In this file we will have reusable functions to interact with the data in the database.</p>
-<p><strong>CRUD</strong> comes from: <strong>C</strong>reate, <strong>R</strong>ead, <strong>U</strong>pdate, and <strong>D</strong>elete.</p>
-<p>...although in this example we are only creating and reading.</p>
-<h3 id="read-data">Read data<a class="headerlink" href="#read-data" title="Permanent link">&para;</a></h3>
-<p>Import <code>Session</code> from <code>sqlalchemy.orm</code>, this will allow you to declare the type of the <code>db</code> parameters and have better type checks and completion in your functions.</p>
-<p>Import <code>models</code> (the SQLAlchemy models) and <code>schemas</code> (the Pydantic <em>models</em> / schemas).</p>
-<p>Create utility functions to:</p>
+<p>SQLAlchemy는 그제서야 <code>items</code> 테이블에 가서 해당 유저에 속한 아이템들을 가져옵니다.</p>
+<p><code>orm_mode</code>가 없다면, <em>경로 작동</em>으로부터 SQLAlchemy 모델을 반환할 때 관계에 대한 정보는 포함하지 않습니다.</p>
+<p>Pydantic 모델에서 해당 관계들을 선언한 경우라도 그러합니다.</p>
+<p>그러나 ORM 모드를 사용하면 Pydantic이 <code>dict</code> 로 가정하는 대신 어트리뷰트에서 필요한 데이터에 접근하려고 하기 때문에, 반환하고자 하는 특정한 데이터를 선언할 수 있으며 ORM에서도 데이터들을 가져올 수 있습니다.  </p>
+<h2 id="crud">CRUD 유틸리티<a class="headerlink" href="#crud" title="Permanent link">&para;</a></h2>
+<p><code>sql_app/crud.py</code> 파일을 참고하십시오.</p>
+<p>이 파일에서는 데이터베이스의 데이터와 상호작용 하기 위한 재사용 가능한 함수들을 정의할 것입니다.</p>
+<p><strong>CRUD</strong>는 다음의 것들을 의미합니다: 생성(<strong>C</strong>reate), 읽기(<strong>R</strong>ead), 업데이트(<strong>U</strong>pdate), 삭제(<strong>D</strong>elete).</p>
+<p>하지만 예시에서는 생성과 읽기만 다룹니다.</p>
+<h3 id="_6">데이터 읽기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><code>sqlalchemy.orm</code> 에서 <code>Session</code> 을 임포트하십시오. 이로써 <code>db</code> 매개변수의 형을 선언할 수 있으며 더 나은 형 체크 및 함수의 완성도를 기대할 수 있습니다.</p>
+<p><code>models</code>(SQLAlchemy 모델)와 <code>schemas</code>(Pydantic <em>모델</em> / 스키마)를 임포트 하십시오.</p>
+<p>다음을 위한 유틸리티 함수들을 생성합니다:</p>
 <ul>
-<li>Read a single user by ID and by email.</li>
-<li>Read multiple users.</li>
-<li>Read multiple items.</li>
+<li>ID와 이메일을 이용해 하나의 사용자 읽기</li>
+<li>다수의 사용자 읽기</li>
+<li>다수의 아이템 읽기</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
 </span>
@@ -3877,17 +3654,17 @@
     <span class="k">return</span> <span class="n">db_item</span>
 </code></pre></div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>By creating functions that are only dedicated to interacting with the database (get a user or an item) independent of your <em>path operation function</em>, you can more easily reuse them in multiple parts and also add <abbr title="Automated tests, written in code, that check if another piece of code is working correctly.">unit tests</abbr> for them.</p>
+<p class="admonition-title">팁</p>
+<p><em>경로 작동 함수</em>와는 별개로 데이터베이스와 상호 작용하는 데에만 사용되는 함수들(사용자 또는 아이템을 가져오는 함수)을 생성함으로써 여러 부분에서 이들을 쉽게 재사용할 수 있으며 <abbr title="코드로 작성된, 다른 부분의 코드가 올바르게 동작하는지 확인하는 자동화된 테스트.">단위 테스트</abbr>를 추가할 수 있습니다. </p>
 </div>
-<h3 id="create-data">Create data<a class="headerlink" href="#create-data" title="Permanent link">&para;</a></h3>
-<p>Now create utility functions to create data.</p>
-<p>The steps are:</p>
+<h3 id="_7">데이터 생성<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>데이터를 생성하는 유틸리티 함수를 생성합니다.</p>
+<p>단계는 다음과 같습니다:</p>
 <ul>
-<li>Create a SQLAlchemy model <em>instance</em> with your data.</li>
-<li><code>add</code> that instance object to your database session.</li>
-<li><code>commit</code> the changes to the database (so that they are saved).</li>
-<li><code>refresh</code> your instance (so that it contains any new data from the database, like the generated ID).</li>
+<li>데이터와 함께 SQLAlchemy 모델 <em>인스턴스</em> 생성</li>
+<li>해당 인스턴스 객체를 데이터베이스 세션에 추가(<code>add</code>)</li>
+<li>변경 사항이 저장될 수 있도록 데이터베이스에 커밋(<code>commit</code>)</li>
+<li>생성된 ID와 같은, 데이터베이스의 새로운 데이터를 포함할 수 있도록 인스턴스 새로고침(<code>refresh</code>)</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
 
@@ -3927,34 +3704,31 @@
 </span><span class="hll">    <span class="k">return</span> <span class="n">db_item</span>
 </span></code></pre></div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The SQLAlchemy model for <code>User</code> contains a <code>hashed_password</code> that should contain a secure hashed version of the password.</p>
-<p>But as what the API client provides is the original password, you need to extract it and generate the hashed password in your application.</p>
-<p>And then pass the <code>hashed_password</code> argument with the value to save.</p>
+<p class="admonition-title">팁</p>
+<p><code>User</code> 을 위한 SQLAlchemy 모델은 안전하게 암호화된 비밀번호인 <code>hashed_password</code> 를 포함해야 합니다.</p>
+<p>그러나 API 클라이언트가 제공하는 것은 암호화되지 않은 비밀번호이기 때문에, 그것을 추출한 다음 응용 프로그램에서 암호화된 비밀번호를 생성해야합니다.</p>
+<p>그 다음, 해당 값을 <code>hashed_password</code> 인자에 전달하고 저장합니다.</p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This example is not secure, the password is not hashed.</p>
-<p>In a real life application you would need to hash the password and never save them in plaintext.</p>
-<p>For more details, go back to the Security section in the tutorial.</p>
-<p>Here we are focusing only on the tools and mechanics of databases.</p>
+<p class="admonition-title">경고</p>
+<p>비밀번호가 암호화되지 않았기 때문에 이 예시는 안전하지 않습니다.</p>
+<p>실제 응용 프로그램에서는 비밀번호를 암호화하고 절대 플레인 텍스트로 저장하지 마십시오.</p>
+<p>더 많은 정보가 필요하다면, 자습서의 보안(Security) 항목을 참고하십시오.</p>
+<p>여기서는 데이터베이스의 도구와 역학에만 초점을 맞출 것입니다.</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Instead of passing each of the keyword arguments to <code>Item</code> and reading each one of them from the Pydantic <em>model</em>, we are generating a <code>dict</code> with the Pydantic <em>model</em>'s data with:</p>
+<p class="admonition-title">팁</p>
+<p>각각의 키워드 인자들을 <code>Item</code> 에 전달하고 이들 각각을 Pydantic <em>모델</em>로 읽는 대신, 다음과 같이 Pydantic <em>모델</em>의 데이터로 <code>dict</code> 를 생성할 수 있습니다:</p>
 <p><code>item.dict()</code></p>
-<p>and then we are passing the <code>dict</code>'s key-value pairs as the keyword arguments to the SQLAlchemy <code>Item</code>, with:</p>
+<p>그다음 <code>dict</code>의 키-값 쌍들을 SQLAlchemy <code>Item</code>의 키워드 인자들로 전달합니다:</p>
 <p><code>Item(**item.dict())</code></p>
-<p>And then we pass the extra keyword argument <code>owner_id</code> that is not provided by the Pydantic <em>model</em>, with:</p>
+<p>이후 Pydantic <em>모델</em>이 제공하지 않는 여분의 키워드 인자인 <code>owner_id</code>를 전달합니다:</p>
 <p><code>Item(**item.dict(), owner_id=user_id)</code></p>
 </div>
-<h2 id="main-fastapi-app">Main <strong>FastAPI</strong> app<a class="headerlink" href="#main-fastapi-app" title="Permanent link">&para;</a></h2>
-<p>And now in the file <code>sql_app/main.py</code> let's integrate and use all the other parts we created before.</p>
-<h3 id="create-the-database-tables">Create the database tables<a class="headerlink" href="#create-the-database-tables" title="Permanent link">&para;</a></h3>
-<p>In a very simplistic way create the database tables:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Python 3.6 and above</label><label for="__tabbed_4_2">Python 3.9 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h2 id="main-fastapi">Main <strong>FastAPI</strong> 응용 프로그램<a class="headerlink" href="#main-fastapi" title="Permanent link">&para;</a></h2>
+<p>이제 <code>sql_app/main.py</code> 파일에서 지금까지 작성한 모든 부분들을 통합하고 사용합시다.</p>
+<h3 id="_8">데이터베이스 테이블 생성<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>데이터베이스 테이블을 생성하는 매우 간단한 방법은 다음과 같습니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
@@ -4011,79 +3785,25 @@
     <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">items</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
-
-<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">crud</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">schemas</span>
-<span class="kn">from</span> <span class="nn">.database</span> <span class="kn">import</span> <span class="n">SessionLocal</span><span class="p">,</span> <span class="n">engine</span>
-
-<span class="hll"><span class="n">models</span><span class="o">.</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="c1"># Dependency</span>
-<span class="k">def</span> <span class="nf">get_db</span><span class="p">():</span>
-    <span class="n">db</span> <span class="o">=</span> <span class="n">SessionLocal</span><span class="p">()</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">yield</span> <span class="n">db</span>
-    <span class="k">finally</span><span class="p">:</span>
-        <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">UserCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user_by_email</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Email already registered&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_users</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">users</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_users</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">users</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;User not found&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">db_user</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_item_for_user</span><span class="p">(</span>
-    <span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">ItemCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
-<span class="p">):</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user_item</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_items</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">items</span>
+<h4 id="alembic">Alembic 참고사항<a class="headerlink" href="#alembic" title="Permanent link">&para;</a></h4>
+<p>일반적으로 <a href="https://alembic.sqlalchemy.org/en/latest/" class="external-link" target="_blank">Alembic</a>을 사용하여 데이터베이스를 초기화(테이블 생성 등)할 수 있습니다.</p>
+<p>또한 Alembic을 사용하여 "마이그레이션"을 할 수도 있습니다 (이것이 Alembic의 주요 역할이기도 합니다).</p>
+<p>"마이그레이션"이란 SQLAlchemy 모델 구조에 변화가 생기거나, 새로운 속성을 추가하는 등의 작업이 이루어질 때마다 그러한 변경사항들을 데이터베이스에 복제하거나, 새로운 컬럼 및 테이블을 추가하기 위해 필요한 단계의 집합입니다.</p>
+<p>FastAPI 프로젝트에서의 Alembic에 대한 예시를 <a class="internal-link" href="../../../en/docs/project-generation.md" target="_blank">Project Generation - Template</a>의 템플릿들에서 찾을 수 있습니다. <a href="https://github.com/tiangolo/full-stack-fastapi-postgresql/tree/master/%7B%7Bcookiecutter.project_slug%7D%7D/backend/app/alembic/" class="external-link" target="_blank">소스코드의 <code>alembic</code> 디렉터리</a>를 참고하십시오.</p>
+<h3 id="_9">의존성 생성<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">정보</p>
+<p>이 작업을 수행하기 위해, <strong>파이썬 3.7</strong> 이상의 버전을 사용하거나 <strong>파이썬 3.6</strong> 버전 사용시 "backports"를 설치하여야 합니다:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pip install async-exit-stack async-generator
 </code></pre></div>
+<p>이것은 <a href="https://github.com/sorcio/async_exit_stack" class="external-link" target="_blank">async-exit-stack</a>과 <a href="https://github.com/python-trio/async_generator" class="external-link" target="_blank">async-generator</a>를 설치합니다.</p>
+<p>마지막에 설명할 "미들웨어"와 함께 다른 메서드들을 사용할 수도 있습니다.</p>
 </div>
-</div>
-</div>
-<h4 id="alembic-note">Alembic Note<a class="headerlink" href="#alembic-note" title="Permanent link">&para;</a></h4>
-<p>Normally you would probably initialize your database (create tables, etc) with <a href="https://alembic.sqlalchemy.org/en/latest/" class="external-link" target="_blank">Alembic</a>.</p>
-<p>And you would also use Alembic for "migrations" (that's its main job).</p>
-<p>A "migration" is the set of steps needed whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to replicate those changes in the database, add a new column, a new table, etc.</p>
-<p>You can find an example of Alembic in a FastAPI project in the templates from <a class="internal-link" href="../../project-generation/" target="_blank">Project Generation - Template</a>. Specifically in <a href="https://github.com/tiangolo/full-stack-fastapi-postgresql/tree/master/%7B%7Bcookiecutter.project_slug%7D%7D/backend/app/alembic/" class="external-link" target="_blank">the <code>alembic</code> directory in the source code</a>.</p>
-<h3 id="create-a-dependency">Create a dependency<a class="headerlink" href="#create-a-dependency" title="Permanent link">&para;</a></h3>
-<p>Now use the <code>SessionLocal</code> class we created in the <code>sql_app/database.py</code> file to create a dependency.</p>
-<p>We need to have an independent database session/connection (<code>SessionLocal</code>) per request, use the same session through all the request and then close it after the request is finished.</p>
-<p>And then a new session will be created for the next request.</p>
-<p>For that, we will create a new dependency with <code>yield</code>, as explained before in the section about <a class="internal-link" href="../dependencies/dependencies-with-yield/" target="_blank">Dependencies with <code>yield</code></a>.</p>
-<p>Our dependency will create a new SQLAlchemy <code>SessionLocal</code> that will be used in a single request, and then close it once the request is finished.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Python 3.6 and above</label><label for="__tabbed_5_2">Python 3.9 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p>이제 의존성을 생성하기 위해 <code>sql_app/databases.py</code> 파일의 <code>SessionLocal</code> 클래스를 사용하십시오.</p>
+<p>각 요청마다 독립적인 데이터베이스 세션/연결 (<code>SessionLocal</code> )이 있고, 모든 요청에 대해 동일한 세션을 사용한 후 요청이 완료되면 종료해야 합니다.</p>
+<p>이후 다음 요청에 대해서는 새로운 세션이 생성될 것입니다.</p>
+<p>이를 위해, <a href="../../../en/docs/tutorial/dependencies/dependencies-with-yield.md"><code>yield</code>를 사용한 의존성</a>에서 설명한 것과 같이 <code>yield</code> 를 사용해 새로운 의존성을 생성합니다.</p>
+<p>이 의존성은 하나의 요청에 대해서만 사용된 후 요청이 완료되면 종료되는 새로운 SQLAlchemy <code>SessionLocal</code> 을 생성할 것입니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
@@ -4140,77 +3860,15 @@
     <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">items</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
-
-<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">crud</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">schemas</span>
-<span class="kn">from</span> <span class="nn">.database</span> <span class="kn">import</span> <span class="n">SessionLocal</span><span class="p">,</span> <span class="n">engine</span>
-
-<span class="n">models</span><span class="o">.</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="c1"># Dependency</span>
-<span class="hll"><span class="k">def</span> <span class="nf">get_db</span><span class="p">():</span>
-</span><span class="hll">    <span class="n">db</span> <span class="o">=</span> <span class="n">SessionLocal</span><span class="p">()</span>
-</span><span class="hll">    <span class="k">try</span><span class="p">:</span>
-</span><span class="hll">        <span class="k">yield</span> <span class="n">db</span>
-</span><span class="hll">    <span class="k">finally</span><span class="p">:</span>
-</span><span class="hll">        <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span>
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">UserCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user_by_email</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Email already registered&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_users</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">users</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_users</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">users</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;User not found&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">db_user</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_item_for_user</span><span class="p">(</span>
-    <span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">ItemCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
-<span class="p">):</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user_item</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_items</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">items</span>
-</code></pre></div>
-</div>
-</div>
-</div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>We put the creation of the <code>SessionLocal()</code> and handling of the requests in a <code>try</code> block.</p>
-<p>And then we close it in the <code>finally</code> block.</p>
-<p>This way we make sure the database session is always closed after the request. Even if there was an exception while processing the request.</p>
-<p>But you can't raise another exception from the exit code (after <code>yield</code>). See more in <a class="internal-link" href="../dependencies/dependencies-with-yield/#dependencies-with-yield-and-httpexception" target="_blank">Dependencies with <code>yield</code> and <code>HTTPException</code></a></p>
+<p class="admonition-title">정보</p>
+<p><code>SessionLocal()</code> 의 생성과 요청의 처리를 <code>try</code> 블록에 배치합니다.</p>
+<p>그리고 <code>finally</code> 블록에서 이를 종료합니다.</p>
+<p>이를 통해 요청 이후 데이터베이스 세션이 언제나 닫혀있다는 사실을 확실히 할 수 있습니다. 요청 처리 도중 예외가 발생한 경우라도 그러합니다.</p>
+<p>그러나 종료 코드(<code>yield</code> 이후)에서 다른 예외를 발생시킬 수는 없습니다. 자세한 사항은 <a href="../../../en/docs/tutorial/dependencies/dependencies-with-yield.md#dependencies-with-yield-and-httpexception"><code>yield</code> 및 <code>HTTPException</code>을 사용한 의존성</a>을 참고하십시오.</p>
 </div>
-<p>And then, when using the dependency in a <em>path operation function</em>, we declare it with the type <code>Session</code> we imported directly from SQLAlchemy.</p>
-<p>This will then give us better editor support inside the <em>path operation function</em>, because the editor will know that the <code>db</code> parameter is of type <code>Session</code>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Python 3.6 and above</label><label for="__tabbed_6_2">Python 3.9 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p>그런 다음, <em>경로 작동 함수</em>에서 의존성을 사용할 때, SQLAlchemy로부터 직접 임포트한 <code>Session</code> 형으로 이것을 선언합니다.</p>
+<p>이를 통해 에디터가 <code>db</code> 매개변수가 <code>Session</code> 형임을 알 수 있으므로 경로 작동 함수 내부에서 더 나은 에디터 지원을 제공할 수 있게 됩니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
@@ -4267,75 +3925,13 @@
 </span>    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">items</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
-
-<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">crud</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">schemas</span>
-<span class="kn">from</span> <span class="nn">.database</span> <span class="kn">import</span> <span class="n">SessionLocal</span><span class="p">,</span> <span class="n">engine</span>
-
-<span class="n">models</span><span class="o">.</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="c1"># Dependency</span>
-<span class="k">def</span> <span class="nf">get_db</span><span class="p">():</span>
-    <span class="n">db</span> <span class="o">=</span> <span class="n">SessionLocal</span><span class="p">()</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">yield</span> <span class="n">db</span>
-    <span class="k">finally</span><span class="p">:</span>
-        <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="hll"><span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">UserCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span>    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user_by_email</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Email already registered&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">])</span>
-<span class="hll"><span class="k">def</span> <span class="nf">read_users</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span>    <span class="n">users</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_users</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">users</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="hll"><span class="k">def</span> <span class="nf">read_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span>    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;User not found&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">db_user</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_item_for_user</span><span class="p">(</span>
-<span class="hll">    <span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">ItemCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
-</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user_item</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">])</span>
-<span class="hll"><span class="k">def</span> <span class="nf">read_items</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span>    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">items</span>
-</code></pre></div>
-</div>
-</div>
-</div>
 <div class="admonition info">
-<p class="admonition-title">Technical Details</p>
-<p>The parameter <code>db</code> is actually of type <code>SessionLocal</code>, but this class (created with <code>sessionmaker()</code>) is a "proxy" of a SQLAlchemy <code>Session</code>, so, the editor doesn't really know what methods are provided.</p>
-<p>But by declaring the type as <code>Session</code>, the editor now can know the available methods (<code>.add()</code>, <code>.query()</code>, <code>.commit()</code>, etc) and can provide better support (like completion). The type declaration doesn't affect the actual object.</p>
+<p class="admonition-title">기술적 세부사항</p>
+<p><code>db</code> 매개변수는 사실 <code>SessionLocal</code> 형이지만, ( <code>sessionmaker()</code> 로부터 만들어진) 해당 클래스가 SQLAlchemy <code>Session</code> 의 "프록시"이므로, 에디터는 어떤 메서드들이 제공되는지는 알지 못합니다.</p>
+<p>하지만 <code>Session</code> 형으로 선언함으로써, 에디터는 사용 가능한 메서드들(<code>.add()</code>, <code>.query()</code>, <code>.commit()</code> 등)을 알 수 있고 (자동완성과 같은) 더 나은 지원을 제공할 수 있습니다. 형 선언이 실제 객체에 영향을 미치지는 않습니다.</p>
 </div>
-<h3 id="create-your-fastapi-path-operations">Create your <strong>FastAPI</strong> <em>path operations</em><a class="headerlink" href="#create-your-fastapi-path-operations" title="Permanent link">&para;</a></h3>
-<p>Now, finally, here's the standard <strong>FastAPI</strong> <em>path operations</em> code.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Python 3.6 and above</label><label for="__tabbed_7_2">Python 3.9 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h3 id="fastapi"><strong>FastAPI</strong> <em>경로 동작</em> 생성<a class="headerlink" href="#fastapi" title="Permanent link">&para;</a></h3>
+<p>드디어, 여기 표준 <strong>FastAPI</strong> 경로 작동 코드가 있습니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
@@ -4392,112 +3988,53 @@
 </span><span class="hll">    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
 </span><span class="hll">    <span class="k">return</span> <span class="n">items</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
-
-<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">crud</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">schemas</span>
-<span class="kn">from</span> <span class="nn">.database</span> <span class="kn">import</span> <span class="n">SessionLocal</span><span class="p">,</span> <span class="n">engine</span>
-
-<span class="n">models</span><span class="o">.</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="c1"># Dependency</span>
-<span class="k">def</span> <span class="nf">get_db</span><span class="p">():</span>
-    <span class="n">db</span> <span class="o">=</span> <span class="n">SessionLocal</span><span class="p">()</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">yield</span> <span class="n">db</span>
-    <span class="k">finally</span><span class="p">:</span>
-        <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-
-<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-</span><span class="hll"><span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">UserCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span><span class="hll">    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user_by_email</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">if</span> <span class="n">db_user</span><span class="p">:</span>
-</span><span class="hll">        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Email already registered&quot;</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-</span>
-
-<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">])</span>
-</span><span class="hll"><span class="k">def</span> <span class="nf">read_users</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span><span class="hll">    <span class="n">users</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_users</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">return</span> <span class="n">users</span>
-</span>
-
-<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-</span><span class="hll"><span class="k">def</span> <span class="nf">read_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span><span class="hll">    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">if</span> <span class="n">db_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-</span><span class="hll">        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;User not found&quot;</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">return</span> <span class="n">db_user</span>
-</span>
-
-<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">)</span>
-</span><span class="hll"><span class="k">def</span> <span class="nf">create_item_for_user</span><span class="p">(</span>
-</span><span class="hll">    <span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">ItemCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
-</span><span class="hll"><span class="p">):</span>
-</span><span class="hll">    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user_item</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-</span>
-
-<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">])</span>
-</span><span class="hll"><span class="k">def</span> <span class="nf">read_items</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-</span><span class="hll">    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">return</span> <span class="n">items</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<p>We are creating the database session before each request in the dependency with <code>yield</code>, and then closing it afterwards.</p>
-<p>And then we can create the required dependency in the <em>path operation function</em>, to get that session directly.</p>
-<p>With that, we can just call <code>crud.get_user</code> directly from inside of the <em>path operation function</em> and use that session.</p>
+<p>의존성 내부에서 <code>yield</code>를 사용해 각 요청 이전에 데이터베이스 세션을 생성하고 이후 종료합니다.</p>
+<p>그다음 해당 세션을 직접 가져오기 위해 <em>경로 작동  함수</em> 내부에서 필요한 의존성을 생성할 수 있습니다.</p>
+<p>이를 통해, <em>경로 작동 함수</em> 내부에서 <code>crud.get_user</code>를 직접 호출해서 해당 세션을 사용할 수 있습니다.</p>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Notice that the values you return are SQLAlchemy models, or lists of SQLAlchemy models.</p>
-<p>But as all the <em>path operations</em> have a <code>response_model</code> with Pydantic <em>models</em> / schemas using <code>orm_mode</code>, the data declared in your Pydantic models will be extracted from them and returned to the client, with all the normal filtering and validation.</p>
+<p class="admonition-title">팁</p>
+<p>반환되는 값은 SQLAlchemy 모델이거나 SQLAlchemy 모델들의 목록이라는 점을 주의하십시오.</p>
+<p>하지만 모든 <em>경로 작동</em>이 'orm_mode'을 사용하여 Pydantic <em>모델</em> /스키마를 사용한 'response_model'을 가지고 있으므로 Pydantic 모델에 선언된 데이터는 이로부터 추출된 후 모든 일반 필터링 및 유효성 검사를 통해 클라이언트에게 반환됩니다.</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Also notice that there are <code>response_models</code> that have standard Python types like <code>List[schemas.Item]</code>.</p>
-<p>But as the content/parameter of that <code>List</code> is a Pydantic <em>model</em> with <code>orm_mode</code>, the data will be retrieved and returned to the client as normally, without problems.</p>
+<p class="admonition-title">팁</p>
+<p><code>List[schemas.Item]</code>과 같은 표준 파이썬 형을 가진 <code>response_models</code>가 있다는 것도 주의하십시오.</p>
+<p>그러나 <code>List</code>의 요쇼 / 매개변수는 'orm_mode'가 있는 Pydantic <em>모델</em>이기 때문에, 데이터는 문제 없이 클라이언트에게 반환됩니다.</p>
 </div>
-<h3 id="about-def-vs-async-def">About <code>def</code> vs <code>async def</code><a class="headerlink" href="#about-def-vs-async-def" title="Permanent link">&para;</a></h3>
-<p>Here we are using SQLAlchemy code inside of the <em>path operation function</em> and in the dependency, and, in turn, it will go and communicate with an external database.</p>
-<p>That could potentially require some "waiting".</p>
-<p>But as SQLAlchemy doesn't have compatibility for using <code>await</code> directly, as would be with something like:</p>
+<h3 id="def-vs-async-def"><code>def</code> vs <code>async def</code><a class="headerlink" href="#def-vs-async-def" title="Permanent link">&para;</a></h3>
+<p>여기서 우리는 경로 작동 함수 내부와 의존성에서 SQLAlchemy 코드를 사용하고, 결과적으로 외부 데이터베이스와 통신합니다.</p>
+<p>이는 잠재적으로 "대기"를 필요로 할 수 있습니다.</p>
+<p>그러나 SQLAlchemy에서는 다음과 같은 직접적인 <code>await</code>의 사용이 불가합니다: </p>
 <div class="highlight"><pre><span></span><code><span class="n">user</span> <span class="o">=</span> <span class="k">await</span> <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
 </code></pre></div>
-<p>...and instead we are using:</p>
+<p>대신 이렇게 사용합니다:</p>
 <div class="highlight"><pre><span></span><code><span class="n">user</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
 </code></pre></div>
-<p>Then we should declare the <em>path operation functions</em> and the dependency without <code>async def</code>, just with a normal <code>def</code>, as:</p>
+<p>이후 <code>async def</code>가 아닌 일반적인 <code>def</code>를 사용해서 <em>경로 작동 함수</em>와 의존성을 다음과 같이 선언합니다:</p>
 <div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
 <span class="hll"><span class="k">def</span> <span class="nf">read_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
 </span>    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
     <span class="o">...</span>
 </code></pre></div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>If you need to connect to your relational database asynchronously, see <a class="internal-link" href="../../advanced/async-sql-databases/" target="_blank">Async SQL (Relational) Databases</a>.</p>
+<p class="admonition-title">정보</p>
+<p>관계형 데이터베이스에 비동기적으로 연결해야할 경우, <a class="internal-link" href="../../../en/docs/advanced/async-sql-databases.md" target="_blank">Async SQL (Relational) Databases</a>를 참고하십시오.</p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Very Technical Details</p>
-<p>If you are curious and have a deep technical knowledge, you can check the very technical details of how this <code>async def</code> vs <code>def</code> is handled in the <a class="internal-link" href="../../async/#very-technical-details" target="_blank">Async</a> docs.</p>
+<p class="admonition-title">매우 세부적인 기술적 사항</p>
+<p>만약 당신이 호기심이 있고 깊은 기술적 지식을 갖고있을 경우, <code>async def</code> vs <code>def</code>가 어떻게 처리되는지에 대해 <a href="../../../en/docs/async.md#very-technical-details">Async</a> 문서의 매우 세부적인 기술적 사항들을 확인해 보십시오.</p>
 </div>
-<h2 id="migrations">Migrations<a class="headerlink" href="#migrations" title="Permanent link">&para;</a></h2>
-<p>Because we are using SQLAlchemy directly and we don't require any kind of plug-in for it to work with <strong>FastAPI</strong>, we could integrate database <abbr title="Automatically updating the database to have any new column we define in our models.">migrations</abbr> with <a href="https://alembic.sqlalchemy.org" class="external-link" target="_blank">Alembic</a> directly.</p>
-<p>And as the code related to SQLAlchemy and the SQLAlchemy models lives in separate independent files, you would even be able to perform the migrations with Alembic without having to install FastAPI, Pydantic, or anything else.</p>
-<p>The same way, you would be able to use the same SQLAlchemy models and utilities in other parts of your code that are not related to <strong>FastAPI</strong>.</p>
-<p>For example, in a background task worker with <a href="https://docs.celeryq.dev" class="external-link" target="_blank">Celery</a>, <a href="https://python-rq.org/" class="external-link" target="_blank">RQ</a>, or <a href="https://arq-docs.helpmanual.io/" class="external-link" target="_blank">ARQ</a>.</p>
-<h2 id="review-all-the-files">Review all the files<a class="headerlink" href="#review-all-the-files" title="Permanent link">&para;</a></h2>
-<p>Remember you should have a directory named <code>my_super_project</code> that contains a sub-directory called <code>sql_app</code>.</p>
-<p><code>sql_app</code> should have the following files:</p>
+<h2 id="_10">마이그레이션<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>우리는 SQLAlchemy를 직접적으로 사용하고 있으며 이것이 <strong>FastAPI</strong>와 동작하기 위해 어떠한 종류의 플러그인도 필요로하지 않기 때문에, 데이터베이스 <abbr title="모델에서 정의한 새로운 열에 대한 자동적인 데이터베이스 업데이트">마이그레이션</abbr>을 <a href="https://alembic.sqlalchemy.org" class="external-link" target="_blank">Alembic</a>과 직접 통합할 수 있습니다.</p>
+<p>그리고 SQLAlchemy와 관련된 코드와 SQLAlchemy 모델들이 분리된 독립적인 파일들에 존재하기 때문에, Alembic을 사용한 마이그레이션을 FastAPI, Pydantic 기타 어느 것도 설치하지 않고 수행할 수 있습니다.</p>
+<p>같은 방식으로, 동일한 SQLAlchemy 모델 및 유틸리티를 <strong>FastAPI</strong>와 관련이 없는 다른 부분의 코드에서도 사용할 수 있습니다.</p>
+<p>예를 들어, <a href="https://docs.celeryproject.org" class="external-link" target="_blank">Celery</a>, <a href="https://python-rq.org/" class="external-link" target="_blank">RQ</a>, 또는 <a href="https://arq-docs.helpmanual.io/" class="external-link" target="_blank">ARQ</a>와 함께 백그라운드 작업자에서의 사용이 가능합니다.</p>
+<h2 id="_11">모든 파일 검토<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p><code>sql_app</code>을 하위 디렉토리로 갖는<code>my_super_project</code>디렉토리가 있어야 합니다.</p>
+<p><code>sql_app</code>에는 다음의 파일들이 있습니다:</p>
 <ul>
 <li>
-<p><code>sql_app/__init__.py</code>: is an empty file.</p>
+<p><code>sql_app/__init__.py</code>: 빈 파일</p>
 </li>
 <li>
 <p><code>sql_app/database.py</code>:</p>
@@ -4550,9 +4087,6 @@
 <ul>
 <li><code>sql_app/schemas.py</code>:</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Python 3.6 and above</label><label for="__tabbed_8_2">Python 3.9 and above</label><label for="__tabbed_8_3">Python 3.10 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Union</span>
 
 <span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
@@ -4591,87 +4125,6 @@
     <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
         <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
-
-<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-
-
-<span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">description</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-
-
-<span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-
-<span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-
-
-<span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-
-
-<span class="k">class</span> <span class="nc">ItemBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-
-
-<span class="k">class</span> <span class="nc">ItemCreate</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-
-<span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">ItemBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">owner_id</span><span class="p">:</span> <span class="nb">int</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-
-
-<span class="k">class</span> <span class="nc">UserBase</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-    <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">UserCreate</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
-
-
-<span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">UserBase</span><span class="p">):</span>
-    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">is_active</span><span class="p">:</span> <span class="nb">bool</span>
-    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Item</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
-        <span class="n">orm_mode</span> <span class="o">=</span> <span class="kc">True</span>
-</code></pre></div>
-</div>
-</div>
-</div>
 <ul>
 <li><code>sql_app/crud.py</code>:</li>
 </ul>
@@ -4715,9 +4168,6 @@
 <ul>
 <li><code>sql_app/main.py</code>:</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Python 3.6 and above</label><label for="__tabbed_9_2">Python 3.9 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
@@ -4774,72 +4224,13 @@
     <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">items</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
-
-<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">crud</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">schemas</span>
-<span class="kn">from</span> <span class="nn">.database</span> <span class="kn">import</span> <span class="n">SessionLocal</span><span class="p">,</span> <span class="n">engine</span>
-
-<span class="n">models</span><span class="o">.</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="c1"># Dependency</span>
-<span class="k">def</span> <span class="nf">get_db</span><span class="p">():</span>
-    <span class="n">db</span> <span class="o">=</span> <span class="n">SessionLocal</span><span class="p">()</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">yield</span> <span class="n">db</span>
-    <span class="k">finally</span><span class="p">:</span>
-        <span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">UserCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user_by_email</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Email already registered&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_users</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">users</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_users</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">users</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;User not found&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">db_user</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_item_for_user</span><span class="p">(</span>
-    <span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">ItemCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
-<span class="p">):</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user_item</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_items</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">items</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<h2 id="check-it">Check it<a class="headerlink" href="#check-it" title="Permanent link">&para;</a></h2>
-<p>You can copy this code and use it as is.</p>
+<h2 id="_12">확인하십시오<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>이 코드를 복사해서 그대로 사용할 수 있습니다.</p>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>In fact, the code shown here is part of the tests. As most of the code in these docs.</p>
+<p class="admonition-title">정보</p>
+<p>사실 이 문서들의 대부분의 코드와 마찬가지로 여기에 표시된 코드는 테스트의 일부입니다.</p>
 </div>
-<p>Then you can run it with Uvicorn:</p>
+<p>Uvicorn을 통해 실행합니다:</p>
 <div class="termy">
 
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>uvicorn sql_app.main:app --reload
@@ -4849,22 +4240,19 @@
 
 </div>
 
-<p>And then, you can open your browser at <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.</p>
-<p>And you will be able to interact with your <strong>FastAPI</strong> application, reading data from a real database:</p>
+<p>그다음, <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>에서 브라우저를 열 수 있습니다.</p>
+<p>이제 FastAPI 응용 프로그램과 상호작용하며 실제 데이터베이스에서 데이터를 읽는 것이 가능합니다:</p>
 <p><img src="/img/tutorial/sql-databases/image01.png"></p>
-<h2 id="interact-with-the-database-directly">Interact with the database directly<a class="headerlink" href="#interact-with-the-database-directly" title="Permanent link">&para;</a></h2>
-<p>If you want to explore the SQLite database (file) directly, independently of FastAPI, to debug its contents, add tables, columns, records, modify data, etc. you can use <a href="https://sqlitebrowser.org/" class="external-link" target="_blank">DB Browser for SQLite</a>.</p>
-<p>It will look like this:</p>
+<h2 id="_13">데이터베이스와 직접적인 상호작용<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>FastAPI와 관계 없이 디버깅을 하거나, 테이블, 컬럼, 레코드를 추가하거나, 데이터를 수정하는 등의 작업을 위해  SQLite 데이터베이스(파일)를 직접 실행하고 싶다면, <a href="https://sqlitebrowser.org/" class="external-link" target="_blank">DB Browser for SQLite</a>를 사용할 수 있습니다.</p>
+<p>그것은 다음과 같습니다:</p>
 <p><img src="/img/tutorial/sql-databases/image02.png"></p>
-<p>You can also use an online SQLite browser like <a href="https://inloop.github.io/sqlite-viewer/" class="external-link" target="_blank">SQLite Viewer</a> or <a href="https://extendsclass.com/sqlite-browser.html" class="external-link" target="_blank">ExtendsClass</a>.</p>
-<h2 id="alternative-db-session-with-middleware">Alternative DB session with middleware<a class="headerlink" href="#alternative-db-session-with-middleware" title="Permanent link">&para;</a></h2>
-<p>If you can't use dependencies with <code>yield</code> -- for example, if you are not using <strong>Python 3.7</strong> and can't install the "backports" mentioned above for <strong>Python 3.6</strong> -- you can set up the session in a "middleware" in a similar way.</p>
-<p>A "middleware" is basically a function that is always executed for each request, with some code executed before, and some code executed after the endpoint function.</p>
-<h3 id="create-a-middleware">Create a middleware<a class="headerlink" href="#create-a-middleware" title="Permanent link">&para;</a></h3>
-<p>The middleware we'll add (just a function) will create a new SQLAlchemy <code>SessionLocal</code> for each request, add it to the request and then close it once the request is finished.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Python 3.6 and above</label><label for="__tabbed_10_2">Python 3.9 and above</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p><a href="https://inloop.github.io/sqlite-viewer/" class="external-link" target="_blank">SQLite Viewer</a>나 <a href="https://extendsclass.com/sqlite-browser.html" class="external-link" target="_blank">ExtendsClass</a>와 같은 온라인 SQLite 브라우저를 사용할 수도 있습니다.</p>
+<h2 id="db">미들웨어가 있는 대체 DB 세션<a class="headerlink" href="#db" title="Permanent link">&para;</a></h2>
+<p><strong>파이썬 3.7</strong>을 사용하고 있지 않거나 <strong>파이썬 3.6</strong>에서 상기 언급한 “backports”를 설치할 수 없어 <code>yield</code>를 사용한 의존성을 사용할 수 없다면 유사한 방식으로 “미들웨어”에 세션을 설정할 수 있습니다.</p>
+<p>“미들웨어”는 요청이 있을 때마다 실행되는 함수로, 일부는 사전에, 일부는 함수의 종점 이후에 실행됩니다.</p>
+<h3 id="_14">미들웨어 생성<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>우리가 추가할 미들웨어(단순한 함수)는 각 요청마다 새로운 SQLAlchemy <code>SessionLocal</code>을 생성, 요청에 이를 추가하고 요청이 완료되면 이를 종료할 것입니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 
 <span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">Request</span><span class="p">,</span> <span class="n">Response</span>
@@ -4928,105 +4316,39 @@
     <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">items</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">Request</span><span class="p">,</span> <span class="n">Response</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Session</span>
-
-<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">crud</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">schemas</span>
-<span class="kn">from</span> <span class="nn">.database</span> <span class="kn">import</span> <span class="n">SessionLocal</span><span class="p">,</span> <span class="n">engine</span>
-
-<span class="n">models</span><span class="o">.</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">middleware</span><span class="p">(</span><span class="s2">&quot;http&quot;</span><span class="p">)</span>
-</span><span class="hll"><span class="k">async</span> <span class="k">def</span> <span class="nf">db_session_middleware</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">,</span> <span class="n">call_next</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">response</span> <span class="o">=</span> <span class="n">Response</span><span class="p">(</span><span class="s2">&quot;Internal server error&quot;</span><span class="p">,</span> <span class="n">status_code</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">try</span><span class="p">:</span>
-</span><span class="hll">        <span class="n">request</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">db</span> <span class="o">=</span> <span class="n">SessionLocal</span><span class="p">()</span>
-</span><span class="hll">        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">call_next</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class="hll">    <span class="k">finally</span><span class="p">:</span>
-</span><span class="hll">        <span class="n">request</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span><span class="hll">    <span class="k">return</span> <span class="n">response</span>
-</span>
-
-<span class="c1"># Dependency</span>
-<span class="k">def</span> <span class="nf">get_db</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">request</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">db</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span><span class="n">user</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">UserCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user_by_email</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Email already registered&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_users</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">users</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_users</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">users</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">User</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">db_user</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">db_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;User not found&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">db_user</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/users/</span><span class="si">{user_id}</span><span class="s2">/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">create_item_for_user</span><span class="p">(</span>
-    <span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">schemas</span><span class="o">.</span><span class="n">ItemCreate</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
-<span class="p">):</span>
-    <span class="k">return</span> <span class="n">crud</span><span class="o">.</span><span class="n">create_user_item</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">)</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="nb">list</span><span class="p">[</span><span class="n">schemas</span><span class="o">.</span><span class="n">Item</span><span class="p">])</span>
-<span class="k">def</span> <span class="nf">read_items</span><span class="p">(</span><span class="n">skip</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)):</span>
-    <span class="n">items</span> <span class="o">=</span> <span class="n">crud</span><span class="o">.</span><span class="n">get_items</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="n">skip</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="n">limit</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">items</span>
-</code></pre></div>
-</div>
-</div>
-</div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>We put the creation of the <code>SessionLocal()</code> and handling of the requests in a <code>try</code> block.</p>
-<p>And then we close it in the <code>finally</code> block.</p>
-<p>This way we make sure the database session is always closed after the request. Even if there was an exception while processing the request.</p>
+<p class="admonition-title">정보</p>
+<p><code>SessionLocal()</code> 의 생성과 요청의 처리를 <code>try</code> 블록에 배치합니다.</p>
+<p>그리고 <code>finally</code> 블록에서 이를 종료합니다.</p>
+<p>이를 통해 요청 이후 데이터베이스 세션이 언제나 닫혀있다는 사실을 확실히 할 수 있습니다. 요청 처리 도중 예외가 발생한 경우라도 그러합니다.</p>
 </div>
-<h3 id="about-requeststate">About <code>request.state</code><a class="headerlink" href="#about-requeststate" title="Permanent link">&para;</a></h3>
-<p><code>request.state</code> is a property of each <code>Request</code> object. It is there to store arbitrary objects attached to the request itself, like the database session in this case. You can read more about it in <a href="https://www.starlette.io/requests/#other-state" class="external-link" target="_blank">Starlette's docs about <code>Request</code> state</a>.</p>
-<p>For us in this case, it helps us ensure a single database session is used through all the request, and then closed afterwards (in the middleware).</p>
-<h3 id="dependencies-with-yield-or-middleware">Dependencies with <code>yield</code> or middleware<a class="headerlink" href="#dependencies-with-yield-or-middleware" title="Permanent link">&para;</a></h3>
-<p>Adding a <strong>middleware</strong> here is similar to what a dependency with <code>yield</code> does, with some differences:</p>
+<h3 id="requeststate"><code>request.state</code>에 대해<a class="headerlink" href="#requeststate" title="Permanent link">&para;</a></h3>
+<p><code>request.state</code>는 각 <code>Request</code> 객체에 대한 프로퍼티입니다. 이 경우에서의 데이터베이스 세션과 같이 요청 자체와 연결된 임의의 객체를 저장하기 위해 존재합니다. <a href="https://www.starlette.io/requests/#other-state" class="external-link" target="_blank"><code>Request</code> 상태에 관한 Starlette 문서</a>에서 더 자세한 사항을 확인할 수 있습니다.</p>
+<p>이 경우에서, 이것은 하나의 데이터베이스 세션이 모든 요청에 대해 사용되고 이후 (미들웨어에서) 종료되는 것을 보장합니다.</p>
+<h3 id="yield"><code>yield</code>를 사용하는 의존성 또는 미들웨어와<a class="headerlink" href="#yield" title="Permanent link">&para;</a></h3>
+<p><strong>미들웨어</strong>를 추가하는 것은 <code>yield</code>를 사용하는 의존성이 하는 것과 유사하지만, 몇 가지 차이점이 존재합니다:</p>
 <ul>
-<li>It requires more code and is a bit more complex.</li>
-<li>The middleware has to be an <code>async</code> function.<ul>
-<li>If there is code in it that has to "wait" for the network, it could "block" your application there and degrade performance a bit.</li>
-<li>Although it's probably not very problematic here with the way <code>SQLAlchemy</code> works.</li>
-<li>But if you added more code to the middleware that had a lot of <abbr title="input and output">I/O</abbr> waiting, it could then be problematic.</li>
+<li>더 많은 코드를 필요로하고 조금 더 복잡합니다.</li>
+<li>미들웨어는 <code>async</code> 함수여야 합니다.<ul>
+<li>내부에 네트워크를 “대기”하는 코드가 있다면, 이는 응용 프로그램을 "차단"하고 성능을 약간 저하시킬 수 있습니다.</li>
+<li><code>SQLAlchemy</code>가 작동하는 방식에 문제가 되지 않을 수도 있습니다.</li>
+<li>하지만 <abbr title="인풋과 아웃풋">I/O</abbr> 대기를 해야하는 코드를 미들웨어에 다수 추가하면 문제가 될 수 있습니다.</li>
 </ul>
 </li>
-<li>A middleware is run for <em>every</em> request.<ul>
-<li>So, a connection will be created for every request.</li>
-<li>Even when the <em>path operation</em> that handles that request didn't need the DB.</li>
+<li>미들웨어는 <em>모든</em> 요청시에 실행됩니다.<ul>
+<li>따라서 매 요청시 연결이 생성됩니다.</li>
+<li><em>경로 작동</em>이 데이터베이스와 관련 없는 요청을 처리하는 경우에도 그렇습니다.</li>
 </ul>
 </li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>It's probably better to use dependencies with <code>yield</code> when they are enough for the use case.</p>
+<p class="admonition-title">팁</p>
+<p><code>yield</code>를 사용하는 의존성만으로도 충분하다면, 이를 사용하는 것이 더 나을 수 있습니다.</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Dependencies with <code>yield</code> were added recently to <strong>FastAPI</strong>.</p>
-<p>A previous version of this tutorial only had the examples with a middleware and there are probably several applications using the middleware for database session management.</p>
+<p class="admonition-title">정보</p>
+<p><code>yield</code>를 사용하는 의존성은 <strong>FastAPI</strong>에 최근에 추가되었습니다.</p>
+<p>이전 버전의 자습서에서는 미들웨어에 대한 예시만 있었고 데이터베이스 세션 관리를 위해 미들웨어를 사용하는 여러 응용 프로그램이 있을 수 있습니다.</p>
 </div>
 
               
@@ -5045,7 +4367,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../cors/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CORS (Cross-Origin Resource Sharing)" rel="prev">
+        <a href="../cors/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 교차 출처 리소스 공유" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -5054,7 +4376,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              CORS (Cross-Origin Resource Sharing)
+              교차 출처 리소스 공유
             </div>
           </div>
         </a>

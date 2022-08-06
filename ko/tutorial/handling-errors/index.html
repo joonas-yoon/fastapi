@@ -17,7 +17,7 @@
     
     
       
-        <title>Handling Errors - FastAPI</title>
+        <title>오류 처리 - FastAPI</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#handling-errors" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -174,7 +174,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Handling Errors
+              오류 처리
             
           </span>
         </div>
@@ -1133,12 +1133,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Handling Errors
+          오류 처리
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Handling Errors
+        오류 처리
       </a>
       
         
@@ -1157,30 +1157,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-httpexception" class="md-nav__link">
-    Use HTTPException
+  <a href="#httpexception" class="md-nav__link">
+    HTTPException 사용
   </a>
   
-    <nav class="md-nav" aria-label="Use HTTPException">
+    <nav class="md-nav" aria-label="HTTPException 사용">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-httpexception" class="md-nav__link">
-    Import HTTPException
+  <a href="#httpexception_1" class="md-nav__link">
+    HTTPException 임포트
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#raise-an-httpexception-in-your-code" class="md-nav__link">
-    Raise an HTTPException in your code
+  <a href="#httpexception_2" class="md-nav__link">
+    코드에서 HTTPException 발생시키기
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-resulting-response" class="md-nav__link">
-    The resulting response
+  <a href="#_2" class="md-nav__link">
+    결과 응답
   </a>
   
 </li>
@@ -1191,33 +1191,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-custom-headers" class="md-nav__link">
-    Add custom headers
+  <a href="#_3" class="md-nav__link">
+    사용자 정의 헤더 추가
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-custom-exception-handlers" class="md-nav__link">
-    Install custom exception handlers
+  <a href="#exception-handler" class="md-nav__link">
+    사용자 정의 예외 처리기(exception handler) 설치
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#override-the-default-exception-handlers" class="md-nav__link">
-    Override the default exception handlers
+  <a href="#_4" class="md-nav__link">
+    기본 예외 처리기 재정의
   </a>
   
-    <nav class="md-nav" aria-label="Override the default exception handlers">
+    <nav class="md-nav" aria-label="기본 예외 처리기 재정의">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#override-request-validation-exceptions" class="md-nav__link">
-    Override request validation exceptions
+  <a href="#_5" class="md-nav__link">
+    요청 유효성 검사 예외 재정의
   </a>
   
-    <nav class="md-nav" aria-label="Override request validation exceptions">
+    <nav class="md-nav" aria-label="요청 유효성 검사 예외 재정의">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1233,23 +1233,23 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#override-the-httpexception-error-handler" class="md-nav__link">
-    Override the HTTPException error handler
+  <a href="#httpexception_3" class="md-nav__link">
+    HTTPException 예외 처리기 재정의
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-the-requestvalidationerror-body" class="md-nav__link">
-    Use the RequestValidationError body
+  <a href="#requestvalidationerror" class="md-nav__link">
+    RequestValidationError 본문 사용
   </a>
   
-    <nav class="md-nav" aria-label="Use the RequestValidationError body">
+    <nav class="md-nav" aria-label="RequestValidationError 본문 사용">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fastapis-httpexception-vs-starlettes-httpexception" class="md-nav__link">
-    FastAPI's HTTPException vs Starlette's HTTPException
+  <a href="#fastapi-httpexception-vs-starlette-httpexception" class="md-nav__link">
+    FastAPI의 HTTPException vs Starlette의 HTTPException
   </a>
   
 </li>
@@ -1260,8 +1260,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#re-use-fastapis-exception-handlers" class="md-nav__link">
-    Re-use FastAPI's exception handlers
+  <a href="#fastapi" class="md-nav__link">
+    FastAPI의 예외 처리기 재사용
   </a>
   
 </li>
@@ -1287,7 +1287,7 @@
   
     <li class="md-nav__item">
       <a href="../path-operation-configuration/" class="md-nav__link">
-        Path Operation Configuration
+        경로 동작 설정
       </a>
     </li>
   
@@ -1549,7 +1549,7 @@
   
     <li class="md-nav__item">
       <a href="../cors/" class="md-nav__link">
-        CORS (Cross-Origin Resource Sharing)
+        교차 출처 리소스 공유
       </a>
     </li>
   
@@ -1563,7 +1563,7 @@
   
     <li class="md-nav__item">
       <a href="../sql-databases/" class="md-nav__link">
-        SQL (Relational) Databases
+        SQL (관계형) 데이터베이스
       </a>
     </li>
   
@@ -1633,7 +1633,7 @@
   
     <li class="md-nav__item">
       <a href="../testing/" class="md-nav__link">
-        Testing
+        테스트
       </a>
     </li>
   
@@ -1840,20 +1840,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/response-headers/" class="md-nav__link">
-        Response Headers
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../advanced/response-change-status-code/" class="md-nav__link">
         Response - Change Status Code
       </a>
@@ -1885,18 +1871,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_11" type="checkbox" id="__nav_8_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_10" type="checkbox" id="__nav_8_10" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_8_11">
+        <label class="md-nav__link" for="__nav_8_10">
           Advanced Security
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Advanced Security" data-md-level="2">
-        <label class="md-nav__title" for="__nav_8_11">
+        <label class="md-nav__title" for="__nav_8_10">
           <span class="md-nav__icon md-icon"></span>
           Advanced Security
         </label>
@@ -2300,6 +2286,54 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          고급 사용자 안내서
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="고급 사용자 안내서" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          고급 사용자 안내서
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-headers/" class="md-nav__link">
+        응답 헤더
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../async/" class="md-nav__link">
         Concurrency and async / await
@@ -2319,18 +2353,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_10">
+        <label class="md-nav__link" for="__nav_11">
           Deployment
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deployment" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
+        <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Deployment
         </label>
@@ -2601,30 +2635,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-httpexception" class="md-nav__link">
-    Use HTTPException
+  <a href="#httpexception" class="md-nav__link">
+    HTTPException 사용
   </a>
   
-    <nav class="md-nav" aria-label="Use HTTPException">
+    <nav class="md-nav" aria-label="HTTPException 사용">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-httpexception" class="md-nav__link">
-    Import HTTPException
+  <a href="#httpexception_1" class="md-nav__link">
+    HTTPException 임포트
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#raise-an-httpexception-in-your-code" class="md-nav__link">
-    Raise an HTTPException in your code
+  <a href="#httpexception_2" class="md-nav__link">
+    코드에서 HTTPException 발생시키기
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-resulting-response" class="md-nav__link">
-    The resulting response
+  <a href="#_2" class="md-nav__link">
+    결과 응답
   </a>
   
 </li>
@@ -2635,33 +2669,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-custom-headers" class="md-nav__link">
-    Add custom headers
+  <a href="#_3" class="md-nav__link">
+    사용자 정의 헤더 추가
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-custom-exception-handlers" class="md-nav__link">
-    Install custom exception handlers
+  <a href="#exception-handler" class="md-nav__link">
+    사용자 정의 예외 처리기(exception handler) 설치
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#override-the-default-exception-handlers" class="md-nav__link">
-    Override the default exception handlers
+  <a href="#_4" class="md-nav__link">
+    기본 예외 처리기 재정의
   </a>
   
-    <nav class="md-nav" aria-label="Override the default exception handlers">
+    <nav class="md-nav" aria-label="기본 예외 처리기 재정의">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#override-request-validation-exceptions" class="md-nav__link">
-    Override request validation exceptions
+  <a href="#_5" class="md-nav__link">
+    요청 유효성 검사 예외 재정의
   </a>
   
-    <nav class="md-nav" aria-label="Override request validation exceptions">
+    <nav class="md-nav" aria-label="요청 유효성 검사 예외 재정의">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2677,23 +2711,23 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#override-the-httpexception-error-handler" class="md-nav__link">
-    Override the HTTPException error handler
+  <a href="#httpexception_3" class="md-nav__link">
+    HTTPException 예외 처리기 재정의
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-the-requestvalidationerror-body" class="md-nav__link">
-    Use the RequestValidationError body
+  <a href="#requestvalidationerror" class="md-nav__link">
+    RequestValidationError 본문 사용
   </a>
   
-    <nav class="md-nav" aria-label="Use the RequestValidationError body">
+    <nav class="md-nav" aria-label="RequestValidationError 본문 사용">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fastapis-httpexception-vs-starlettes-httpexception" class="md-nav__link">
-    FastAPI's HTTPException vs Starlette's HTTPException
+  <a href="#fastapi-httpexception-vs-starlette-httpexception" class="md-nav__link">
+    FastAPI의 HTTPException vs Starlette의 HTTPException
   </a>
   
 </li>
@@ -2704,8 +2738,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#re-use-fastapis-exception-handlers" class="md-nav__link">
-    Re-use FastAPI's exception handlers
+  <a href="#fastapi" class="md-nav__link">
+    FastAPI의 예외 처리기 재사용
   </a>
   
 </li>
@@ -2729,28 +2763,23 @@
                 
 
 
-<h1 id="handling-errors">Handling Errors<a class="headerlink" href="#handling-errors" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The current page still doesn't have a translation for this language.</p>
-<p>But you can help translating it: <a class="internal-link" href="https://fastapi.tiangolo.com/contributing/" target="_blank">Contributing</a>.</p>
-</div>
-<p>There are many situations in where you need to notify an error to a client that is using your API.</p>
-<p>This client could be a browser with a frontend, a code from someone else, an IoT device, etc.</p>
-<p>You could need to tell the client that:</p>
+<h1 id="_1">오류 처리<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>당신의 API를 사용하는 클라이언트에게 오류를 알려야하는 다양한 상황들이 있습니다.</p>
+<p>여기서 클라이언트는 프론트엔드가 있는 브라우저, 다른 사람이 작성한 코드, IoT 기기 등이 될 수 있습니다.</p>
+<p>클라이언트에게 다음의 사실을 전달하여야 합니다:</p>
 <ul>
-<li>The client doesn't have enough privileges for that operation.</li>
-<li>The client doesn't have access to that resource.</li>
-<li>The item the client was trying to access doesn't exist.</li>
-<li>etc.</li>
+<li>클라이언트가 해당 작업을 수행하기에 충분한 권한을 가지지 않았다는 사실</li>
+<li>클라이언트가 자원에 접근할 수 없다는 사실</li>
+<li>클라이언트가 접근하려고 하는 항목이 존재하지 않는다는 사실</li>
+<li>기타 등등</li>
 </ul>
-<p>In these cases, you would normally return an <strong>HTTP status code</strong> in the range of <strong>400</strong> (from 400 to 499).</p>
-<p>This is similar to the 200 HTTP status codes (from 200 to 299). Those "200" status codes mean that somehow there was a "success" in the request.</p>
-<p>The status codes in the 400 range mean that there was an error from the client.</p>
-<p>Remember all those <strong>"404 Not Found"</strong> errors (and jokes)?</p>
-<h2 id="use-httpexception">Use <code>HTTPException</code><a class="headerlink" href="#use-httpexception" title="Permanent link">&para;</a></h2>
-<p>To return HTTP responses with errors to the client you use <code>HTTPException</code>.</p>
-<h3 id="import-httpexception">Import <code>HTTPException</code><a class="headerlink" href="#import-httpexception" title="Permanent link">&para;</a></h3>
+<p>이러한 경우 일반적으로 <strong>4xx</strong>(400에서 499까지)의 <strong>HTTP 상태 코드</strong>를 반환합니다.</p>
+<p>이것은 2xx(200에서 299까지)의 HTTP 상태 코드와 유사합니다. "2xx" 상태 코드들은 요청이 "성공"적이었다는 것을 의미합니다.</p>
+<p>400번대의 상태 코드들은 클라이언트로부터 오류가 발생했음을 의미합니다.</p>
+<p>지금까지 본 <strong>"404 Not Found"</strong> 오류들을 떠올려보세요(그리고 그에 대한 농담들도요)!</p>
+<h2 id="httpexception"><code>HTTPException</code> 사용<a class="headerlink" href="#httpexception" title="Permanent link">&para;</a></h2>
+<p>클라이언트에게 HTTP 응답을 반환하기 위해 <code>HTTPException</code>을 사용합니다.</p>
+<h3 id="httpexception_1"><code>HTTPException</code> 임포트<a class="headerlink" href="#httpexception_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
 </span>
 <span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
@@ -2764,12 +2793,12 @@
         <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Item not found&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="n">items</span><span class="p">[</span><span class="n">item_id</span><span class="p">]}</span>
 </code></pre></div>
-<h3 id="raise-an-httpexception-in-your-code">Raise an <code>HTTPException</code> in your code<a class="headerlink" href="#raise-an-httpexception-in-your-code" title="Permanent link">&para;</a></h3>
-<p><code>HTTPException</code> is a normal Python exception with additional data relevant for APIs.</p>
-<p>Because it's a Python exception, you don't <code>return</code> it, you <code>raise</code> it.</p>
-<p>This also means that if you are inside a utility function that you are calling inside of your <em>path operation function</em>, and you raise the <code>HTTPException</code> from inside of that utility function, it won't run the rest of the code in the <em>path operation function</em>, it will terminate that request right away and send the HTTP error from the <code>HTTPException</code> to the client.</p>
-<p>The benefit of raising an exception over <code>return</code>ing a value will be more evident in the section about Dependencies and Security.</p>
-<p>In this example, when the client requests an item by an ID that doesn't exist, raise an exception with a status code of <code>404</code>:</p>
+<h3 id="httpexception_2">코드에서 <code>HTTPException</code> 발생시키기<a class="headerlink" href="#httpexception_2" title="Permanent link">&para;</a></h3>
+<p><code>HTTPException</code>은 API에 대한 추가적인 데이터를 포함한 일반적인 파이썬 예외입니다.</p>
+<p>파이썬 예외이기 때문에, 반환(<code>return</code>)하지 않고 발생(<code>raise</code>)시킵니다.</p>
+<p>이것은 만약 당신이 <em>경로 동작 함수</em>의 내부에서 호출하는 유틸리티 함수 내부에 있고, 해당 유틸리티 함수 내부에서 <code>HTTPException</code>을 발생시키는 경우, <em>경로 동작 함수</em>의 나머지 부분을 실행하는 대신 즉시 요청에 대한 작업을 중단하고 <code>HTTPException</code>에 따른 HTTP 오류를 클라이언트에게 전송한다는 것을 의미합니다.</p>
+<p>예외 처리를 함에 있어 값을 반환(<code>return</code>)하는 것보다 발생시키는 것의 이점은 종속 및 보안(Dependencies and Security) 섹션에서 깊게 다룰 것입니다.</p>
+<p>일례로, 클라이언트가 존재하지 않는 항목의 ID를 요청하는 경우,  다음과 같은 방법으로 상태 코드 <code>404</code>와 함께 예외 처리를 할 수 있습니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
@@ -2783,27 +2812,27 @@
 <span class="hll">        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Item not found&quot;</span><span class="p">)</span>
 </span>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="n">items</span><span class="p">[</span><span class="n">item_id</span><span class="p">]}</span>
 </code></pre></div>
-<h3 id="the-resulting-response">The resulting response<a class="headerlink" href="#the-resulting-response" title="Permanent link">&para;</a></h3>
-<p>If the client requests <code>http://example.com/items/foo</code> (an <code>item_id</code> <code>"foo"</code>), that client will receive an HTTP status code of 200, and a JSON response of:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;item&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Foo Wrestlers&quot;</span><span class="w"></span>
+<h3 id="_2">결과 응답<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>클라이언트가 <code>http://example.com/items/foo</code>(<code>item_id</code>가 <code>"foo"</code>인 항목)로 요청을 보냈다면, 클라이언트는 HTTP 상태코드 200과 다음과 같은 JSON 응답을 받게 될 것입니다:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w">  </span>
+<span class="w">    </span><span class="nt">&quot;item&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Foo Wrestlers&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>But if the client requests <code>http://example.com/items/bar</code> (a non-existent <code>item_id</code> <code>"bar"</code>), that client will receive an HTTP status code of 404 (the "not found" error), and a JSON response of:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Item not found&quot;</span><span class="w"></span>
+<p>하지만 클라이언트가 <code>http://example.com/items/bar</code> (<code>item_id</code>가 <code>"bar"</code>인 항목 없음)로 요청을 보낸다면, 클라이언트는 HTTP 상태코드 404("찾을 수 없음(not found)" 오류)와 다음의 JSON 응답을 받게 될 것입니다:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w">  </span>
+<span class="w">    </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Item not found&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>When raising an <code>HTTPException</code>, you can pass any value that can be converted to JSON as the parameter <code>detail</code>, not only <code>str</code>.</p>
-<p>You could pass a <code>dict</code>, a <code>list</code>, etc.</p>
-<p>They are handled automatically by <strong>FastAPI</strong> and converted to JSON.</p>
+<p class="admonition-title">팁</p>
+<p><code>HTTPException</code>을 발생시킬 때, <code>str</code> 뿐 아니라 JSON으로 변환 가능한 모든 값을 <code>detail</code> 매개변수로 전달할 수 있습니다.</p>
+<p><code>dict</code>, <code>list</code> 등을 전달할 수 있습니다.</p>
+<p>이들은 <strong>FastAPI</strong>에 의해 자동적으로 처리되고 JSON으로 변환됩니다.</p>
 </div>
-<h2 id="add-custom-headers">Add custom headers<a class="headerlink" href="#add-custom-headers" title="Permanent link">&para;</a></h2>
-<p>There are some situations in where it's useful to be able to add custom headers to the HTTP error. For example, for some types of security.</p>
-<p>You probably won't need to use it directly in your code.</p>
-<p>But in case you needed it for an advanced scenario, you can add custom headers:</p>
+<h2 id="_3">사용자 정의 헤더 추가<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>HTTP 오류에 사용자 정의 헤더를 추가하는 것이 유용한 경우들이 있습니다. 예를들어, 몇몇 보안 문제의 경우 그러합니다.</p>
+<p>코드에서 이것을 직접 사용할 필요는 없을 수 있습니다.</p>
+<p>그러나 고급 시나리오에서 필요한 경우, 사용자 정의 헤더를 추가하는 것이 가능합니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
@@ -2821,11 +2850,11 @@
 </span>        <span class="p">)</span>
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="n">items</span><span class="p">[</span><span class="n">item_id</span><span class="p">]}</span>
 </code></pre></div>
-<h2 id="install-custom-exception-handlers">Install custom exception handlers<a class="headerlink" href="#install-custom-exception-handlers" title="Permanent link">&para;</a></h2>
-<p>You can add custom exception handlers with <a href="https://www.starlette.io/exceptions/" class="external-link" target="_blank">the same exception utilities from Starlette</a>.</p>
-<p>Let's say you have a custom exception <code>UnicornException</code> that you (or a library you use) might <code>raise</code>.</p>
-<p>And you want to handle this exception globally with FastAPI.</p>
-<p>You could add a custom exception handler with <code>@app.exception_handler()</code>:</p>
+<h2 id="exception-handler">사용자 정의 예외 처리기(exception handler) 설치<a class="headerlink" href="#exception-handler" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.starlette.io/exceptions/" class="external-link" target="_blank">Starlette과 동일한 예외 유틸리티</a>를 사용하여 사용자 정의 예외 처리기를 추가할 수 있습니다.</p>
+<p>당신 또는 당신이 사용하는 라이브러리가 사용자 정의 예외인 <code>UnicornException</code>을  발생(<code>raise</code>) 시키고자 한다고 가정해봅시다. </p>
+<p>그리고 당신은 FastAPI를 사용하여 해당 예외를 전역적으로 처리하고자 합니다.</p>
+<p><code>@app.exception_handler()</code>를 사용하여 사용자 예외를 추가할 수 있습니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">Request</span>
 <span class="kn">from</span> <span class="nn">fastapi.responses</span> <span class="kn">import</span> <span class="n">JSONResponse</span>
 
@@ -2852,25 +2881,25 @@
 <span class="hll">        <span class="k">raise</span> <span class="n">UnicornException</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
 </span>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;unicorn_name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">}</span>
 </code></pre></div>
-<p>Here, if you request <code>/unicorns/yolo</code>, the <em>path operation</em> will <code>raise</code> a <code>UnicornException</code>.</p>
-<p>But it will be handled by the <code>unicorn_exception_handler</code>.</p>
-<p>So, you will receive a clean error, with an HTTP status code of <code>418</code> and a JSON content of:</p>
+<p>여기서 <code>/unicorns/yolo</code>를 요청하면, <em>경로 동작</em>은 <code>UnicornException</code>을 발생(<code>raise</code>)시킬 것입니다.</p>
+<p>하지만 이것은 <code>unicorn_exception_handler</code> 에 의해 처리됩니다.</p>
+<p>따라서 당신은 HTTP 상태코드가 <code>418</code>이고, 다음과 같은 JSON 내용을 가진 오류를 받게됩니다:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Oops! yolo did something. There goes a rainbow...&quot;</span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition note">
-<p class="admonition-title">Technical Details</p>
-<p>You could also use <code>from starlette.requests import Request</code> and <code>from starlette.responses import JSONResponse</code>.</p>
-<p><strong>FastAPI</strong> provides the same <code>starlette.responses</code> as <code>fastapi.responses</code> just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with <code>Request</code>.</p>
+<p class="admonition-title">기술 세부사항</p>
+<p><code>from starlette.requests import Request</code>와 <code>from starlette.responses import JSONResponse</code> 역시 사용할 수 있습니다.</p>
+<p><strong>FastAPI</strong>는 개발자인 당신의 편의를 위해 <code>fastapi.responses</code> 와 동일한 <code>starlette.responses</code> 도 제공합니다. 하지만 대부분의 응답들은 Starlette로부터 직접 제공됩니다. 마찬가지로 <code>Request</code> 도 그러합니다.</p>
 </div>
-<h2 id="override-the-default-exception-handlers">Override the default exception handlers<a class="headerlink" href="#override-the-default-exception-handlers" title="Permanent link">&para;</a></h2>
-<p><strong>FastAPI</strong> has some default exception handlers.</p>
-<p>These handlers are in charge of returning the default JSON responses when you <code>raise</code> an <code>HTTPException</code> and when the request has invalid data.</p>
-<p>You can override these exception handlers with your own.</p>
-<h3 id="override-request-validation-exceptions">Override request validation exceptions<a class="headerlink" href="#override-request-validation-exceptions" title="Permanent link">&para;</a></h3>
-<p>When a request contains invalid data, <strong>FastAPI</strong> internally raises a <code>RequestValidationError</code>.</p>
-<p>And it also includes a default exception handler for it.</p>
-<p>To override it, import the <code>RequestValidationError</code> and use it with <code>@app.exception_handler(RequestValidationError)</code> to decorate the exception handler.</p>
-<p>The exception handler will receive a <code>Request</code> and the exception.</p>
+<h2 id="_4">기본 예외 처리기 재정의<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>FastAPI</strong> 에는 기본 예외 처리기들이 있습니다.</p>
+<p>이 예외 처리기들은 당신이 <code>HTTPException</code>을 발생(<code>raise</code>)시키거나 요청에 유효하지 않은 데이터가 있을 때 기본 JSON 응답들을 반환하는 역할을 합니다.</p>
+<p>이 예외 처리기들을 직접 재정의 할 수 있습니다.</p>
+<h3 id="_5">요청 유효성 검사 예외 재정의<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>요청에 유효하지 않은 데이터가 있을 때, <strong>FastAPI</strong>는 내부적으로 <code>RequestValidationError</code>를 발생시킵니다.</p>
+<p>또한 이에 대한 기본적인 예외 처리기도 포함하고 있습니다.</p>
+<p>이를 재정의 하기 위해, <code>RequestValidationError</code>를 임포트한 후<code>@app.exception_handler(RequestValidationError)</code> 데코레이터와 함께 예외 처리기에 사용하세요.</p>
+<p>예외 처리기는 <code>Request</code>와 예외를 전달받습니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
 <span class="hll"><span class="kn">from</span> <span class="nn">fastapi.exceptions</span> <span class="kn">import</span> <span class="n">RequestValidationError</span>
 </span><span class="kn">from</span> <span class="nn">fastapi.responses</span> <span class="kn">import</span> <span class="n">PlainTextResponse</span>
@@ -2895,7 +2924,7 @@
         <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">418</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Nope! I don&#39;t like 3.&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
 </code></pre></div>
-<p>Now, if you go to <code>/items/foo</code>, instead of getting the default JSON error with:</p>
+<p>이제 <code>/items/foo</code>로 요청을 보내면, 기본 JSON 오류를 받는 대신:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
 <span class="w">        </span><span class="p">{</span><span class="w"></span>
@@ -2909,24 +2938,24 @@
 <span class="w">    </span><span class="p">]</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>you will get a text version, with:</p>
+<p>다음과 같은 텍스트를 받게 될 것입니다:</p>
 <div class="highlight"><pre><span></span><code>1 validation error
 path -&gt; item_id
   value is not a valid integer (type=type_error.integer)
 </code></pre></div>
 <h4 id="requestvalidationerror-vs-validationerror"><code>RequestValidationError</code> vs <code>ValidationError</code><a class="headerlink" href="#requestvalidationerror-vs-validationerror" title="Permanent link">&para;</a></h4>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>These are technical details that you might skip if it's not important for you now.</p>
+<p class="admonition-title">주의</p>
+<p>이 부분은 당신에게 지금 중요하지 않다면 넘어가도 무관한 기술 세부사항입니다.</p>
 </div>
-<p><code>RequestValidationError</code> is a sub-class of Pydantic's <a href="https://pydantic-docs.helpmanual.io/usage/models/#error-handling" class="external-link" target="_blank"><code>ValidationError</code></a>.</p>
-<p><strong>FastAPI</strong> uses it so that, if you use a Pydantic model in <code>response_model</code>, and your data has an error, you will see the error in your log.</p>
-<p>But the client/user will not see it. Instead, the client will receive an "Internal Server Error" with a HTTP status code <code>500</code>.</p>
-<p>It should be this way because if you have a Pydantic <code>ValidationError</code> in your <em>response</em> or anywhere in your code (not in the client's <em>request</em>), it's actually a bug in your code.</p>
-<p>And while you fix it, your clients/users shouldn't have access to internal information about the error, as that could expose a security vulnerability.</p>
-<h3 id="override-the-httpexception-error-handler">Override the <code>HTTPException</code> error handler<a class="headerlink" href="#override-the-httpexception-error-handler" title="Permanent link">&para;</a></h3>
-<p>The same way, you can override the <code>HTTPException</code> handler.</p>
-<p>For example, you could want to return a plain text response instead of JSON for these errors:</p>
+<p><code>RequestValidationError</code> 는 Pydantic의 <a href="https://pydantic-docs.helpmanual.io/#error-handling" class="external-link" target="_blank"><code>ValidationError</code></a>의 하위 클래스입니다.</p>
+<p><strong>FastAPI</strong>가 이것을 사용하기 때문에 당신이 <code>response_model</code>에서 Pydantic 모델을 사용하고, 당신의 데이터에 오류가 있는 경우 로그에서 오류를 확인할 수 있습니다.</p>
+<p>하지만 클라이언트와 사용자는 이를 볼 수 없습니다. 대신, 클라이언트는 HTTP 상태 코드 <code>500</code> 과 함께 "내부 서버 오류(Internal Server Error)"를 전달 받습니다.</p>
+<p>만약 클라이언트의 <em>요청(request)</em>이 아닌 <em>응답(response)</em>이나 코드 어딘가에 Pydantic의 <code>ValidationError</code> 가 있는 경우, 이것은 코드 내에 버그가 있음을 의미하기 때문입니다.</p>
+<p>당신이 해당 버그를 해결하는 동안 보안 취약점이 노출되는 것을 방지하기 위해 클라이언트와 사용자는 오류에 관한 내부 정보에 접근할 수 없습니다.</p>
+<h3 id="httpexception_3"><code>HTTPException</code> 예외 처리기 재정의<a class="headerlink" href="#httpexception_3" title="Permanent link">&para;</a></h3>
+<p>같은 방식으로 <code>HTTPException</code> 처리기를 재정의할 수 있습니다.</p>
+<p>예를 들어, 이 오류들에 대해 JSON 대신 일반 텍스트를 반환하고자 할 수 있습니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
 <span class="kn">from</span> <span class="nn">fastapi.exceptions</span> <span class="kn">import</span> <span class="n">RequestValidationError</span>
 <span class="hll"><span class="kn">from</span> <span class="nn">fastapi.responses</span> <span class="kn">import</span> <span class="n">PlainTextResponse</span>
@@ -2952,13 +2981,13 @@ path -&gt; item_id
 </span>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
 </code></pre></div>
 <div class="admonition note">
-<p class="admonition-title">Technical Details</p>
-<p>You could also use <code>from starlette.responses import PlainTextResponse</code>.</p>
-<p><strong>FastAPI</strong> provides the same <code>starlette.responses</code> as <code>fastapi.responses</code> just as a convenience for you, the developer. But most of the available responses come directly from Starlette.</p>
+<p class="admonition-title">기술 세부사항</p>
+<p><code>from starlette.responses import JSONResponse</code> 역시 사용할 수 있습니다.</p>
+<p><strong>FastAPI</strong>는 개발자인 당신의 편의를 위해 <code>fastapi.responses</code>와 동일한 <code>starlette.responses</code>도 제공합니다. 하지만 대부분의 응답들은 Starlette로부터 직접 제공됩니다.</p>
 </div>
-<h3 id="use-the-requestvalidationerror-body">Use the <code>RequestValidationError</code> body<a class="headerlink" href="#use-the-requestvalidationerror-body" title="Permanent link">&para;</a></h3>
-<p>The <code>RequestValidationError</code> contains the <code>body</code> it received with invalid data.</p>
-<p>You could use it while developing your app to log the body and debug it, return it to the user, etc.</p>
+<h3 id="requestvalidationerror"><code>RequestValidationError</code> 본문 사용<a class="headerlink" href="#requestvalidationerror" title="Permanent link">&para;</a></h3>
+<p><code>RequestValidationError</code> 는 유효하지 않은 데이터와 함께 받은 <code>body</code>를 포함합니다.</p>
+<p>당신은 어플리케이션을 개발하는 동안 본문을 로그에 기록하고, 디버깅하고, 사용자에게 반환하는 작업 등을 수행하는 데에 이를 사용할 수 있습니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">Request</span><span class="p">,</span> <span class="n">status</span>
 <span class="kn">from</span> <span class="nn">fastapi.encoders</span> <span class="kn">import</span> <span class="n">jsonable_encoder</span>
 <span class="kn">from</span> <span class="nn">fastapi.exceptions</span> <span class="kn">import</span> <span class="n">RequestValidationError</span>
@@ -2985,13 +3014,13 @@ path -&gt; item_id
 <span class="k">async</span> <span class="k">def</span> <span class="nf">create_item</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">item</span>
 </code></pre></div>
-<p>Now try sending an invalid item like:</p>
+<p>다음과 같이 유효하지 않은 항목을 전송하면:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;towel&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;XL&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>You will receive a response telling you that the data is invalid containing the received body:</p>
+<p>데이터가 유효하지 않음을 알려주는, 전달받은 본문을 포함한 응답을 받게 될 것입니다.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
@@ -3009,19 +3038,20 @@ path -&gt; item_id
 </span><span class="hll"><span class="w">  </span><span class="p">}</span><span class="w"></span>
 </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<h4 id="fastapis-httpexception-vs-starlettes-httpexception">FastAPI's <code>HTTPException</code> vs Starlette's <code>HTTPException</code><a class="headerlink" href="#fastapis-httpexception-vs-starlettes-httpexception" title="Permanent link">&para;</a></h4>
-<p><strong>FastAPI</strong> has its own <code>HTTPException</code>.</p>
-<p>And <strong>FastAPI</strong>'s <code>HTTPException</code> error class inherits from Starlette's <code>HTTPException</code> error class.</p>
-<p>The only difference, is that <strong>FastAPI</strong>'s <code>HTTPException</code> allows you to add headers to be included in the response.</p>
-<p>This is needed/used internally for OAuth 2.0 and some security utilities.</p>
-<p>So, you can keep raising <strong>FastAPI</strong>'s <code>HTTPException</code> as normally in your code.</p>
-<p>But when you register an exception handler, you should register it for Starlette's <code>HTTPException</code>.</p>
-<p>This way, if any part of Starlette's internal code, or a Starlette extension or plug-in, raises a Starlette <code>HTTPException</code>, your handler will be able to catch and handle it.</p>
-<p>In this example, to be able to have both <code>HTTPException</code>s in the same code, Starlette's exceptions is renamed to <code>StarletteHTTPException</code>:</p>
+<h4 id="fastapi-httpexception-vs-starlette-httpexception">FastAPI의 <code>HTTPException</code> vs Starlette의 <code>HTTPException</code><a class="headerlink" href="#fastapi-httpexception-vs-starlette-httpexception" title="Permanent link">&para;</a></h4>
+<p><strong>FastAPI</strong>에는 자체적인 <code>HTTPException</code> 이 있습니다.</p>
+<p>그리고 <strong>FastAPI</strong>의 <code>HTTPException</code> 오류 클래스는 Starlette의 <code>HTTPException</code> 오류 클래스를 상속받습니다.</p>
+<p>유일한 차이점은, <strong>FastAPI</strong>의 <code>HTTPException</code> 을 사용할 경우 응답에 헤더를 추가할 수 있다는 것입니다.</p>
+<p>이것은 OAuth 2.0 및 몇몇 보안 유틸리티에 내부적으로 필요/사용됩니다.</p>
+<p>따라서, 평소와 같이 코드에서 <strong>FastAP</strong>I의 <code>HTTPException</code> 을 계속 발생시킬 수 있습니다.</p>
+<p>그러나 예외 처리기를 등록할 때에는, Starlette의 <code>HTTPException</code> 에 대하여 등록해야 합니다.</p>
+<p>이렇게 하면 Starlette의 내부 코드 또는 Starlette 확장(extension) 또는 플러그인의 일부가 Starlette <code>HTTPException</code>을 발생시킬 때, 해당 예외 처리기가 이를 포착하고 처리할 수 있습니다.</p>
+<p>아래 예시에서, 두 개의 <code>HTTPException</code> 을 같은 코드에서 사용하기 위해, Starlette의 예외는 <code>StarletteHTTPException</code> 로 이름을 변경하였습니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">starlette.exceptions</span> <span class="kn">import</span> <span class="n">HTTPException</span> <span class="k">as</span> <span class="n">StarletteHTTPException</span>
 </code></pre></div>
-<h3 id="re-use-fastapis-exception-handlers">Re-use <strong>FastAPI</strong>'s exception handlers<a class="headerlink" href="#re-use-fastapis-exception-handlers" title="Permanent link">&para;</a></h3>
-<p>If you want to use the exception along with the same default exception handlers from  <strong>FastAPI</strong>, You can import and re-use the default exception handlers from <code>fastapi.exception_handlers</code>:</p>
+<h3 id="fastapi"><strong>FastAPI</strong>의 예외 처리기 재사용<a class="headerlink" href="#fastapi" title="Permanent link">&para;</a></h3>
+<p>어떠한 방식으로든 예외를 사용하면서, <strong>FastAPI</strong>의 동일한 기본 예외 처리기를 사용할 수도 있습니다.</p>
+<p><code>fastapi.exception_handlers</code> 로부터 기본 예외 처리기를 임포트하고 재사용합니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
 <span class="hll"><span class="kn">from</span> <span class="nn">fastapi.exception_handlers</span> <span class="kn">import</span> <span class="p">(</span>
 </span><span class="hll">    <span class="n">http_exception_handler</span><span class="p">,</span>
@@ -3051,7 +3081,8 @@ path -&gt; item_id
         <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">418</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Nope! I don&#39;t like 3.&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
 </code></pre></div>
-<p>In this example you are just <code>print</code>ing the error with a very expressive message, but you get the idea. You can use the exception and then just re-use the default exception handlers.</p>
+<p>상기 예시에서, 감정이 매우 많이 섞인 메시지와 함께 오류를 단순히 <code>print</code> 했습니다.</p>
+<p>하지만 이를 통해 예외를 사용한 후, 기본 예외 처리기를 다시 사용하는 방법에 대해 알았을 것입니다.</p>
 
               
             </article>
@@ -3085,13 +3116,13 @@ path -&gt; item_id
       
       
         
-        <a href="../path-operation-configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Path Operation Configuration" rel="next">
+        <a href="../path-operation-configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: 경로 동작 설정" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Path Operation Configuration
+              경로 동작 설정
             </div>
           </div>
           <div class="md-footer__button md-icon">
