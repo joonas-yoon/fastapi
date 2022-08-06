@@ -73,6 +73,8 @@ nav:
   - tutorial/cors.md
   - tutorial/sql-databases.md
   - tutorial/testing.md
+- 고급 사용자 안내서:
+  - advanced/response-headers.md
 markdown_extensions:
 - toc:
     permalink: true
