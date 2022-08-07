@@ -89,8 +89,8 @@
 
 다음으로 확장 테스트를 통해 이전과 동일한 `test_main_b.py`를 가질 수 있습니다.
 
-```python
-{!../../../docs_src/app_testing/test_main_b.py!}
+```Python
+{!> ../../../docs_src/app_testing/app_b/test_main.py!}
 ```
 
 클라이언트가 요청에 정보를 전달해야 하는데 방법을 모를 때마다 '요청'에서 방법을 검색할 수 있습니다(Google).
