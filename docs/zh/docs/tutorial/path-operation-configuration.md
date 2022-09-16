@@ -36,7 +36,7 @@
 
 OpenAPI 概图会自动添加标签，供 API 文档接口使用：
 
-<img src="/img/tutorial/path-operation-configuration/image01.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image01.png">
 
 ## `summary` 和 `description` 参数
 
@@ -58,7 +58,7 @@ OpenAPI 概图会自动添加标签，供 API 文档接口使用：
 
 下图为 Markdown 文本在 API 文档中的显示效果：
 
-<img src="/img/tutorial/path-operation-configuration/image02.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image02.png">
 
 ## 响应描述
 
@@ -78,7 +78,7 @@ OpenAPI 概图会自动添加标签，供 API 文档接口使用：
 
     如果没有定义响应描述，**FastAPI** 则自动生成内容为 "Successful response" 的响应描述。
 
-<img src="/img/tutorial/path-operation-configuration/image03.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image03.png">
 
 ## 弃用*路径操作*
 
@@ -90,11 +90,11 @@ OpenAPI 概图会自动添加标签，供 API 文档接口使用：
 
 API 文档会把该路径操作标记为弃用：
 
-<img src="/img/tutorial/path-operation-configuration/image04.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image04.png">
 
 下图显示了正常*路径操作*与弃用*路径操作* 的区别：
 
-<img src="/img/tutorial/path-operation-configuration/image05.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image05.png">
 
 ## 小结
 

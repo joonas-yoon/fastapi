@@ -265,13 +265,13 @@ The "official" way to access the app would be through the proxy with the path pr
 
 You can check it at <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>:
 
-<img src="/img/tutorial/behind-a-proxy/image01.png">
+<img src="/fastapi/img/tutorial/behind-a-proxy/image01.png">
 
 But if we access the docs UI at the "official" URL using the proxy with port `9999`, at `/api/v1/docs`, it works correctly! 🎉
 
 You can check it at <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs</a>:
 
-<img src="/img/tutorial/behind-a-proxy/image02.png">
+<img src="/fastapi/img/tutorial/behind-a-proxy/image02.png">
 
 Right as we wanted it. ✔️
 
@@ -324,7 +324,7 @@ Will generate an OpenAPI schema like:
 
 In the docs UI at <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs</a> it would look like:
 
-<img src="/img/tutorial/behind-a-proxy/image03.png">
+<img src="/fastapi/img/tutorial/behind-a-proxy/image03.png">
 
 !!! tip
     The docs UI will interact with the server that you select.

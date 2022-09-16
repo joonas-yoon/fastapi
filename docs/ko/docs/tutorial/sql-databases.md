@@ -618,7 +618,7 @@ $ uvicorn sql_app.main:app --reload
 
 이제 FastAPI 응용 프로그램과 상호작용하며 실제 데이터베이스에서 데이터를 읽는 것이 가능합니다:
 
-<img src="/img/tutorial/sql-databases/image01.png">
+<img src="/fastapi/img/tutorial/sql-databases/image01.png">
 
 ## 데이터베이스와 직접적인 상호작용
 
@@ -626,7 +626,7 @@ FastAPI와 관계 없이 디버깅을 하거나, 테이블, 컬럼, 레코드를
 
 그것은 다음과 같습니다:
 
-<img src="/img/tutorial/sql-databases/image02.png">
+<img src="/fastapi/img/tutorial/sql-databases/image02.png">
 
 <a href="https://inloop.github.io/sqlite-viewer/" class="external-link" target="_blank">SQLite Viewer</a>나 <a href="https://extendsclass.com/sqlite-browser.html" class="external-link" target="_blank">ExtendsClass</a>와 같은 온라인 SQLite 브라우저를 사용할 수도 있습니다.
 

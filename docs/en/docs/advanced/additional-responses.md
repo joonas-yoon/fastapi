@@ -198,7 +198,7 @@ And a response with a status code `200` that uses your `response_model`, but inc
 
 It will all be combined and included in your OpenAPI, and shown in the API docs:
 
-<img src="/img/tutorial/additional-responses/image01.png">
+<img src="/fastapi/img/tutorial/additional-responses/image01.png">
 
 ## Combine predefined responses and custom ones
 

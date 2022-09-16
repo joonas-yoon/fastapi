@@ -78,7 +78,7 @@ And you will be able to select which scopes you want to give access to: `me` and
 
 This is the same mechanism used when you give permissions while logging in with Facebook, Google, GitHub, etc:
 
-<img src="/img/tutorial/security/image11.png">
+<img src="/fastapi/img/tutorial/security/image11.png">
 
 ## JWT token with scopes
 
@@ -235,7 +235,7 @@ They will be checked independently for each *path operation*.
 
 If you open the API docs, you can authenticate and specify which scopes you want to authorize.
 
-<img src="/img/tutorial/security/image11.png">
+<img src="/fastapi/img/tutorial/security/image11.png">
 
 If you don't select any scope, you will be "authenticated", but when you try to access `/users/me/` or `/users/me/items/` you will get an error saying that you don't have enough permissions. You will still be able to access `/status/`.
 

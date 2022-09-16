@@ -230,7 +230,7 @@ Run the server and go to the docs: <a href="http://127.0.0.1:8000/docs" class="e
 
 You'll see the user interface like:
 
-<img src="/img/tutorial/security/image07.png">
+<img src="/fastapi/img/tutorial/security/image07.png">
 
 Authorize the application the same way as before.
 
@@ -242,7 +242,7 @@ Password: `secret`
 !!! check
     Notice that nowhere in the code is the plaintext password "`secret`", we only have the hashed version.
 
-<img src="/img/tutorial/security/image08.png">
+<img src="/fastapi/img/tutorial/security/image08.png">
 
 Call the endpoint `/users/me/`, you will get the response as:
 
@@ -255,11 +255,11 @@ Call the endpoint `/users/me/`, you will get the response as:
 }
 ```
 
-<img src="/img/tutorial/security/image09.png">
+<img src="/fastapi/img/tutorial/security/image09.png">
 
 If you open the developer tools, you could see how the data sent and only includes the token, the password is only sent in the first request to authenticate the user and get that access token, but not afterwards:
 
-<img src="/img/tutorial/security/image10.png">
+<img src="/fastapi/img/tutorial/security/image10.png">
 
 !!! note
     Notice the header `Authorization`, with a value that starts with `Bearer `.

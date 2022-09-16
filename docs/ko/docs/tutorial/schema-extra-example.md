@@ -42,7 +42,7 @@ JSON 스키마에 들어갈 추가 정보를 정의할 수 있습니다.
 
 위의 어떤 방법으로든 `/docs`에서는 이렇게 보일 것입니다:
 
-<img src="/img/tutorial/body-fields/image01.png">
+<img src="/fastapi/img/tutorial/body-fields/image01.png">
 
 ## 기술적 세부사항
 

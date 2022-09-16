@@ -155,7 +155,7 @@ You can copy this code as is, and see the docs at <a href="http://127.0.0.1:8000
 
 There you can see all your API documented and interact with it:
 
-<img src="/img/tutorial/async-sql-databases/image01.png">
+<img src="/fastapi/img/tutorial/async-sql-databases/image01.png">
 
 ## More info
 

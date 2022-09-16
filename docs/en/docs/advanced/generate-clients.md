@@ -34,7 +34,7 @@ Notice that the *path operations* define the models they use for request payload
 
 If you go to the API docs, you will see that it has the **schemas** for the data to be sent in requests and received in responses:
 
-<img src="/img/tutorial/generate-clients/image01.png">
+<img src="/fastapi/img/tutorial/generate-clients/image01.png">
 
 You can see those schemas because they were declared with the models in the app.
 
@@ -105,22 +105,22 @@ That command will generate code in `./src/client` and will use `axios` (the fron
 
 Now you can import and use the client code, it could look like this, notice that you get autocompletion for the methods:
 
-<img src="/img/tutorial/generate-clients/image02.png">
+<img src="/fastapi/img/tutorial/generate-clients/image02.png">
 
 You will also get autocompletion for the payload to send:
 
-<img src="/img/tutorial/generate-clients/image03.png">
+<img src="/fastapi/img/tutorial/generate-clients/image03.png">
 
 !!! tip
     Notice the autocompletion for `name` and `price`, that was defined in the FastAPI application, in the `Item` model.
 
 You will have inline errors for the data that you send:
 
-<img src="/img/tutorial/generate-clients/image04.png">
+<img src="/fastapi/img/tutorial/generate-clients/image04.png">
 
 The response object will also have autocompletion:
 
-<img src="/img/tutorial/generate-clients/image05.png">
+<img src="/fastapi/img/tutorial/generate-clients/image05.png">
 
 ## FastAPI App with Tags
 
@@ -147,7 +147,7 @@ If you generate a client for a FastAPI app using tags, it will normally also sep
 
 This way you will be able to have things ordered and grouped correctly for the client code:
 
-<img src="/img/tutorial/generate-clients/image06.png">
+<img src="/fastapi/img/tutorial/generate-clients/image06.png">
 
 In this case you have:
 
@@ -202,7 +202,7 @@ You can then pass that custom function to **FastAPI** as the `generate_unique_id
 
 Now if you generate the client again, you will see that it has the improved method names:
 
-<img src="/img/tutorial/generate-clients/image07.png">
+<img src="/fastapi/img/tutorial/generate-clients/image07.png">
 
 As you see, the method names now have the tag and then the function name, now they don't include information from the URL path and the HTTP operation.
 
@@ -248,7 +248,7 @@ Now as the end result is in a file `openapi.json`, you would modify the `package
 
 After generating the new client, you would now have **clean method names**, with all the **autocompletion**, **inline errors**, etc:
 
-<img src="/img/tutorial/generate-clients/image08.png">
+<img src="/fastapi/img/tutorial/generate-clients/image08.png">
 
 ## Benefits
 

@@ -254,11 +254,11 @@ User: `johndoe`
 
 Password: `secret`
 
-<img src="/img/tutorial/security/image04.png">
+<img src="/fastapi/img/tutorial/security/image04.png">
 
 After authenticating in the system, you will see it like:
 
-<img src="/img/tutorial/security/image05.png">
+<img src="/fastapi/img/tutorial/security/image05.png">
 
 ### Get your own user data
 
@@ -276,7 +276,7 @@ You will get your user's data, like:
 }
 ```
 
-<img src="/img/tutorial/security/image06.png">
+<img src="/fastapi/img/tutorial/security/image06.png">
 
 If you click the lock icon and logout, and then try the same operation again, you will get an HTTP 401 error of:
 

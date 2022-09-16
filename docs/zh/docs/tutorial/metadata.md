@@ -19,7 +19,7 @@
 
 通过这样设置，自动 API 文档看起来会像：
 
-<img src="/img/tutorial/metadata/image01.png">
+<img src="/fastapi/img/tutorial/metadata/image01.png">
 
 ## 标签元数据
 
@@ -65,7 +65,7 @@
 
 如果你现在查看文档，它们会显示所有附加的元数据：
 
-<img src="/img/tutorial/metadata/image02.png">
+<img src="/fastapi/img/tutorial/metadata/image02.png">
 
 ### 标签顺序
 

@@ -57,7 +57,7 @@ You type the first parameter of the function, `first_name`, then a dot (`.`) and
 
 But, sadly, you get nothing useful:
 
-<img src="/img/python-types/image01.png">
+<img src="/fastapi/img/python-types/image01.png">
 
 ### Add types
 
@@ -99,11 +99,11 @@ But now, imagine you are again in the middle of creating that function, but with
 
 At the same point, you try to trigger the autocomplete with `Ctrl+Space` and you see:
 
-<img src="/img/python-types/image02.png">
+<img src="/fastapi/img/python-types/image02.png">
 
 With that, you can scroll, seeing the options, until you find the one that "rings a bell":
 
-<img src="/img/python-types/image03.png">
+<img src="/fastapi/img/python-types/image03.png">
 
 ## More motivation
 
@@ -115,7 +115,7 @@ Check this function, it already has type hints:
 
 Because the editor knows the types of the variables, you don't only get completion, you also get error checks:
 
-<img src="/img/python-types/image04.png">
+<img src="/fastapi/img/python-types/image04.png">
 
 Now you know that you have to fix it, convert `age` to a string with `str(age)`:
 
@@ -206,7 +206,7 @@ That means: "the variable `items` is a `list`, and each of the items in this lis
 
 By doing that, your editor can provide support even while processing items from the list:
 
-<img src="/img/python-types/image05.png">
+<img src="/fastapi/img/python-types/image05.png">
 
 Without types, that's almost impossible to achieve.
 
@@ -420,7 +420,7 @@ Then you can declare a variable to be of type `Person`:
 
 And then, again, you get all the editor support:
 
-<img src="/img/python-types/image06.png">
+<img src="/fastapi/img/python-types/image06.png">
 
 ## Pydantic models
 

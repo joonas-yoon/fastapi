@@ -57,7 +57,7 @@ Ardından, programcıların en iyi arkadaşı olan otomatik tamamlama ile denedi
 
 Ancak, ne yazık ki, yararlı hiçbir şey elde edemediniz:
 
-<img src="/img/python-types/image01.png">
+<img src="/fastapi/img/python-types/image01.png">
 
 ### Tipleri ekle
 
@@ -99,11 +99,11 @@ Normalde tip belirteçleri eklemek, kod üzerinde olacakları değiştirmez.
 
 Aynı noktada, `Ctrl+Space` ile otomatik tamamlamayı tetiklediniz  ve şunu görüyorsunuz:
 
-<img src="/img/python-types/image02.png">
+<img src="/fastapi/img/python-types/image02.png">
 
 Aradığınızı bulana kadar seçenekleri kaydırabilirsiniz:
 
-<img src="/img/python-types/image03.png">
+<img src="/fastapi/img/python-types/image03.png">
 
 ## Daha fazla motivasyon
 
@@ -115,7 +115,7 @@ Bu fonksiyon, zaten tür belirteçlerine sahip:
 
 Editör değişkenlerin tiplerini bildiğinden, yalnızca otomatik tamamlama değil, hata kontrolleri de sağlar:
 
-<img src="/img/python-types/image04.png">
+<img src="/fastapi/img/python-types/image04.png">
 
 Artık `age` değişkenini `str(age)` olarak kullanmanız gerektiğini biliyorsunuz:
 
@@ -181,7 +181,7 @@ Bunun anlamı şudur: "`items` değişkeni bir `list`tir ve bu listedeki öğele
 
 Bunu yaparak, düzenleyicinizin listedeki öğeleri işlerken bile destek sağlamasını sağlayabilirsiniz:
 
-<img src="/img/python-types/image05.png">
+<img src="/fastapi/img/python-types/image05.png">
 
 Tip belirteçleri olmadan, bunu başarmak neredeyse imkansızdır.
 
@@ -261,7 +261,7 @@ Sonra bir değişkeni 'Person' tipinde tanımlayabilirsiniz:
 
 Ve yine bütün editör desteğini alırsınız:
 
-<img src="/img/python-types/image06.png">
+<img src="/fastapi/img/python-types/image06.png">
 
 ## Pydantic modelleri
 

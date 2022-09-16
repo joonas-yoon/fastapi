@@ -90,7 +90,7 @@ from myapp import app
 
 看起来可能是这样：
 
-<img src="/img/tutorial/debugging/image01.png">
+<img src="/fastapi/img/tutorial/debugging/image01.png">
 
 ---
 
@@ -105,4 +105,4 @@ from myapp import app
 
 看起来可能是这样：
 
-<img src="/img/tutorial/debugging/image02.png">
+<img src="/fastapi/img/tutorial/debugging/image02.png">

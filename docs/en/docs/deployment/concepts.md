@@ -82,7 +82,7 @@ If you check out the "task manager" or "system monitor" (or similar tools) in yo
 
 And, for example, you will probably see that there are multiple processes running the same browser program (Firefox, Chrome, Edge, etc). They normally run one process per tab, plus some other extra processes.
 
-<img class="shadow" src="/img/deployment/concepts/image01.png">
+<img class="shadow" src="/fastapi/img/deployment/concepts/image01.png">
 
 ---
 
@@ -213,7 +213,7 @@ This Manager Process would probably be the one listening on the **port** in the 
 
 Those worker processes would be the ones running your application, they would perform the main computations to receive a **request** and return a **response**, and they would load anything you put in variables in RAM.
 
-<img src="/img/deployment/concepts/process-ram.svg">
+<img src="/fastapi/img/deployment/concepts/process-ram.svg">
 
 And of course, the same machine would probably have **other processes** running as well, apart from your application.
 

@@ -57,7 +57,7 @@ John Doe
 
 Но, к сожалению, ничего полезного не выходит:
 
-<img src="/img/python-types/image01.png">
+<img src="/fastapi/img/python-types/image01.png">
 
 ### Добавим типы
 
@@ -99,11 +99,11 @@ John Doe
 
 В тот же момент вы пытаетесь запустить автодополнение с помощью `Ctrl+Space` и вы видите:
 
-<img src="/img/python-types/image02.png">
+<img src="/fastapi/img/python-types/image02.png">
 
 При этом вы можете просматривать варианты, пока не найдёте подходящий:
 
-<img src="/img/python-types/image03.png">
+<img src="/fastapi/img/python-types/image03.png">
 
 ## Больше мотивации
 
@@ -115,7 +115,7 @@ John Doe
 
 Поскольку редактор знает типы переменных, вы получаете не только дополнение, но и проверки ошибок:
 
-<img src="/img/python-types/image04.png">
+<img src="/fastapi/img/python-types/image04.png">
 
 Теперь вы знаете, что вам нужно исправить, преобразовав `age` в строку с `str(age)`:
 
@@ -181,7 +181,7 @@ John Doe
 
 Если вы будете так поступать, редактор может оказывать поддержку даже при обработке элементов списка:
 
-<img src="/img/python-types/image05.png">
+<img src="/fastapi/img/python-types/image05.png">
 
 Без типов добиться этого практически невозможно.
 
@@ -261,7 +261,7 @@ John Doe
 
 И снова вы получаете полную поддержку редактора:
 
-<img src="/img/python-types/image06.png">
+<img src="/fastapi/img/python-types/image06.png">
 
 ## Pydantic-модели
 

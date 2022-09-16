@@ -124,7 +124,7 @@ common_parameters --> read_users
 
 所以，交互文档里也会显示依赖项的所有信息：
 
-<img src="/img/tutorial/dependencies/image01.png">
+<img src="/fastapi/img/tutorial/dependencies/image01.png">
 
 ## 简单用法
 

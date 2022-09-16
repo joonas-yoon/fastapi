@@ -189,7 +189,7 @@ FastAPIアプリから返ってきたJSONレスポンスが表示されます:
 
 次のようなドキュメントが表示されます:
 
-<img src="/img/deployment/deta/image01.png">
+<img src="/fastapi/img/deployment/deta/image01.png">
 
 ## パブリックアクセスの有効化
 
@@ -231,7 +231,7 @@ ID `5` の例を示します。
 
 また、それらを編集してリプレイできます。
 
-<img src="/img/deployment/deta/image02.png">
+<img src="/fastapi/img/deployment/deta/image02.png">
 
 ## さらに詳しく知る
 

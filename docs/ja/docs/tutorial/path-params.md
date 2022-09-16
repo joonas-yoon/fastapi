@@ -74,7 +74,7 @@ Pythonのformat文字列と同様のシンタックスで「パスパラメー�
 
 そしてブラウザで <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a> を開くと、以下の様な自動的に生成された対話的なドキュメントが表示されます。
 
-<img src="/img/tutorial/path-params/image01.png">
+<img src="/fastapi/img/tutorial/path-params/image01.png">
 
 !!! check "確認"
     繰り返しになりますが、Python型宣言を使用するだけで、**FastAPI**は対話的なAPIドキュメントを自動的に生成します（Swagger UIを統合）。
@@ -87,7 +87,7 @@ Pythonのformat文字列と同様のシンタックスで「パスパラメー�
 
 このため、**FastAPI**自体が代替のAPIドキュメントを提供します（ReDocを使用）。これは、 <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> にアクセスすると確認できます。
 
-<img src="/img/tutorial/path-params/image02.png">
+<img src="/fastapi/img/tutorial/path-params/image02.png">
 
 同様に、互換性のあるツールが多数あります（多くの言語用のコード生成ツールを含む）。
 
@@ -149,7 +149,7 @@ Pythonのformat文字列と同様のシンタックスで「パスパラメー�
 
 *パスパラメータ*の利用可能な値が事前に定義されているので、対話的なドキュメントで適切に表示できます:
 
-<img src="/img/tutorial/path-params/image03.png">
+<img src="/fastapi/img/tutorial/path-params/image03.png">
 
 ### Python*列挙型*の利用
 

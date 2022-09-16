@@ -25,7 +25,7 @@ It will:
 * Return that status code in the response.
 * Document it as such in the OpenAPI schema (and so, in the user interfaces):
 
-<img src="/img/tutorial/response-status-code/image01.png">
+<img src="/fastapi/img/tutorial/response-status-code/image01.png">
 
 !!! note
     Some response codes (see the next section) indicate that the response does not have a body.
@@ -77,7 +77,7 @@ You can use the convenience variables from `fastapi.status`.
 
 They are just a convenience, they hold the same number, but that way you can use the editor's autocomplete to find them:
 
-<img src="/img/tutorial/response-status-code/image02.png">
+<img src="/fastapi/img/tutorial/response-status-code/image02.png">
 
 !!! note "Technical Details"
     You could also use `from starlette import status`.

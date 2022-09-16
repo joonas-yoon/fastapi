@@ -74,7 +74,7 @@ O mesmo erro apareceria se você tivesse fornecido um `float` ao invés de um `i
 
 Quando você abrir o seu navegador em <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>, você verá de forma automática e interativa a documentação da API como:
 
-<img src="/img/tutorial/path-params/image01.png">
+<img src="/fastapi/img/tutorial/path-params/image01.png">
 
 !!! check
 	Novamente, apenas com a mesma declaração de tipo do Python, o **FastAPI** te dá de forma automática e interativa a documentação (integrada com o Swagger UI).
@@ -87,7 +87,7 @@ Devido ao schema gerado ser o padrão do <a href="https://github.com/OAI/OpenAPI
 
 Por esse motivo, o próprio **FastAPI** fornece uma API alternativa para documentação (utilizando ReDoc), que você pode acessar em <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>:
 
-<img src="/img/tutorial/path-params/image02.png">
+<img src="/fastapi/img/tutorial/path-params/image02.png">
 
 Da mesma forma, existem muitas ferramentas compatíveis. Incluindo ferramentas de geração de código para muitas linguagens.
 
@@ -149,7 +149,7 @@ Logo, crie um *parâmetro de rota* com anotações de tipo usando a classe enum 
 
 Visto que os valores disponíveis para o parâmetro da rota estão predefinidos, a documentação interativa pode mostrar esses valores de uma forma bem legal:
 
-<img src="/img/tutorial/path-params/image03.png">
+<img src="/fastapi/img/tutorial/path-params/image03.png">
 
 ### Trabalhando com os *enumeration* do Python
 

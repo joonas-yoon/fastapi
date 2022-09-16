@@ -703,7 +703,7 @@ And then, you can open your browser at <a href="http://127.0.0.1:8000/docs" clas
 
 And you will be able to interact with your **FastAPI** application, reading data from a real database:
 
-<img src="/img/tutorial/sql-databases/image01.png">
+<img src="/fastapi/img/tutorial/sql-databases/image01.png">
 
 ## Interact with the database directly
 
@@ -711,7 +711,7 @@ If you want to explore the SQLite database (file) directly, independently of Fas
 
 It will look like this:
 
-<img src="/img/tutorial/sql-databases/image02.png">
+<img src="/fastapi/img/tutorial/sql-databases/image02.png">
 
 You can also use an online SQLite browser like <a href="https://inloop.github.io/sqlite-viewer/" class="external-link" target="_blank">SQLite Viewer</a> or <a href="https://extendsclass.com/sqlite-browser.html" class="external-link" target="_blank">ExtendsClass</a>.
 

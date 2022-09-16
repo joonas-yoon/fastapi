@@ -180,7 +180,7 @@ Assim, a resposta para essa URL seria:
 
 A documentação interativa da API irá atualizar de acordo, permitindo múltiplos valores:
 
-<img src="/img/tutorial/query-params-str-validations/image02.png">
+<img src="/fastapi/img/tutorial/query-params-str-validations/image02.png">
 
 ### Lista de parâmetros de consulta / múltiplos valores por padrão
 
@@ -279,7 +279,7 @@ Então você passa o parâmetro `deprecated=True` para `Query`:
 
 Na documentação aparecerá assim:
 
-<img src="/img/tutorial/query-params-str-validations/image01.png">
+<img src="/fastapi/img/tutorial/query-params-str-validations/image01.png">
 
 ## Recapitulando
 

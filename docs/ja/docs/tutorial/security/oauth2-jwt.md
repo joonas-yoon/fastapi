@@ -199,7 +199,7 @@ IDの衝突を回避するために、ユーザーのJWTトークンを作成す
 
 次のようなユーザーインターフェイスが表示されます：
 
-<img src="/img/tutorial/security/image07.png">
+<img src="/fastapi/img/tutorial/security/image07.png">
 
 前回と同じ方法でアプリケーションの認可を行います。
 
@@ -211,7 +211,7 @@ Password: `secret`
 !!! check "確認"
     コードのどこにも平文のパスワード"`secret`"はなく、ハッシュ化されたものしかないことを確認してください。
 
-<img src="/img/tutorial/security/image08.png">
+<img src="/fastapi/img/tutorial/security/image08.png">
 
 エンドポイント`/users/me/`を呼び出すと、次のようなレスポンスが得られます：
 
@@ -224,11 +224,11 @@ Password: `secret`
 }
 ```
 
-<img src="/img/tutorial/security/image09.png">
+<img src="/fastapi/img/tutorial/security/image09.png">
 
 開発者ツールを開くと、送信されるデータにはトークンだけが含まれており、パスワードはユーザーを認証してアクセストークンを取得する最初のリクエストでのみ送信され、その後は送信されないことがわかります。
 
-<img src="/img/tutorial/security/image10.png">
+<img src="/fastapi/img/tutorial/security/image10.png">
 
 !!! note "備考"
     ヘッダーの`Authorization`には、`Bearer`で始まる値があります。

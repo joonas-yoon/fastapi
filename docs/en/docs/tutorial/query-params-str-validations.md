@@ -288,7 +288,7 @@ So, the response to that URL would be:
 
 The interactive API docs will update accordingly, to allow multiple values:
 
-<img src="/img/tutorial/query-params-str-validations/image02.png">
+<img src="/fastapi/img/tutorial/query-params-str-validations/image02.png">
 
 ### Query parameter list / multiple values with defaults
 
@@ -427,7 +427,7 @@ Then pass the parameter `deprecated=True` to `Query`:
 
 The docs will show it like this:
 
-<img src="/img/tutorial/query-params-str-validations/image01.png">
+<img src="/fastapi/img/tutorial/query-params-str-validations/image01.png">
 
 ## Exclude from OpenAPI
 

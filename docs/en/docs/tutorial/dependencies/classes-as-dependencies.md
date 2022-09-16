@@ -197,7 +197,7 @@ commons = Depends(CommonQueryParams)
 
 But declaring the type is encouraged as that way your editor will know what will be passed as the parameter `commons`, and then it can help you with code completion, type checks, etc:
 
-<img src="/img/tutorial/dependencies/image02.png">
+<img src="/fastapi/img/tutorial/dependencies/image02.png">
 
 ## Shortcut
 

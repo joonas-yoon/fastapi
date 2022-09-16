@@ -189,7 +189,7 @@ And now go to the `/docs` for your API, in the example above it would be `https:
 
 It will show your docs like:
 
-<img src="/img/deployment/deta/image01.png">
+<img src="/fastapi/img/deployment/deta/image01.png">
 
 ## Enable public access
 
@@ -231,7 +231,7 @@ In there you can inspect the recent requests sent to your app.
 
 You can also edit them and re-play them.
 
-<img src="/img/deployment/deta/image02.png">
+<img src="/fastapi/img/deployment/deta/image02.png">
 
 ## Learn more
 

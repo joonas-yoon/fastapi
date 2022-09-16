@@ -52,13 +52,13 @@ And open the docs at <a href="http://127.0.0.1:8000/docs" class="external-link" 
 
 You will see the automatic API docs for the main app, including only its own _path operations_:
 
-<img src="/img/tutorial/sub-applications/image01.png">
+<img src="/fastapi/img/tutorial/sub-applications/image01.png">
 
 And then, open the docs for the sub-application, at <a href="http://127.0.0.1:8000/subapi/docs" class="external-link" target="_blank">http://127.0.0.1:8000/subapi/docs</a>.
 
 You will see the automatic API docs for the sub-application, including only its own _path operations_, all under the correct sub-path prefix `/subapi`:
 
-<img src="/img/tutorial/sub-applications/image02.png">
+<img src="/fastapi/img/tutorial/sub-applications/image02.png">
 
 If you try interacting with any of the two user interfaces, they will work correctly, because the browser will be able to talk to each specific app or sub-app.
 

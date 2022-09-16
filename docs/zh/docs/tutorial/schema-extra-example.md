@@ -41,7 +41,7 @@
 
 使用上面的任何方法，它在 `/docs` 中看起来都是这样的:
 
-<img src="/img/tutorial/body-fields/image01.png">
+<img src="/fastapi/img/tutorial/body-fields/image01.png">
 
 ## 技术细节
 

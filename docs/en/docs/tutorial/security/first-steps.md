@@ -51,7 +51,7 @@ Go to the interactive docs at: <a href="http://127.0.0.1:8000/docs" class="exter
 
 You will see something like this:
 
-<img src="/img/tutorial/security/image01.png">
+<img src="/fastapi/img/tutorial/security/image01.png">
 
 !!! check "Authorize button!"
     You already have a shiny new "Authorize" button.
@@ -60,7 +60,7 @@ You will see something like this:
 
 And if you click it, you have a little authorization form to type a `username` and `password` (and other optional fields):
 
-<img src="/img/tutorial/security/image02.png">
+<img src="/fastapi/img/tutorial/security/image02.png">
 
 !!! note
     It doesn't matter what you type in the form, it won't work yet. But we'll get there.
@@ -173,7 +173,7 @@ You don't even have to check if the token exists to return an error. You can be 
 
 You can try it already in the interactive docs:
 
-<img src="/img/tutorial/security/image03.png">
+<img src="/fastapi/img/tutorial/security/image03.png">
 
 We are not verifying the validity of the token yet, but that's a start already.
 

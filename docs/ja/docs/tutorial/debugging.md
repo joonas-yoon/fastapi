@@ -94,7 +94,7 @@ from myapp import app
 
 以下の様な画面になります:
 
-<img src="/img/tutorial/debugging/image01.png">
+<img src="/fastapi/img/tutorial/debugging/image01.png">
 
 ---
 
@@ -109,4 +109,4 @@ Pycharmを使用する場合、次のことが可能です:
 
 以下の様な画面になります:
 
-<img src="/img/tutorial/debugging/image02.png">
+<img src="/fastapi/img/tutorial/debugging/image02.png">

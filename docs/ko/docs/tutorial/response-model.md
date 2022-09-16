@@ -80,11 +80,11 @@ FastAPI는 이 `response_model`를 사용하여:
 
 자동 생성 문서를 보면 입력 모델과 출력 모델이 각자의 JSON 스키마를 가지고 있음을 확인할 수 있습니다:
 
-<img src="/img/tutorial/response-model/image01.png">
+<img src="/fastapi/img/tutorial/response-model/image01.png">
 
 그리고 두 모델 모두 대화형 API 문서에 사용됩니다:
 
-<img src="/img/tutorial/response-model/image02.png">
+<img src="/fastapi/img/tutorial/response-model/image02.png">
 
 ## 응답 모델 인코딩 매개변수
 

@@ -91,7 +91,7 @@
 
 但如果你在 `response_class` 中也传入了 `HTMLResponse`，**FastAPI** 会知道如何在 OpenAPI 和交互式文档中使用 `text/html` 将其文档化为 HTML。
 
-<img src="/img/tutorial/custom-response/image01.png">
+<img src="/fastapi/img/tutorial/custom-response/image01.png">
 
 ## 可用响应
 

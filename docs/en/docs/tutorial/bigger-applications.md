@@ -46,7 +46,7 @@ Let's say you have a file structure like this:
 * There's also a subdirectory `app/internal/` with another file `__init__.py`, so it's another "Python subpackage": `app.internal`.
 * And the file `app/internal/admin.py` is another submodule: `app.internal.admin`.
 
-<img src="/img/tutorial/bigger-applications/package.svg">
+<img src="/fastapi/img/tutorial/bigger-applications/package.svg">
 
 The same file structure with comments:
 
@@ -220,7 +220,7 @@ But that file doesn't exist, our dependencies are in a file at `app/dependencies
 
 Remember how our app/file structure looks like:
 
-<img src="/img/tutorial/bigger-applications/package.svg">
+<img src="/fastapi/img/tutorial/bigger-applications/package.svg">
 
 ---
 
@@ -467,7 +467,7 @@ And open the docs at <a href="http://127.0.0.1:8000/docs" class="external-link" 
 
 You will see the automatic API docs, including the paths from all the submodules, using the correct paths (and prefixes) and the correct tags:
 
-<img src="/img/tutorial/bigger-applications/image01.png">
+<img src="/fastapi/img/tutorial/bigger-applications/image01.png">
 
 ## Include the same router multiple times with different `prefix`
 

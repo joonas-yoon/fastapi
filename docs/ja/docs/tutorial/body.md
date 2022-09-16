@@ -82,21 +82,21 @@ APIはほとんどの場合 **レスポンス** ボディを送らなければ�
 
 モデルのJSONスキーマはOpenAPIで生成されたスキーマの一部になり、対話的なAPIドキュメントに表示されます:
 
-<img src="/img/tutorial/body/image01.png">
+<img src="/fastapi/img/tutorial/body/image01.png">
 
 そして、それらが使われる *パスオペレーション* のそれぞれのAPIドキュメントにも表示されます:
 
-<img src="/img/tutorial/body/image02.png">
+<img src="/fastapi/img/tutorial/body/image02.png">
 
 ## エディターサポート
 
 エディターによる型ヒントと補完が関数内で利用できます (Pydanticモデルではなく `dict` を受け取ると、同じサポートは受けられません):
 
-<img src="/img/tutorial/body/image03.png">
+<img src="/fastapi/img/tutorial/body/image03.png">
 
 型によるエラーチェックも可能です:
 
-<img src="/img/tutorial/body/image04.png">
+<img src="/fastapi/img/tutorial/body/image04.png">
 
 これは偶然ではなく、このデザインに基づいてフレームワークが作られています。
 
@@ -108,7 +108,7 @@ APIはほとんどの場合 **レスポンス** ボディを送らなければ�
 
 しかし、<a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>やほとんどのPythonエディタでも同様なエディターサポートを受けられます:
 
-<img src="/img/tutorial/body/image05.png">
+<img src="/fastapi/img/tutorial/body/image05.png">
 
 !!! tip "豆知識"
     <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>エディタを使用している場合は、<a href="https://github.com/koxudaxi/pydantic-pycharm-plugin/" class="external-link" target="_blank">Pydantic PyCharm Plugin</a>が使用可能です。

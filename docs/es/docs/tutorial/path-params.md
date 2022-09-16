@@ -74,7 +74,7 @@ El mismo error aparecería si pasaras un `float` en vez de un `int` como en: <a 
 
 Cuando abras tu navegador en <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a> verás la documentación automática e interactiva del API como:
 
-<img src="/img/tutorial/path-params/image01.png">
+<img src="/fastapi/img/tutorial/path-params/image01.png">
 
 !!! check "Revisa"
     Nuevamente, con la misma declaración de tipo de Python, **FastAPI** te da documentación automática e interactiva (integrándose con Swagger UI)
@@ -87,7 +87,7 @@ Debido a que el schema generado es del estándar <a href="https://github.com/OAI
 
 Es por esto que **FastAPI** mismo provee una documentación alternativa de la API (usando ReDoc), a la que puedes acceder en <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>:
 
-<img src="/img/tutorial/path-params/image02.png">
+<img src="/fastapi/img/tutorial/path-params/image02.png">
 
 De la misma manera hay muchas herramientas compatibles. Incluyendo herramientas de generación de código para muchos lenguajes.
 
@@ -149,7 +149,7 @@ Luego, crea un *parámetro de path* con anotaciones de tipos usando la clase enu
 
 Debido a que los valores disponibles para el *parámetro de path* están predefinidos, la documentación interactiva los puede mostrar bien:
 
-<img src="/img/tutorial/path-params/image03.png">
+<img src="/fastapi/img/tutorial/path-params/image03.png">
 
 ### Trabajando con los *enumerations* de Python
 

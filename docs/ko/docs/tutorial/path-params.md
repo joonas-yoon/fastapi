@@ -74,7 +74,7 @@
 
 그리고 브라우저에서 <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>를 열면, 다음과 같이 자동 대화식 API 문서를 볼 수 있습니다:
 
-<img src="/img/tutorial/path-params/image01.png">
+<img src="/fastapi/img/tutorial/path-params/image01.png">
 
 !!! check "확인"
     다시 한번, 그저 파이썬 타입 선언을 하기만 하면 **FastAPI**는 자동 대화식 API 문서(Swagger UI 통합)를 제공합니다.
@@ -87,7 +87,7 @@
 
 이 덕분에 **FastAPI**는 <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>로 접속할 수 있는 (ReDoc을 사용하는) 대체 API 문서를 제공합니다:
 
-<img src="/img/tutorial/path-params/image02.png">
+<img src="/fastapi/img/tutorial/path-params/image02.png">
 
 이와 마찬가지로 호환되는 도구가 많이 있습니다. 다양한 언어에 대한 코드 생성 도구를 포함합니다.
 
@@ -149,7 +149,7 @@
 
 *경로 매개변수*에 사용할 수 있는 값은 미리 정의되어 있으므로 대화형 문서에서 멋지게 표시됩니다:
 
-<img src="/img/tutorial/path-params/image03.png">
+<img src="/fastapi/img/tutorial/path-params/image03.png">
 
 ### 파이썬 *열거형*으로 작업하기
 

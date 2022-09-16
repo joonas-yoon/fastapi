@@ -265,13 +265,13 @@ Uvicorn에 대한 포트를 사용해 URL로 접속하십시오: <a href="http:/
 
  <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>에서 확인할 수 있습니다:
 
- <img src="/img/tutorial/behind-a-proxy/image01.png">
+ <img src="/fastapi/img/tutorial/behind-a-proxy/image01.png">
 
  하지만 문서 URL을 포트 `9999`의 프록시를 사용하는 "공식적인" URL인 `/api/v1/docs`를 통해 접근하면, 정상적으로 동작합니다! 🎉
 
 <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs</a>에서 확인할 수 있습니다:
 
-<img src="/img/tutorial/behind-a-proxy/image02.png">
+<img src="/fastapi/img/tutorial/behind-a-proxy/image02.png">
 
 우리가 바란 그대로 입니다. ✔️
 
@@ -324,7 +324,7 @@ Uvicorn에 대한 포트를 사용해 URL로 접속하십시오: <a href="http:/
 
 <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs</a>의 문서 UI는 다음처럼 생겼습니다:
 
-<img src="/img/tutorial/behind-a-proxy/image03.png">
+<img src="/fastapi/img/tutorial/behind-a-proxy/image03.png">
 
 !!! tip "팁"
      문서 UI는 당신이 선택한 서버와 상호작용합니다.

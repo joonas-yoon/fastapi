@@ -91,7 +91,7 @@ This `openapi_extra` can be helpful, for example, to declare [OpenAPI Extensions
 
 If you open the automatic API docs, your extension will show up at the bottom of the specific *path operation*.
 
-<img src="/img/tutorial/path-operation-advanced-configuration/image01.png">
+<img src="/fastapi/img/tutorial/path-operation-advanced-configuration/image01.png">
 
 And if you see the resulting OpenAPI (at `/openapi.json` in your API), you will see your extension as part of the specific *path operation* too:
 

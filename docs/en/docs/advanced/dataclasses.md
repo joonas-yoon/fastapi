@@ -39,7 +39,7 @@ The dataclass will be automatically converted to a Pydantic dataclass.
 
 This way, its schema will show up in the API docs user interface:
 
-<img src="/img/tutorial/dataclasses/image01.png">
+<img src="/fastapi/img/tutorial/dataclasses/image01.png">
 
 ## Dataclasses in Nested Data Structures
 

@@ -69,19 +69,19 @@ Open your browser at <a href="http://127.0.0.1:8000" class="external-link" targe
 
 You will see a simple page like:
 
-<img src="/img/tutorial/websockets/image01.png">
+<img src="/fastapi/img/tutorial/websockets/image01.png">
 
 You can type messages in the input box, and send them:
 
-<img src="/img/tutorial/websockets/image02.png">
+<img src="/fastapi/img/tutorial/websockets/image02.png">
 
 And your **FastAPI** application with WebSockets will respond back:
 
-<img src="/img/tutorial/websockets/image03.png">
+<img src="/fastapi/img/tutorial/websockets/image03.png">
 
 You can send (and receive) many messages:
 
-<img src="/img/tutorial/websockets/image04.png">
+<img src="/fastapi/img/tutorial/websockets/image04.png">
 
 And all of them will use the same WebSocket connection.
 
@@ -135,7 +135,7 @@ There you can set:
 
 With that you can connect the WebSocket and then send and receive messages:
 
-<img src="/img/tutorial/websockets/image05.png">
+<img src="/fastapi/img/tutorial/websockets/image05.png">
 
 ## Handling disconnections and multiple clients
 

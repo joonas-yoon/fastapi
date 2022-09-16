@@ -106,21 +106,21 @@ With just that Python type declaration, **FastAPI** will:
 
 The JSON Schemas of your models will be part of your OpenAPI generated schema, and will be shown in the interactive API docs:
 
-<img src="/img/tutorial/body/image01.png">
+<img src="/fastapi/img/tutorial/body/image01.png">
 
 And will be also used in the API docs inside each *path operation* that needs them:
 
-<img src="/img/tutorial/body/image02.png">
+<img src="/fastapi/img/tutorial/body/image02.png">
 
 ## Editor support
 
 In your editor, inside your function you will get type hints and completion everywhere (this wouldn't happen if you received a `dict` instead of a Pydantic model):
 
-<img src="/img/tutorial/body/image03.png">
+<img src="/fastapi/img/tutorial/body/image03.png">
 
 You also get error checks for incorrect type operations:
 
-<img src="/img/tutorial/body/image04.png">
+<img src="/fastapi/img/tutorial/body/image04.png">
 
 This is not by chance, the whole framework was built around that design.
 
@@ -132,7 +132,7 @@ The previous screenshots were taken with <a href="https://code.visualstudio.com"
 
 But you would get the same editor support with <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> and most of the other Python editors:
 
-<img src="/img/tutorial/body/image05.png">
+<img src="/fastapi/img/tutorial/body/image05.png">
 
 !!! tip
     If you use <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> as your editor, you can use the <a href="https://github.com/koxudaxi/pydantic-pycharm-plugin/" class="external-link" target="_blank">Pydantic PyCharm Plugin</a>.

@@ -51,7 +51,7 @@ $ uvicorn main:app --reload
 
 下記のように見えるでしょう:
 
-<img src="/img/tutorial/security/image01.png">
+<img src="/fastapi/img/tutorial/security/image01.png">
 
 !!! check "Authorizeボタン!"
     すでにピカピカの新しい「Authorize」ボタンがあります。
@@ -60,7 +60,7 @@ $ uvicorn main:app --reload
 
 それをクリックすると、`ユーザー名`と`パスワード` (およびその他のオプションフィールド) を入力する小さな認証フォームが表示されます:
 
-<img src="/img/tutorial/security/image02.png">
+<img src="/fastapi/img/tutorial/security/image02.png">
 
 !!! note "備考"
     フォームに何を入力しても、まだうまくいきません。ですが、これから動くようになります。
@@ -173,7 +173,7 @@ oauth2_scheme(some, parameters)
 
 インタラクティブなドキュメントですでに試すことができます:
 
-<img src="/img/tutorial/security/image03.png">
+<img src="/fastapi/img/tutorial/security/image03.png">
 
 まだトークンの有効性を検証しているわけではありませんが、これはもう始まっています。
 

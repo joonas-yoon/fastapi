@@ -58,7 +58,7 @@ Você digita o primeiro parâmetro da função, `first_name`, depois um ponto (`
 
 Mas, infelizmente, você não obtém nada útil:
 
-<img src="/img/python-types/image01.png">
+<img src="/fastapi/img/python-types/image01.png">
 
 ### Adicionar tipos
 
@@ -100,11 +100,11 @@ Mas agora, imagine que você está novamente no meio da criação dessa função
 
 No mesmo ponto, você tenta acionar o preenchimento automático com o `Ctrl Space` e vê:
 
-<img src="/img/python-types/image02.png">
+<img src="/fastapi/img/python-types/image02.png">
 
 Com isso, você pode rolar, vendo as opções, até encontrar o que "toca uma campainha":
 
-<img src="/img/python-types/image03.png">
+<img src="/fastapi/img/python-types/image03.png">
 
 ## Mais motivação
 
@@ -116,7 +116,7 @@ Marque esta função, ela já possui type hints:
 
 Como o editor conhece os tipos de variáveis, você não apenas obtém a conclusão, mas também as verificações de erro:
 
-<img src="/img/python-types/image04.png">
+<img src="/fastapi/img/python-types/image04.png">
 
 Agora você sabe que precisa corrigí-lo, converta `age` em uma string com `str (age)`:
 
@@ -182,7 +182,7 @@ Isso significa que: "a variável `items` é uma `list`, e cada um dos itens dest
 
 Ao fazer isso, seu editor pode fornecer suporte mesmo durante o processamento de itens da lista:
 
-<img src="/img/python-types/image05.png">
+<img src="/fastapi/img/python-types/image05.png">
 
 Sem tipos, isso é quase impossível de alcançar.
 
@@ -262,7 +262,7 @@ Então você pode declarar que uma variável é do tipo `Person`:
 
 E então, novamente, você recebe todo o suporte do editor:
 
-<img src="/img/python-types/image06.png">
+<img src="/fastapi/img/python-types/image06.png">
 
 ## Modelos Pydantic
 

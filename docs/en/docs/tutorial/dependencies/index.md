@@ -145,7 +145,7 @@ All the request declarations, validations and requirements of your dependencies 
 
 So, the interactive docs will have all the information from these dependencies too:
 
-<img src="/img/tutorial/dependencies/image01.png">
+<img src="/fastapi/img/tutorial/dependencies/image01.png">
 
 ## Simple usage
 

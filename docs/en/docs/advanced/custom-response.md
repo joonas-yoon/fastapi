@@ -89,7 +89,7 @@ By returning the result of calling `generate_html_response()`, you are already r
 
 But as you passed the `HTMLResponse` in the `response_class` too, **FastAPI** will know how to document it in OpenAPI and the interactive docs as HTML with `text/html`:
 
-<img src="/img/tutorial/custom-response/image01.png">
+<img src="/fastapi/img/tutorial/custom-response/image01.png">
 
 ## Available responses
 

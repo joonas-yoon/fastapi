@@ -57,7 +57,7 @@ John Doe
 
 하지만 슬프게도 아무런 도움이 되지 않습니다:
 
-<img src="/img/python-types/image01.png">
+<img src="/fastapi/img/python-types/image01.png">
 
 ### 타입 추가하기
 
@@ -99,11 +99,11 @@ John Doe
 
 같은 상황에서 `Ctrl+Space`로 자동완성을 작동시키면,
 
-<img src="/img/python-types/image02.png">
+<img src="/fastapi/img/python-types/image02.png">
 
 아래와 같이 "그렇지!"하는 옵션이 나올때까지 스크롤을 내려서 볼 수 있습니다:
 
-<img src="/img/python-types/image03.png">
+<img src="/fastapi/img/python-types/image03.png">
 
 ## 더 큰 동기부여
 
@@ -115,7 +115,7 @@ John Doe
 
 편집기가 변수의 타입을 알고 있기 때문에, 자동완성 뿐 아니라 에러도 확인할 수 있습니다:
 
-<img src="/img/python-types/image04.png">
+<img src="/fastapi/img/python-types/image04.png">
 
 이제 고쳐야하는 걸 알기 때문에, `age`를 `str(age)`과 같이 문자열로 바꾸게 됩니다:
 
@@ -181,7 +181,7 @@ John Doe
 
 이렇게 함으로써, 에디터는 배열에 들어있는 아이템을 처리할때도 도움을 줄 수 있게 됩니다:
 
-<img src="/img/python-types/image05.png">
+<img src="/fastapi/img/python-types/image05.png">
 
 타입이 없으면 이건 거의 불가능이나 다름 없습니다.
 
@@ -261,7 +261,7 @@ John Doe
 
 그리고 역시나 모든 에디터 도움을 받게 되겠죠.
 
-<img src="/img/python-types/image06.png">
+<img src="/fastapi/img/python-types/image06.png">
 
 ## Pydantic 모델
 

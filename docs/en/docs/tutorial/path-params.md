@@ -74,7 +74,7 @@ The same error would appear if you provided a `float` instead of an `int`, as in
 
 And when you open your browser at <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>, you will see an automatic, interactive, API documentation like:
 
-<img src="/img/tutorial/path-params/image01.png">
+<img src="/fastapi/img/tutorial/path-params/image01.png">
 
 !!! check
     Again, just with that same Python type declaration, **FastAPI** gives you automatic, interactive documentation (integrating Swagger UI).
@@ -87,7 +87,7 @@ And because the generated schema is from the <a href="https://github.com/OAI/Ope
 
 Because of this, **FastAPI** itself provides an alternative API documentation (using ReDoc), which you can access at <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>:
 
-<img src="/img/tutorial/path-params/image02.png">
+<img src="/fastapi/img/tutorial/path-params/image02.png">
 
 The same way, there are many compatible tools. Including code generation tools for many languages.
 
@@ -157,7 +157,7 @@ Then create a *path parameter* with a type annotation using the enum class you c
 
 Because the available values for the *path parameter* are predefined, the interactive docs can show them nicely:
 
-<img src="/img/tutorial/path-params/image03.png">
+<img src="/fastapi/img/tutorial/path-params/image03.png">
 
 ### Working with Python *enumerations*
 

@@ -26,7 +26,7 @@ You can set them as follows:
 
 With this configuration, the automatic API docs would look like:
 
-<img src="/img/tutorial/metadata/image01.png">
+<img src="/fastapi/img/tutorial/metadata/image01.png">
 
 ## Metadata for tags
 
@@ -72,7 +72,7 @@ Use the `tags` parameter with your *path operations* (and `APIRouter`s) to assig
 
 Now, if you check the docs, they will show all the additional metadata:
 
-<img src="/img/tutorial/metadata/image02.png">
+<img src="/fastapi/img/tutorial/metadata/image02.png">
 
 ### Order of tags
 

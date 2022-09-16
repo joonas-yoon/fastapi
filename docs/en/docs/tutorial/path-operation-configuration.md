@@ -62,7 +62,7 @@ You can add tags to your *path operation*, pass the parameter `tags` with a `lis
 
 They will be added to the OpenAPI schema and used by the automatic documentation interfaces:
 
-<img src="/img/tutorial/path-operation-configuration/image01.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image01.png">
 
 ### Tags with Enums
 
@@ -124,7 +124,7 @@ You can write <a href="https://en.wikipedia.org/wiki/Markdown" class="external-l
 
 It will be used in the interactive docs:
 
-<img src="/img/tutorial/path-operation-configuration/image02.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image02.png">
 
 ## Response description
 
@@ -156,7 +156,7 @@ You can specify the response description with the parameter `response_descriptio
 
     So, if you don't provide one, **FastAPI** will automatically generate one of "Successful response".
 
-<img src="/img/tutorial/path-operation-configuration/image03.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image03.png">
 
 ## Deprecate a *path operation*
 
@@ -168,11 +168,11 @@ If you need to mark a *path operation* as <abbr title="obsolete, recommended not
 
 It will be clearly marked as deprecated in the interactive docs:
 
-<img src="/img/tutorial/path-operation-configuration/image04.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image04.png">
 
 Check how deprecated and non-deprecated *path operations* look like:
 
-<img src="/img/tutorial/path-operation-configuration/image05.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image05.png">
 
 ## Recap
 

@@ -134,11 +134,11 @@ So, **FastAPI** will take care of filtering out all the data that is not declare
 
 When you see the automatic docs, you can check that the input model and output model will both have their own JSON Schema:
 
-<img src="/img/tutorial/response-model/image01.png">
+<img src="/fastapi/img/tutorial/response-model/image01.png">
 
 And both models will be used for the interactive API documentation:
 
-<img src="/img/tutorial/response-model/image02.png">
+<img src="/fastapi/img/tutorial/response-model/image02.png">
 
 ## Response Model encoding parameters
 

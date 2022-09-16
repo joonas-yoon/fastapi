@@ -82,21 +82,21 @@ API는 대부분 **응답** 본문을 보냅니다. 하지만 클라이언트는
 
 모델의 JSON 스키마는 OpenAPI 생성 스키마의 일부가 되며 대화형 API 문서에 표시됩니다:
 
-<img src="/img/tutorial/body/image01.png">
+<img src="/fastapi/img/tutorial/body/image01.png">
 
 그리고 이를 필요로 하는 각 *경로 동작* 내의 API 문서에서도 사용됩니다:
 
-<img src="/img/tutorial/body/image02.png">
+<img src="/fastapi/img/tutorial/body/image02.png">
 
 ## 편집기 지원
 
 편집기에서 함수 내부 모든 곳(Pydantic 모델 대신 `dict`를 받은 경우에는 발생하지 않습니다)에서 타입 힌트와 자동완성을 얻을 수 있습니다:
 
-<img src="/img/tutorial/body/image03.png">
+<img src="/fastapi/img/tutorial/body/image03.png">
 
 잘못된 타입 작업에 대한 오류 검사도 받습니다:
 
-<img src="/img/tutorial/body/image04.png">
+<img src="/fastapi/img/tutorial/body/image04.png">
 
 이는 우연이 아니며, 전체 프레임워크는 이러한 설계를 중심으로 구축되었습니다.
 
@@ -108,7 +108,7 @@ API는 대부분 **응답** 본문을 보냅니다. 하지만 클라이언트는
 
 하지만 <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> 및 대부분의 다른 파이썬 편집기에서 동일한 편집기 지원을 얻을 수 있습니다:
 
-<img src="/img/tutorial/body/image05.png">
+<img src="/fastapi/img/tutorial/body/image05.png">
 
 !!! tip "팁"
     <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>을 편집기로 사용하고 있다면, <a href="https://github.com/koxudaxi/pydantic-pycharm-plugin/" class="external-link" target="_blank">Pydantic PyCharm 플러그인</a>을 사용할 수 있습니다.

@@ -84,7 +84,7 @@ La même erreur se produira si vous passez un nombre flottant (`float`) et non u
 Et quand vous vous rendez sur <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>, vous verrez la
 documentation générée automatiquement et interactive :
 
-<img src="/img/tutorial/path-params/image01.png">
+<img src="/fastapi/img/tutorial/path-params/image01.png">
 
 !!! info
     À nouveau, en utilisant uniquement les déclarations de type Python, **FastAPI** vous fournit automatiquement une documentation interactive (via Swagger UI).
@@ -99,7 +99,7 @@ il existe de nombreux outils compatibles.
 Grâce à cela, **FastAPI** lui-même fournit une documentation alternative (utilisant ReDoc), qui peut être lue
 sur <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> :
 
-<img src="/img/tutorial/path-params/image02.png">
+<img src="/fastapi/img/tutorial/path-params/image02.png">
 
 De la même façon, il existe bien d'autres outils compatibles, y compris des outils de génération de code
 pour de nombreux langages.
@@ -159,7 +159,7 @@ Créez ensuite un *paramètre de chemin* avec une annotation de type désignant 
 
 Les valeurs disponibles pour le *paramètre de chemin* sont bien prédéfinies, la documentation les affiche correctement :
 
-<img src="/img/tutorial/path-params/image03.png">
+<img src="/fastapi/img/tutorial/path-params/image03.png">
 
 ### Manipuler les *énumérations* Python
 

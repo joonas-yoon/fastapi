@@ -189,7 +189,7 @@ Agora vá para o `/docs` da sua API, no exemplo acima seria `https://qltnci.deta
 
 Ele mostrará sua documentação como:
 
-<img src="/img/deployment/deta/image01.png">
+<img src="/fastapi/img/deployment/deta/image01.png">
 
 ## Permitir acesso público
 
@@ -231,7 +231,7 @@ Lá você pode inspecionar as solicitações recentes enviadas ao seu aplicativo
 
 Você também pode editá-los e reproduzi-los novamente.
 
-<img src="/img/deployment/deta/image02.png">
+<img src="/fastapi/img/deployment/deta/image02.png">
 
 ## Saiba mais
 

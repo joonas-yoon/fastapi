@@ -58,7 +58,7 @@ Vous écrivez le premier paramètre, `first_name`, puis un point (`.`) et appuye
 
 Mais malheureusement, rien d'utile n'en résulte :
 
-<img src="/img/python-types/image01.png">
+<img src="/fastapi/img/python-types/image01.png">
 
 ### Ajouter des types
 
@@ -101,11 +101,11 @@ Maintenant, imaginez que vous êtes en train de créer cette fonction, mais avec
 
 Au même moment que durant l'exemple précédent, vous essayez de déclencher l'auto-complétion et vous voyez :
 
-<img src="/img/python-types/image02.png">
+<img src="/fastapi/img/python-types/image02.png">
 
 Vous pouvez donc dérouler les options jusqu'à trouver la méthode à laquelle vous pensiez.
 
-<img src="/img/python-types/image03.png">
+<img src="/fastapi/img/python-types/image03.png">
 
 ## Plus de motivations
 
@@ -117,7 +117,7 @@ Cette fonction possède déjà des annotations de type :
 
 Comme l'éditeur connaît le type des variables, vous n'avez pas seulement l'auto-complétion, mais aussi de la détection d'erreurs :
 
-<img src="/img/python-types/image04.png">
+<img src="/fastapi/img/python-types/image04.png">
 
 Maintenant que vous avez connaissance du problème, convertissez `age` en <abbr title="string">chaine de caractères</abbr> grâce à `str(age)` :
 
@@ -183,7 +183,7 @@ Ce qui signifie : "la variable `items` est une `list`, et chacun de ses élémen
 
 En faisant cela, votre éditeur pourra vous aider, même pendant que vous traitez des éléments de la liste.
 
-<img src="/img/python-types/image05.png">
+<img src="/fastapi/img/python-types/image05.png">
 
 Sans types, c'est presque impossible à réaliser.
 
@@ -261,7 +261,7 @@ Vous pouvez ensuite déclarer une variable de type `Person` :
 
 Et vous aurez accès, encore une fois, au support complet offert par l'éditeur :
 
-<img src="/img/python-types/image06.png">
+<img src="/fastapi/img/python-types/image06.png">
 
 ## Les modèles Pydantic
 

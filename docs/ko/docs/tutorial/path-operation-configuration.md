@@ -34,7 +34,7 @@
 
 전달된 태그들은 OpenAPI의 스키마에 추가되며, 자동 문서 인터페이스에서 사용됩니다:
 
-<img src="/img/tutorial/path-operation-configuration/image01.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image01.png">
 
 ## 요약과 기술
 
@@ -56,7 +56,7 @@
 
 이는 대화형 문서에서 사용됩니다:
 
-<img src="/img/tutorial/path-operation-configuration/image02.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image02.png">
 
 ## 응답 기술
 
@@ -74,7 +74,7 @@
 
     따라서, 응답에 관한 설명이 없을경우, **FastAPI**가 자동으로 "성공 응답" 중 하나를 생성합니다.
 
-<img src="/img/tutorial/path-operation-configuration/image03.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image03.png">
 
 ## 단일 *경로 작동* 지원중단
 
@@ -86,11 +86,11 @@
 
 대화형 문서에 지원중단이라고 표시됩니다.
 
-<img src="/img/tutorial/path-operation-configuration/image04.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image04.png">
 
 지원중단된 경우와 지원중단 되지 않은 경우에 대한 *경로 작동*이 어떻게 보이는 지 확인하십시오.
 
-<img src="/img/tutorial/path-operation-configuration/image05.png">
+<img src="/fastapi/img/tutorial/path-operation-configuration/image05.png">
 
 ## 정리
 

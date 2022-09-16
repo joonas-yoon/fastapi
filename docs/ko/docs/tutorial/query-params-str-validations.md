@@ -180,7 +180,7 @@ http://localhost:8000/items/?q=foo&q=bar
 
 대화형 API 문서는 여러 값을 허용하도록 수정 됩니다:
 
-<img src="/img/tutorial/query-params-str-validations/image02.png">
+<img src="/fastapi/img/tutorial/query-params-str-validations/image02.png">
 
 ### 쿼리 매개변수 리스트 / 기본값을 사용하는 다중값
 
@@ -279,7 +279,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 문서가 아래와 같이 보일겁니다:
 
-<img src="/img/tutorial/query-params-str-validations/image01.png">
+<img src="/fastapi/img/tutorial/query-params-str-validations/image01.png">
 
 ## 요약
 

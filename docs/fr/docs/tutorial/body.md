@@ -82,21 +82,21 @@ En utilisant uniquement les déclarations de type Python, **FastAPI** réussit �
 
 Les schémas JSON de vos modèles seront intégrés au schéma OpenAPI global de votre application, et seront donc affichés dans la documentation interactive de l'API :
 
-<img src="/img/tutorial/body/image01.png">
+<img src="/fastapi/img/tutorial/body/image01.png">
 
 Et seront aussi utilisés dans chaque *opération de chemin* de la documentation utilisant ces modèles :
 
-<img src="/img/tutorial/body/image02.png">
+<img src="/fastapi/img/tutorial/body/image02.png">
 
 ## Support de l'éditeur
 
 Dans votre éditeur, vous aurez des annotations de types et de l'auto-complétion partout dans votre fonction (ce qui n'aurait pas été le cas si vous aviez utilisé un classique `dict` plutôt qu'un modèle Pydantic) :
 
-<img src="/img/tutorial/body/image03.png">
+<img src="/fastapi/img/tutorial/body/image03.png">
 
 Et vous obtenez aussi de la vérification d'erreur pour les opérations incorrectes de types :
 
-<img src="/img/tutorial/body/image04.png">
+<img src="/fastapi/img/tutorial/body/image04.png">
 
 Ce n'est pas un hasard, ce framework entier a été bati avec ce design comme objectif.
 
@@ -108,7 +108,7 @@ Les captures d'écrans précédentes ont été prises sur <a href="https://code.
 
 Mais vous auriez le même support de l'éditeur avec <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> et la majorité des autres éditeurs de code Python.
 
-<img src="/img/tutorial/body/image05.png">
+<img src="/fastapi/img/tutorial/body/image05.png">
 
 !!! tip "Astuce"
     Si vous utilisez <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> comme éditeur, vous pouvez utiliser le Plugin <a href="https://github.com/koxudaxi/pydantic-pycharm-plugin/" class="external-link" target="_blank">Pydantic PyCharm Plugin</a>.

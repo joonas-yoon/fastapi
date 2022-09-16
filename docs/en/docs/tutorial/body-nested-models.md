@@ -326,7 +326,7 @@ And you get editor support everywhere.
 
 Even for items inside of lists:
 
-<img src="/img/tutorial/body-nested-models/image01.png">
+<img src="/fastapi/img/tutorial/body-nested-models/image01.png">
 
 You couldn't get this kind of editor support if you were working directly with `dict` instead of Pydantic models.
 

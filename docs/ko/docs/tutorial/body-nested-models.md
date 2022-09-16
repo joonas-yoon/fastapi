@@ -195,7 +195,7 @@ images: List[Image]
 
 리스트 내부 항목의 경우에도:
 
-<img src="/img/tutorial/body-nested-models/image01.png">
+<img src="/fastapi/img/tutorial/body-nested-models/image01.png">
 
 Pydantic 모델 대신에 `dict`를 직접 사용하여 작업할 경우, 이러한 편집기 지원을 받을수 없습니다.
 

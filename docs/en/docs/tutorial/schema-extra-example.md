@@ -82,7 +82,7 @@ Here we pass an `example` of the data expected in `Body()`:
 
 With any of the methods above it would look like this in the `/docs`:
 
-<img src="/img/tutorial/body-fields/image01.png">
+<img src="/fastapi/img/tutorial/body-fields/image01.png">
 
 ### `Body` with multiple `examples`
 
@@ -113,7 +113,7 @@ Each specific example `dict` in the `examples` can contain:
 
 With `examples` added to `Body()` the `/docs` would look like:
 
-<img src="/img/tutorial/body-fields/image02.png">
+<img src="/fastapi/img/tutorial/body-fields/image02.png">
 
 ## Technical Details
 

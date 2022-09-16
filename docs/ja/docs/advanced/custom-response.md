@@ -89,7 +89,7 @@
 
 しかし、一方では `response_class` に `HTMLResponse` を渡しているため、 **FastAPI** はOpenAPIや対話的ドキュメントでHTMLとして `text/html` でドキュメント化する方法を知っています。
 
-<img src="/img/tutorial/custom-response/image01.png">
+<img src="/fastapi/img/tutorial/custom-response/image01.png">
 
 ## 利用可能なレスポンス
 

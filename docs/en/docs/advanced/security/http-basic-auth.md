@@ -26,7 +26,7 @@ Then, when you type that username and password, the browser sends them in the he
 
 When you try to open the URL for the first time (or click the "Execute" button in the docs) the browser will ask you for your username and password:
 
-<img src="/img/tutorial/security/image12.png">
+<img src="/fastapi/img/tutorial/security/image12.png">
 
 ## Check the username
 

@@ -87,7 +87,7 @@ Now you can replace the `.openapi()` method with your new function.
 
 Once you go to <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> you will see that you are using your custom logo (in this example, **FastAPI**'s logo):
 
-<img src="/img/tutorial/extending-openapi/image01.png">
+<img src="/fastapi/img/tutorial/extending-openapi/image01.png">
 
 ## Self-hosting JavaScript and CSS for docs
 
@@ -250,7 +250,7 @@ For example, you could disable syntax highlighting in Swagger UI.
 
 Without changing the settings, syntax highlighting is enabled by default:
 
-<img src="/img/tutorial/extending-openapi/image02.png">
+<img src="/fastapi/img/tutorial/extending-openapi/image02.png">
 
 But you can disable it by setting `syntaxHighlight` to `False`:
 
@@ -260,7 +260,7 @@ But you can disable it by setting `syntaxHighlight` to `False`:
 
 ...and then Swagger UI won't show the syntax highlighting anymore:
 
-<img src="/img/tutorial/extending-openapi/image03.png">
+<img src="/fastapi/img/tutorial/extending-openapi/image03.png">
 
 ### Change the Theme
 
@@ -272,7 +272,7 @@ The same way you could set the syntax highlighting theme with the key `"syntaxHi
 
 That configuration would change the syntax highlighting color theme:
 
-<img src="/img/tutorial/extending-openapi/image04.png">
+<img src="/fastapi/img/tutorial/extending-openapi/image04.png">
 
 ### Change Default Swagger UI Parameters
 

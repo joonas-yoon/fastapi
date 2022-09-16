@@ -82,21 +82,21 @@ Apenas com esse declaração de tipos do Python, o **FastAPI** irá:
 
 Os esquemas JSON dos seus modelos farão parte do esquema OpenAPI gerado para sua aplicação, e aparecerão na documentação interativa da API:
 
-<img src="/img/tutorial/body/image01.png">
+<img src="/fastapi/img/tutorial/body/image01.png">
 
 E também serão utilizados em cada *função de operação de rota* que utilizá-los:
 
-<img src="/img/tutorial/body/image02.png">
+<img src="/fastapi/img/tutorial/body/image02.png">
 
 ## Suporte do editor de texto:
 
 No seu editor de texto, dentro da função você receberá dicas de tipos e completação em todo lugar (isso não aconteceria se você recebesse um `dict` em vez de um modelo Pydantic):
 
-<img src="/img/tutorial/body/image03.png">
+<img src="/fastapi/img/tutorial/body/image03.png">
 
 Você também poderá receber verificações de erros para operações de tipos incorretas:
 
-<img src="/img/tutorial/body/image04.png">
+<img src="/fastapi/img/tutorial/body/image04.png">
 
 Isso não é por acaso, todo o framework foi construído em volta deste design.
 
@@ -108,7 +108,7 @@ As capturas de tela anteriores foram capturas no <a href="https://code.visualstu
 
 Mas você terá o mesmo suporte do editor no <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> e na maioria dos editores Python:
 
-<img src="/img/tutorial/body/image05.png">
+<img src="/fastapi/img/tutorial/body/image05.png">
 
 !!! tip "Dica"
     Se você utiliza o <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> como editor, você pode utilizar o <a href="https://github.com/koxudaxi/pydantic-pycharm-plugin/" class="external-link" target="_blank">Plugin do Pydantic para o PyCharm </a>.
