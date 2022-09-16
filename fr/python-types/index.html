@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2823,7 +2823,7 @@ Seulement le minimum nécessaire pour les utiliser avec <strong>FastAPI</strong>
 <p>Vous essayez donc d'utiliser le vieil ami du programmeur, l'auto-complétion de l'éditeur.</p>
 <p>Vous écrivez le premier paramètre, <code>first_name</code>, puis un point (<code>.</code>) et appuyez sur <code>Ctrl+Espace</code> pour déclencher l'auto-complétion.</p>
 <p>Mais malheureusement, rien d'utile n'en résulte :</p>
-<p><img src="/img/python-types/image01.png"></p>
+<p><img src="/fastapi/img/python-types/image01.png"></p>
 <h3 id="ajouter-des-types">Ajouter des types<a class="headerlink" href="#ajouter-des-types" title="Permanent link">&para;</a></h3>
 <p>Modifions une seule ligne de la version précédente.</p>
 <p>Nous allons changer seulement cet extrait, les paramètres de la fonction, de :</p>
@@ -2849,9 +2849,9 @@ Seulement le minimum nécessaire pour les utiliser avec <strong>FastAPI</strong>
 <p>Et ajouter des annotations de types ne crée normalement pas de différence avec le comportement qui aurait eu lieu si elles n'étaient pas là.</p>
 <p>Maintenant, imaginez que vous êtes en train de créer cette fonction, mais avec des annotations de type cette fois.</p>
 <p>Au même moment que durant l'exemple précédent, vous essayez de déclencher l'auto-complétion et vous voyez :</p>
-<p><img src="/img/python-types/image02.png"></p>
+<p><img src="/fastapi/img/python-types/image02.png"></p>
 <p>Vous pouvez donc dérouler les options jusqu'à trouver la méthode à laquelle vous pensiez.</p>
-<p><img src="/img/python-types/image03.png"></p>
+<p><img src="/fastapi/img/python-types/image03.png"></p>
 <h2 id="plus-de-motivations">Plus de motivations<a class="headerlink" href="#plus-de-motivations" title="Permanent link">&para;</a></h2>
 <p>Cette fonction possède déjà des annotations de type :</p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -2859,7 +2859,7 @@ Seulement le minimum nécessaire pour les utiliser avec <strong>FastAPI</strong>
     <span class="k">return</span> <span class="n">name_with_age</span>
 </code></pre></div>
 <p>Comme l'éditeur connaît le type des variables, vous n'avez pas seulement l'auto-complétion, mais aussi de la détection d'erreurs :</p>
-<p><img src="/img/python-types/image04.png"></p>
+<p><img src="/fastapi/img/python-types/image04.png"></p>
 <p>Maintenant que vous avez connaissance du problème, convertissez <code>age</code> en <abbr title="string">chaine de caractères</abbr> grâce à <code>str(age)</code> :</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="hll">    <span class="n">name_with_age</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is this old: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
@@ -2911,7 +2911,7 @@ Seulement le minimum nécessaire pour les utiliser avec <strong>FastAPI</strong>
 </div>
 <p>Ce qui signifie : "la variable <code>items</code> est une <code>list</code>, et chacun de ses éléments a pour type <code>str</code>.</p>
 <p>En faisant cela, votre éditeur pourra vous aider, même pendant que vous traitez des éléments de la liste.</p>
-<p><img src="/img/python-types/image05.png"></p>
+<p><img src="/fastapi/img/python-types/image05.png"></p>
 <p>Sans types, c'est presque impossible à réaliser.</p>
 <p>Vous remarquerez que la variable <code>item</code> n'est qu'un des éléments de la list <code>items</code>.</p>
 <p>Et pourtant, l'éditeur sait qu'elle est de type <code>str</code> et pourra donc vous aider à l'utiliser.</p>
@@ -2991,7 +2991,7 @@ Seulement le minimum nécessaire pour les utiliser avec <strong>FastAPI</strong>
 </span>    <span class="k">return</span> <span class="n">one_person</span><span class="o">.</span><span class="n">name</span>
 </code></pre></div>
 <p>Et vous aurez accès, encore une fois, au support complet offert par l'éditeur :</p>
-<p><img src="/img/python-types/image06.png"></p>
+<p><img src="/fastapi/img/python-types/image06.png"></p>
 <h2 id="les-modeles-pydantic">Les modèles Pydantic<a class="headerlink" href="#les-modeles-pydantic" title="Permanent link">&para;</a></h2>
 <p><a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> est une bibliothèque Python pour effectuer de la validation de données.</p>
 <p>Vous déclarez la forme de la donnée avec des classes et des attributs.</p>

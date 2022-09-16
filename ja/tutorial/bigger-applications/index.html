@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2871,7 +2871,7 @@
 <li>There's also a subdirectory <code>app/internal/</code> with another file <code>__init__.py</code>, so it's another "Python subpackage": <code>app.internal</code>.</li>
 <li>And the file <code>app/internal/admin.py</code> is another submodule: <code>app.internal.admin</code>.</li>
 </ul>
-<p><img src="/img/tutorial/bigger-applications/package.svg"></p>
+<p><img src="/fastapi/img/tutorial/bigger-applications/package.svg"></p>
 <p>The same file structure with comments:</p>
 <div class="highlight"><pre><span></span><code>.
 ├── app                  # &quot;app&quot; is a Python package
@@ -3118,7 +3118,7 @@
 </ul>
 <p>But that file doesn't exist, our dependencies are in a file at <code>app/dependencies.py</code>.</p>
 <p>Remember how our app/file structure looks like:</p>
-<p><img src="/img/tutorial/bigger-applications/package.svg"></p>
+<p><img src="/fastapi/img/tutorial/bigger-applications/package.svg"></p>
 <hr />
 <p>The two dots <code>..</code>, like in:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">..dependencies</span> <span class="kn">import</span> <span class="n">get_token_header</span>
@@ -3451,7 +3451,7 @@
 
 <p>And open the docs at <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.</p>
 <p>You will see the automatic API docs, including the paths from all the submodules, using the correct paths (and prefixes) and the correct tags:</p>
-<p><img src="/img/tutorial/bigger-applications/image01.png"></p>
+<p><img src="/fastapi/img/tutorial/bigger-applications/image01.png"></p>
 <h2 id="include-the-same-router-multiple-times-with-different-prefix">Include the same router multiple times with different <code>prefix</code><a class="headerlink" href="#include-the-same-router-multiple-times-with-different-prefix" title="Permanent link">&para;</a></h2>
 <p>You can also use <code>.include_router()</code> multiple times with the <em>same</em> router using different prefixes.</p>
 <p>This could be useful, for example, to expose the same API under different prefixes, e.g. <code>/api/v1</code> and <code>/api/latest</code>.</p>

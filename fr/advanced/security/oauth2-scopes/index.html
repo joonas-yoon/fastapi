@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -3128,7 +3128,7 @@
 <p>Because we are now declaring those scopes, they will show up in the API docs when you log-in/authorize.</p>
 <p>And you will be able to select which scopes you want to give access to: <code>me</code> and <code>items</code>.</p>
 <p>This is the same mechanism used when you give permissions while logging in with Facebook, Google, GitHub, etc:</p>
-<p><img src="/img/tutorial/security/image11.png"></p>
+<p><img src="/fastapi/img/tutorial/security/image11.png"></p>
 <h2 id="jwt-token-with-scopes">JWT token with scopes<a class="headerlink" href="#jwt-token-with-scopes" title="Permanent link">&para;</a></h2>
 <p>Now, modify the token <em>path operation</em> to return the scopes requested.</p>
 <p>We are still using the same <code>OAuth2PasswordRequestForm</code>. It includes a property <code>scopes</code> with a <code>list</code> of <code>str</code>, with each scope it received in the request.</p>
@@ -4271,7 +4271,7 @@
 <p>They will be checked independently for each <em>path operation</em>.</p>
 <h2 id="check-it">Check it<a class="headerlink" href="#check-it" title="Permanent link">&para;</a></h2>
 <p>If you open the API docs, you can authenticate and specify which scopes you want to authorize.</p>
-<p><img src="/img/tutorial/security/image11.png"></p>
+<p><img src="/fastapi/img/tutorial/security/image11.png"></p>
 <p>If you don't select any scope, you will be "authenticated", but when you try to access <code>/users/me/</code> or <code>/users/me/items/</code> you will get an error saying that you don't have enough permissions. You will still be able to access <code>/status/</code>.</p>
 <p>And if you select the scope <code>me</code> but not the scope <code>items</code>, you will be able to access <code>/users/me/</code> but not <code>/users/me/items/</code>.</p>
 <p>That's what would happen to a third party application that tried to access one of these <em>path operations</em> with a token provided by a user, depending on how many permissions the user gave the application.</p>

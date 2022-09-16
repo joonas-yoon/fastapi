@@ -2,512 +2,512 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://fastapi.tiangolo.com/nl/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/alternatives/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/async/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/benchmarks/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/contributing/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/external-links/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/fastapi-people/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/features/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/help-fastapi/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/history-design-future/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/project-generation/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/python-types/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/release-notes/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/additional-responses/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/additional-status-codes/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/advanced-dependencies/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/async-sql-databases/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/async-tests/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/behind-a-proxy/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/conditional-openapi/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/custom-request-and-route/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/custom-response/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/dataclasses/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/events/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/extending-openapi/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/generate-clients/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/graphql/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/middleware/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/nosql-databases/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/openapi-callbacks/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/path-operation-advanced-configuration/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/response-change-status-code/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/response-cookies/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/response-directly/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/response-headers/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/settings/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/sql-databases-peewee/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/sub-applications/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/templates/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/testing-database/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/testing-dependencies/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/testing-events/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/testing-websockets/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/using-request-directly/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/websockets/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/wsgi/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/security/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/security/http-basic-auth/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/advanced/security/oauth2-scopes/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/concepts/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/deta/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/docker/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/https/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/manually/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/server-workers/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/deployment/versions/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/background-tasks/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/bigger-applications/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/body-fields/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/body-multiple-params/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/body-nested-models/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/body-updates/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/body/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/cookie-params/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/cors/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/debugging/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/encoder/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/extra-data-types/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/extra-models/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/first-steps/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/handling-errors/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/header-params/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/metadata/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/middleware/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/path-operation-configuration/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/path-params-numeric-validations/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/path-params/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/query-params-str-validations/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/query-params/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/request-files/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/request-forms-and-files/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/request-forms/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/response-model/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/response-status-code/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/schema-extra-example/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/sql-databases/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/static-files/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/testing/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/dependencies/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/dependencies/classes-as-dependencies/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/dependencies/dependencies-in-path-operation-decorators/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/dependencies/dependencies-with-yield/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/dependencies/global-dependencies/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/dependencies/sub-dependencies/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/security/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/security/first-steps/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/security/get-current-user/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/security/oauth2-jwt/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fastapi.tiangolo.com/nl/tutorial/security/simple-oauth2/</loc>
-         <lastmod>2022-08-07</lastmod>
+         <lastmod>2022-09-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

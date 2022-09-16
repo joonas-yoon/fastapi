@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2632,7 +2632,7 @@
     <span class="k">return</span> <span class="p">[{</span><span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;johndoe&quot;</span><span class="p">}]</span>
 </code></pre></div>
 <p>전달된 태그들은 OpenAPI의 스키마에 추가되며, 자동 문서 인터페이스에서 사용됩니다:</p>
-<p><img src="/img/tutorial/path-operation-configuration/image01.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image01.png"></p>
 <h2 id="_4">요약과 기술<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p><code>summary</code>와 <code>description</code>을 추가할 수 있습니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Set</span><span class="p">,</span> <span class="n">Union</span>
@@ -2693,7 +2693,7 @@
 </span>    <span class="k">return</span> <span class="n">item</span>
 </code></pre></div>
 <p>이는 대화형 문서에서 사용됩니다:</p>
-<p><img src="/img/tutorial/path-operation-configuration/image02.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image02.png"></p>
 <h2 id="_6">응답 기술<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p><code>response_description</code> 매개변수로 응답에 관한 설명을 명시할 수 있습니다:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Set</span><span class="p">,</span> <span class="n">Union</span>
@@ -2739,7 +2739,7 @@
 <p>OpenAPI는 각 <em>경로 작동</em>이 응답에 관한 설명을 요구할 것을 명시합니다.</p>
 <p>따라서, 응답에 관한 설명이 없을경우, <strong>FastAPI</strong>가 자동으로 "성공 응답" 중 하나를 생성합니다.</p>
 </div>
-<p><img src="/img/tutorial/path-operation-configuration/image03.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image03.png"></p>
 <h2 id="_7">단일 <em>경로 작동</em> 지원중단<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>단일 <em>경로 작동</em>을 없애지 않고 <abbr title="구식, 사용하지 않는것이 권장됨">지원중단</abbr>을 해야한다면, <code>deprecated</code> 매개변수를 전달하면 됩니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
@@ -2762,9 +2762,9 @@
     <span class="k">return</span> <span class="p">[{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="s2">&quot;Foo&quot;</span><span class="p">}]</span>
 </code></pre></div>
 <p>대화형 문서에 지원중단이라고 표시됩니다.</p>
-<p><img src="/img/tutorial/path-operation-configuration/image04.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image04.png"></p>
 <p>지원중단된 경우와 지원중단 되지 않은 경우에 대한 <em>경로 작동</em>이 어떻게 보이는 지 확인하십시오.</p>
-<p><img src="/img/tutorial/path-operation-configuration/image05.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image05.png"></p>
 <h2 id="_8">정리<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p><em>경로 작동 데코레이터</em>에 매개변수(들)를 전달함으로 <em>경로 작동</em>을 설정하고 메타데이터를 추가할수 있습니다.</p>
 

@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2733,11 +2733,11 @@
 <p>Now let's focus on all the actual HTTPS parts.</p>
 <p>First, the browser would check with the <strong>DNS servers</strong> what is the <strong>IP for the domain</strong>, in this case, <code>someapp.example.com</code>.</p>
 <p>The DNS servers would tell the browser to use some specific <strong>IP address</strong>. That would be the public IP address used by your server, that you configured in the DNS servers.</p>
-<p><img src="/img/deployment/https/https01.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https01.svg"></p>
 <h3 id="tls-handshake-start">TLS Handshake Start<a class="headerlink" href="#tls-handshake-start" title="Permanent link">&para;</a></h3>
 <p>The browser would then communicate with that IP address on <strong>port 443</strong> (the HTTPS port).</p>
 <p>The first part of the communication is just to establish the connection between the client and the server and to decide the cryptographic keys they will use, etc.</p>
-<p><img src="/img/deployment/https/https02.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https02.svg"></p>
 <p>This interaction between the client and the server to establish the TLS connection is called the <strong>TLS handshake</strong>.</p>
 <h3 id="tls-with-sni-extension">TLS with SNI Extension<a class="headerlink" href="#tls-with-sni-extension" title="Permanent link">&para;</a></h3>
 <p><strong>Only one process</strong> in the server can be listening on a specific <strong>port</strong> in a specific <strong>IP address</strong>. There could be other processes listening on other ports in the same IP address, but only one for each combination of IP address and port.</p>
@@ -2746,7 +2746,7 @@
 <p>The TLS Termination Proxy would have access to one or more <strong>TLS certificates</strong> (HTTPS certificates).</p>
 <p>Using the <strong>SNI extension</strong> discussed above, the TLS Termination Proxy would check which of the TLS (HTTPS) certificates available it should use for this connection, using the one that matches the domain expected by the client.</p>
 <p>In this case, it would use the certificate for <code>someapp.example.com</code>.</p>
-<p><img src="/img/deployment/https/https03.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https03.svg"></p>
 <p>The client already <strong>trusts</strong> the entity that generated that TLS certificate (in this case Let's Encrypt, but we'll see about that later), so it can <strong>verify</strong> that the certificate is valid.</p>
 <p>Then, using the certificate, the client and the TLS Termination Proxy <strong>decide how to encrypt</strong> the rest of the <strong>TCP communication</strong>. This completes the <strong>TLS Handshake</strong> part.</p>
 <p>After this, the client and the server have an <strong>encrypted TCP connection</strong>, this is what TLS provides. And then they can use that connection to start the actual <strong>HTTP communication</strong>.</p>
@@ -2758,27 +2758,27 @@
 <h3 id="https-request">HTTPS Request<a class="headerlink" href="#https-request" title="Permanent link">&para;</a></h3>
 <p>Now that the client and server (specifically the browser and the TLS Termination Proxy) have an <strong>encrypted TCP connection</strong>, they can start the <strong>HTTP communication</strong>.</p>
 <p>So, the client sends an <strong>HTTPS request</strong>. This is just an HTTP request through an encrypted TLS connection.</p>
-<p><img src="/img/deployment/https/https04.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https04.svg"></p>
 <h3 id="decrypt-the-request">Decrypt the Request<a class="headerlink" href="#decrypt-the-request" title="Permanent link">&para;</a></h3>
 <p>The TLS Termination Proxy would use the encryption agreed to <strong>decrypt the request</strong>, and would transmit the <strong>plain (decrypted) HTTP request</strong> to the process running the application (for example a process with Uvicorn running the FastAPI application).</p>
-<p><img src="/img/deployment/https/https05.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https05.svg"></p>
 <h3 id="http-response">HTTP Response<a class="headerlink" href="#http-response" title="Permanent link">&para;</a></h3>
 <p>The application would process the request and send a <strong>plain (unencrypted) HTTP response</strong> to the TLS Termination Proxy.</p>
-<p><img src="/img/deployment/https/https06.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https06.svg"></p>
 <h3 id="https-response">HTTPS Response<a class="headerlink" href="#https-response" title="Permanent link">&para;</a></h3>
 <p>The TLS Termination Proxy would then <strong>encrypt the response</strong> using the cryptography agreed before (that started with the certificate for <code>someapp.example.com</code>), and send it back to the browser.</p>
 <p>Next, the browser would verify that the response is valid and encrypted with the right cryptographic key, etc. It would then <strong>decrypt the response</strong> and process it.</p>
-<p><img src="/img/deployment/https/https07.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https07.svg"></p>
 <p>The client (browser) will know that the response comes from the correct server because it is using the cryptography they agreed using the <strong>HTTPS certificate</strong> before.</p>
 <h3 id="multiple-applications">Multiple Applications<a class="headerlink" href="#multiple-applications" title="Permanent link">&para;</a></h3>
 <p>In the same server (or servers), there could be <strong>multiple applications</strong>, for example, other API programs or a database.</p>
 <p>Only one process can be handling the specific IP and port (the TLS Termination Proxy in our example) but the other applications/processes can be running on the server(s) too, as long as they don't try to use the same <strong>combination of public IP and port</strong>.</p>
-<p><img src="/img/deployment/https/https08.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https08.svg"></p>
 <p>That way, the TLS Termination Proxy could handle HTTPS and certificates for <strong>multiple domains</strong>, for multiple applications, and then transmit the requests to the right application in each case.</p>
 <h3 id="certificate-renewal">Certificate Renewal<a class="headerlink" href="#certificate-renewal" title="Permanent link">&para;</a></h3>
 <p>At some point in the future, each certificate would <strong>expire</strong> (about 3 months after acquiring it).</p>
 <p>And then, there would be another program (in some cases it's another program, in some cases it could be the same TLS Termination Proxy) that would talk to Let's Encrypt, and renew the certificate(s).</p>
-<p><img src="/img/deployment/https/https.svg"></p>
+<p><img src="/fastapi/img/deployment/https/https.svg"></p>
 <p>The <strong>TLS certificates</strong> are <strong>associated with a domain name</strong>, not with an IP address.</p>
 <p>So, to renew the certificates, the renewal program needs to <strong>prove</strong> to the authority (Let's Encrypt) that it indeed <strong>"owns" and controls that domain</strong>.</p>
 <p>To do that, and to accommodate different application needs, there are several ways it can do it. Some popular ways are:</p>

@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2754,7 +2754,7 @@
 <p>Тогда вы попробуете с давним другом программиста: автодополнением редактора.</p>
 <p>Вы вводите первый параметр функции, <code>first_name</code>, затем точку (<code>.</code>), а затем нажимаете <code>Ctrl+Space</code>, чтобы запустить дополнение.</p>
 <p>Но, к сожалению, ничего полезного не выходит:</p>
-<p><img src="/img/python-types/image01.png"></p>
+<p><img src="/fastapi/img/python-types/image01.png"></p>
 <h3 id="_3">Добавим типы<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>Давайте изменим одну строчку в предыдущей версии.</p>
 <p>Мы изменим именно этот фрагмент, параметры функции, с:</p>
@@ -2780,9 +2780,9 @@
 <p>И добавление аннотаций типов обычно не меняет происходящего по сравнению с тем, что произошло бы без неё.</p>
 <p>Но теперь представьте, что вы снова находитесь в процессе создания этой функции, но уже с аннотациями типов.</p>
 <p>В тот же момент вы пытаетесь запустить автодополнение с помощью <code>Ctrl+Space</code> и вы видите:</p>
-<p><img src="/img/python-types/image02.png"></p>
+<p><img src="/fastapi/img/python-types/image02.png"></p>
 <p>При этом вы можете просматривать варианты, пока не найдёте подходящий:</p>
-<p><img src="/img/python-types/image03.png"></p>
+<p><img src="/fastapi/img/python-types/image03.png"></p>
 <h2 id="_4">Больше мотивации<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>Проверьте эту функцию, она уже имеет аннотации типов:</p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -2790,7 +2790,7 @@
     <span class="k">return</span> <span class="n">name_with_age</span>
 </code></pre></div>
 <p>Поскольку редактор знает типы переменных, вы получаете не только дополнение, но и проверки ошибок:</p>
-<p><img src="/img/python-types/image04.png"></p>
+<p><img src="/fastapi/img/python-types/image04.png"></p>
 <p>Теперь вы знаете, что вам нужно исправить, преобразовав <code>age</code> в строку с <code>str(age)</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="hll">    <span class="n">name_with_age</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is this old: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
@@ -2842,7 +2842,7 @@
 </div>
 <p>Это означает: "переменная <code>items</code> является <code>list</code>, и каждый из элементов этого списка является <code>str</code>".</p>
 <p>Если вы будете так поступать, редактор может оказывать поддержку даже при обработке элементов списка:</p>
-<p><img src="/img/python-types/image05.png"></p>
+<p><img src="/fastapi/img/python-types/image05.png"></p>
 <p>Без типов добиться этого практически невозможно.</p>
 <p>Обратите внимание, что переменная <code>item</code> является одним из элементов списка <code>items</code>.</p>
 <p>И все же редактор знает, что это <code>str</code>, и поддерживает это.</p>
@@ -2923,7 +2923,7 @@
 </span>    <span class="k">return</span> <span class="n">one_person</span><span class="o">.</span><span class="n">name</span>
 </code></pre></div>
 <p>И снова вы получаете полную поддержку редактора:</p>
-<p><img src="/img/python-types/image06.png"></p>
+<p><img src="/fastapi/img/python-types/image06.png"></p>
 <h2 id="pydantic-">Pydantic-модели<a class="headerlink" href="#pydantic-" title="Permanent link">&para;</a></h2>
 <p><a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> является Python-библиотекой для выполнения валидации данных.</p>
 <p>Вы объявляете «форму» данных как классы с атрибутами.</p>

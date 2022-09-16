@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2754,7 +2754,7 @@
 <p>Ardından, programcıların en iyi arkadaşı olan otomatik tamamlama ile denediniz.</p>
 <p>'first_name', ardından bir nokta ('.') yazıp otomatik tamamlamayı tetiklemek için 'Ctrl+Space' tuşlarına bastınız.</p>
 <p>Ancak, ne yazık ki, yararlı hiçbir şey elde edemediniz:</p>
-<p><img src="/img/python-types/image01.png"></p>
+<p><img src="/fastapi/img/python-types/image01.png"></p>
 <h3 id="tipleri-ekle">Tipleri ekle<a class="headerlink" href="#tipleri-ekle" title="Permanent link">&para;</a></h3>
 <p>Önceki sürümden sadece bir satırı değiştirelim.</p>
 <p>Tam olarak bu parçayı, işlevin parametrelerini  değiştireceğiz:</p>
@@ -2780,9 +2780,9 @@
 <p>Normalde tip belirteçleri eklemek, kod üzerinde olacakları değiştirmez.</p>
 <p>Şimdi programı sıfırdan birdaha yazdığınızı hayal edin.</p>
 <p>Aynı noktada, <code>Ctrl+Space</code> ile otomatik tamamlamayı tetiklediniz  ve şunu görüyorsunuz:</p>
-<p><img src="/img/python-types/image02.png"></p>
+<p><img src="/fastapi/img/python-types/image02.png"></p>
 <p>Aradığınızı bulana kadar seçenekleri kaydırabilirsiniz:</p>
-<p><img src="/img/python-types/image03.png"></p>
+<p><img src="/fastapi/img/python-types/image03.png"></p>
 <h2 id="daha-fazla-motivasyon">Daha fazla motivasyon<a class="headerlink" href="#daha-fazla-motivasyon" title="Permanent link">&para;</a></h2>
 <p>Bu fonksiyon, zaten tür belirteçlerine sahip:</p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -2790,7 +2790,7 @@
     <span class="k">return</span> <span class="n">name_with_age</span>
 </code></pre></div>
 <p>Editör değişkenlerin tiplerini bildiğinden, yalnızca otomatik tamamlama değil, hata kontrolleri de sağlar:</p>
-<p><img src="/img/python-types/image04.png"></p>
+<p><img src="/fastapi/img/python-types/image04.png"></p>
 <p>Artık <code>age</code> değişkenini <code>str(age)</code> olarak kullanmanız gerektiğini biliyorsunuz:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="hll">    <span class="n">name_with_age</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is this old: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
@@ -2842,7 +2842,7 @@
 </div>
 <p>Bunun anlamı şudur: "<code>items</code> değişkeni bir <code>list</code>tir ve bu listedeki öğelerin her biri bir <code>str</code>dir".</p>
 <p>Bunu yaparak, düzenleyicinizin listedeki öğeleri işlerken bile destek sağlamasını sağlayabilirsiniz:</p>
-<p><img src="/img/python-types/image05.png"></p>
+<p><img src="/fastapi/img/python-types/image05.png"></p>
 <p>Tip belirteçleri olmadan, bunu başarmak neredeyse imkansızdır.</p>
 <p><code>item</code> değişkeninin <code>items</code> listesindeki öğelerden biri olduğuna dikkat edin.</p>
 <p>Ve yine, editör bunun bir <code>str</code> ​​olduğunu biliyor ve bunun için destek sağlıyor.</p>
@@ -2923,7 +2923,7 @@
 </span>    <span class="k">return</span> <span class="n">one_person</span><span class="o">.</span><span class="n">name</span>
 </code></pre></div>
 <p>Ve yine bütün editör desteğini alırsınız:</p>
-<p><img src="/img/python-types/image06.png"></p>
+<p><img src="/fastapi/img/python-types/image06.png"></p>
 <h2 id="pydantic-modelleri">Pydantic modelleri<a class="headerlink" href="#pydantic-modelleri" title="Permanent link">&para;</a></h2>
 <p><a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> veri doğrulaması yapmak için bir Python kütüphanesidir.</p>
 <p>Verilerin "biçimini" niteliklere sahip sınıflar olarak düzenlersiniz.</p>

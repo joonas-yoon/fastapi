@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2874,10 +2874,10 @@ proxy --&gt; server</code></pre>
 <p>But here's the fun part. ✨</p>
 <p>The "official" way to access the app would be through the proxy with the path prefix that we defined. So, as we would expect, if you try the docs UI served by Uvicorn directly, without the path prefix in the URL, it won't work, because it expects to be accessed through the proxy.</p>
 <p>You can check it at <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>:</p>
-<p><img src="/img/tutorial/behind-a-proxy/image01.png"></p>
+<p><img src="/fastapi/img/tutorial/behind-a-proxy/image01.png"></p>
 <p>But if we access the docs UI at the "official" URL using the proxy with port <code>9999</code>, at <code>/api/v1/docs</code>, it works correctly! 🎉</p>
 <p>You can check it at <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs</a>:</p>
-<p><img src="/img/tutorial/behind-a-proxy/image02.png"></p>
+<p><img src="/fastapi/img/tutorial/behind-a-proxy/image02.png"></p>
 <p>Right as we wanted it. ✔️</p>
 <p>This is because FastAPI uses this <code>root_path</code> to create the default <code>server</code> in OpenAPI with the URL provided by <code>root_path</code>.</p>
 <h2 id="additional-servers">Additional servers<a class="headerlink" href="#additional-servers" title="Permanent link">&para;</a></h2>
@@ -2931,7 +2931,7 @@ proxy --&gt; server</code></pre>
 <p>Notice the auto-generated server with a <code>url</code> value of <code>/api/v1</code>, taken from the <code>root_path</code>.</p>
 </div>
 <p>In the docs UI at <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs</a> it would look like:</p>
-<p><img src="/img/tutorial/behind-a-proxy/image03.png"></p>
+<p><img src="/fastapi/img/tutorial/behind-a-proxy/image03.png"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The docs UI will interact with the server that you select.</p>

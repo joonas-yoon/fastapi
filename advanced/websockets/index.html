@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2807,13 +2807,13 @@
 
 <p>Open your browser at <a href="http://127.0.0.1:8000" class="external-link" target="_blank">http://127.0.0.1:8000</a>.</p>
 <p>You will see a simple page like:</p>
-<p><img src="/img/tutorial/websockets/image01.png"></p>
+<p><img src="/fastapi/img/tutorial/websockets/image01.png"></p>
 <p>You can type messages in the input box, and send them:</p>
-<p><img src="/img/tutorial/websockets/image02.png"></p>
+<p><img src="/fastapi/img/tutorial/websockets/image02.png"></p>
 <p>And your <strong>FastAPI</strong> application with WebSockets will respond back:</p>
-<p><img src="/img/tutorial/websockets/image03.png"></p>
+<p><img src="/fastapi/img/tutorial/websockets/image03.png"></p>
 <p>You can send (and receive) many messages:</p>
-<p><img src="/img/tutorial/websockets/image04.png"></p>
+<p><img src="/fastapi/img/tutorial/websockets/image04.png"></p>
 <p>And all of them will use the same WebSocket connection.</p>
 <h2 id="using-depends-and-others">Using <code>Depends</code> and others<a class="headerlink" href="#using-depends-and-others" title="Permanent link">&para;</a></h2>
 <p>In WebSocket endpoints you can import from <code>fastapi</code> and use:</p>
@@ -2938,7 +2938,7 @@
 <p>Notice that the query <code>token</code> will be handled by a dependency.</p>
 </div>
 <p>With that you can connect the WebSocket and then send and receive messages:</p>
-<p><img src="/img/tutorial/websockets/image05.png"></p>
+<p><img src="/fastapi/img/tutorial/websockets/image05.png"></p>
 <h2 id="handling-disconnections-and-multiple-clients">Handling disconnections and multiple clients<a class="headerlink" href="#handling-disconnections-and-multiple-clients" title="Permanent link">&para;</a></h2>
 <p>When a WebSocket connection is closed, the <code>await websocket.receive_text()</code> will raise a <code>WebSocketDisconnect</code> exception, which you can then catch and handle like in this example.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>

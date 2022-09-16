@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2632,7 +2632,7 @@
     <span class="k">return</span> <span class="p">[{</span><span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;johndoe&quot;</span><span class="p">}]</span>
 </code></pre></div>
 <p>OpenAPI 概图会自动添加标签，供 API 文档接口使用：</p>
-<p><img src="/img/tutorial/path-operation-configuration/image01.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image01.png"></p>
 <h2 id="summary-description"><code>summary</code> 和 <code>description</code> 参数<a class="headerlink" href="#summary-description" title="Permanent link">&para;</a></h2>
 <p>路径装饰器还支持 <code>summary</code> 和 <code>description</code> 这两个参数：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Set</span><span class="p">,</span> <span class="n">Union</span>
@@ -2693,7 +2693,7 @@
 </span>    <span class="k">return</span> <span class="n">item</span>
 </code></pre></div>
 <p>下图为 Markdown 文本在 API 文档中的显示效果：</p>
-<p><img src="/img/tutorial/path-operation-configuration/image02.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image02.png"></p>
 <h2 id="_2">响应描述<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><code>response_description</code> 参数用于定义响应的描述说明：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Set</span><span class="p">,</span> <span class="n">Union</span>
@@ -2739,7 +2739,7 @@
 <p>OpenAPI 规定每个<em>路径操作</em>都要有响应描述。</p>
 <p>如果没有定义响应描述，<strong>FastAPI</strong> 则自动生成内容为 "Successful response" 的响应描述。</p>
 </div>
-<p><img src="/img/tutorial/path-operation-configuration/image03.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image03.png"></p>
 <h2 id="_3">弃用<em>路径操作</em><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p><code>deprecated</code> 参数可以把<em>路径操作</em>标记为<abbr title="过时，建议不要使用">弃用</abbr>，无需直接删除：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
@@ -2762,9 +2762,9 @@
     <span class="k">return</span> <span class="p">[{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="s2">&quot;Foo&quot;</span><span class="p">}]</span>
 </code></pre></div>
 <p>API 文档会把该路径操作标记为弃用：</p>
-<p><img src="/img/tutorial/path-operation-configuration/image04.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image04.png"></p>
 <p>下图显示了正常<em>路径操作</em>与弃用<em>路径操作</em> 的区别：</p>
-<p><img src="/img/tutorial/path-operation-configuration/image05.png"></p>
+<p><img src="/fastapi/img/tutorial/path-operation-configuration/image05.png"></p>
 <h2 id="_4">小结<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>通过传递参数给<em>路径操作装饰器</em> ，即可轻松地配置<em>路径操作</em>、添加元数据。</p>
 

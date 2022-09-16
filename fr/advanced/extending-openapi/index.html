@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -3082,7 +3082,7 @@
 </span></code></pre></div>
 <h3 id="check-it">Check it<a class="headerlink" href="#check-it" title="Permanent link">&para;</a></h3>
 <p>Once you go to <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> you will see that you are using your custom logo (in this example, <strong>FastAPI</strong>'s logo):</p>
-<p><img src="/img/tutorial/extending-openapi/image01.png"></p>
+<p><img src="/fastapi/img/tutorial/extending-openapi/image01.png"></p>
 <h2 id="self-hosting-javascript-and-css-for-docs">Self-hosting JavaScript and CSS for docs<a class="headerlink" href="#self-hosting-javascript-and-css-for-docs" title="Permanent link">&para;</a></h2>
 <p>The API docs use <strong>Swagger UI</strong> and <strong>ReDoc</strong>, and each of those need some JavaScript and CSS files.</p>
 <p>By default, those files are served from a <abbr title="Content Delivery Network: A service, normally composed of several servers, that provides static files, like JavaScript and CSS. It's commonly used to serve those files from the server closer to the client, improving performance.">CDN</abbr>.</p>
@@ -3348,7 +3348,7 @@
 <h3 id="disable-syntax-highlighting">Disable Syntax Highlighting<a class="headerlink" href="#disable-syntax-highlighting" title="Permanent link">&para;</a></h3>
 <p>For example, you could disable syntax highlighting in Swagger UI.</p>
 <p>Without changing the settings, syntax highlighting is enabled by default:</p>
-<p><img src="/img/tutorial/extending-openapi/image02.png"></p>
+<p><img src="/fastapi/img/tutorial/extending-openapi/image02.png"></p>
 <p>But you can disable it by setting <code>syntaxHighlight</code> to <code>False</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 
@@ -3360,7 +3360,7 @@
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Hello </span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
 </code></pre></div>
 <p>...and then Swagger UI won't show the syntax highlighting anymore:</p>
-<p><img src="/img/tutorial/extending-openapi/image03.png"></p>
+<p><img src="/fastapi/img/tutorial/extending-openapi/image03.png"></p>
 <h3 id="change-the-theme">Change the Theme<a class="headerlink" href="#change-the-theme" title="Permanent link">&para;</a></h3>
 <p>The same way you could set the syntax highlighting theme with the key <code>"syntaxHighlight.theme"</code> (notice that it has a dot in the middle):</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
@@ -3373,7 +3373,7 @@
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Hello </span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
 </code></pre></div>
 <p>That configuration would change the syntax highlighting color theme:</p>
-<p><img src="/img/tutorial/extending-openapi/image04.png"></p>
+<p><img src="/fastapi/img/tutorial/extending-openapi/image04.png"></p>
 <h3 id="change-default-swagger-ui-parameters">Change Default Swagger UI Parameters<a class="headerlink" href="#change-default-swagger-ui-parameters" title="Permanent link">&para;</a></h3>
 <p>FastAPI includes some default configuration parameters appropriate for most of the use cases.</p>
 <p>It includes these default configurations:</p>

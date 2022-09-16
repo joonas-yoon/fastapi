@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2801,7 +2801,7 @@
 <p>Then, you try with the old programmer's friend, editor autocompletion.</p>
 <p>You type the first parameter of the function, <code>first_name</code>, then a dot (<code>.</code>) and then hit <code>Ctrl+Space</code> to trigger the completion.</p>
 <p>But, sadly, you get nothing useful:</p>
-<p><img src="/img/python-types/image01.png"></p>
+<p><img src="/fastapi/img/python-types/image01.png"></p>
 <h3 id="add-types">Add types<a class="headerlink" href="#add-types" title="Permanent link">&para;</a></h3>
 <p>Let's modify a single line from the previous version.</p>
 <p>We will change exactly this fragment, the parameters of the function, from:</p>
@@ -2827,9 +2827,9 @@
 <p>And adding type hints normally doesn't change what happens from what would happen without them.</p>
 <p>But now, imagine you are again in the middle of creating that function, but with type hints.</p>
 <p>At the same point, you try to trigger the autocomplete with <code>Ctrl+Space</code> and you see:</p>
-<p><img src="/img/python-types/image02.png"></p>
+<p><img src="/fastapi/img/python-types/image02.png"></p>
 <p>With that, you can scroll, seeing the options, until you find the one that "rings a bell":</p>
-<p><img src="/img/python-types/image03.png"></p>
+<p><img src="/fastapi/img/python-types/image03.png"></p>
 <h2 id="more-motivation">More motivation<a class="headerlink" href="#more-motivation" title="Permanent link">&para;</a></h2>
 <p>Check this function, it already has type hints:</p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -2837,7 +2837,7 @@
     <span class="k">return</span> <span class="n">name_with_age</span>
 </code></pre></div>
 <p>Because the editor knows the types of the variables, you don't only get completion, you also get error checks:</p>
-<p><img src="/img/python-types/image04.png"></p>
+<p><img src="/fastapi/img/python-types/image04.png"></p>
 <p>Now you know that you have to fix it, convert <code>age</code> to a string with <code>str(age)</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="hll">    <span class="n">name_with_age</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is this old: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
@@ -2912,7 +2912,7 @@
 <p>If you use Python 3.9 or above, you don't have to import <code>List</code> from <code>typing</code>, you can use the same regular <code>list</code> type instead.</p>
 </div>
 <p>By doing that, your editor can provide support even while processing items from the list:</p>
-<p><img src="/img/python-types/image05.png"></p>
+<p><img src="/fastapi/img/python-types/image05.png"></p>
 <p>Without types, that's almost impossible to achieve.</p>
 <p>Notice that the variable <code>item</code> is one of the elements in the list <code>items</code>.</p>
 <p>And still, the editor knows it is a <code>str</code>, and provides support for that.</p>
@@ -3140,7 +3140,7 @@
 </span>    <span class="k">return</span> <span class="n">one_person</span><span class="o">.</span><span class="n">name</span>
 </code></pre></div>
 <p>And then, again, you get all the editor support:</p>
-<p><img src="/img/python-types/image06.png"></p>
+<p><img src="/fastapi/img/python-types/image06.png"></p>
 <h2 id="pydantic-models">Pydantic models<a class="headerlink" href="#pydantic-models" title="Permanent link">&para;</a></h2>
 <p><a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> is a Python library to perform data validation.</p>
 <p>You declare the "shape" of the data as classes with attributes.</p>

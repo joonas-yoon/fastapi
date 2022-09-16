@@ -116,31 +116,31 @@
     <div class="item">
       <a title="Get three courses at 10% off their current prices! Plus, we'll be donating 10% of all profits from sales of this bundle to the FastAPI team." style="display: block; position: relative;" href="https://testdriven.io/talkpython/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/fastapi-course-bundle-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/fastapi-course-bundle-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="DiscoArt: Create compelling Disco Diffusion artworks in just one line" style="display: block; position: relative;" href="https://bit.ly/3PjOZqc" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/jina-ai-banner.png" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/jina-ai-banner.png" />
       </a>
     </div>
     <div class="item">
       <a title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway." style="display: block; position: relative;" href="https://cryptapi.io/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/cryptapi-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/cryptapi-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="The ultimate solution to unlimited and forever cloud storage." style="display: block; position: relative;" href="https://app.imgwhale.xyz/" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/imgwhale-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/imgwhale-banner.svg" />
       </a>
     </div>
     <div class="item">
       <a title="Help us migrate doist to FastAPI" style="display: block; position: relative;" href="https://doist.com/careers/9B437B1615-wa-senior-backend-engineer-python" target="_blank">
         <span class="sponsor-badge">sponsor</span>
-        <img class="sponsor-image" src="/img/sponsors/doist-banner.svg" />
+        <img class="sponsor-image" src="/fastapi/img/sponsors/doist-banner.svg" />
       </a>
     </div>
   </div>
@@ -2787,7 +2787,7 @@
 <p>Em seguida, tente com o velho amigo do programador, o preenchimento automático do editor.</p>
 <p>Você digita o primeiro parâmetro da função, <code>first_name</code>, depois um ponto (<code>.</code>) e, em seguida, pressiona <code>Ctrl + Space</code> para acionar a conclusão.</p>
 <p>Mas, infelizmente, você não obtém nada útil:</p>
-<p><img src="/img/python-types/image01.png"></p>
+<p><img src="/fastapi/img/python-types/image01.png"></p>
 <h3 id="adicionar-tipos">Adicionar tipos<a class="headerlink" href="#adicionar-tipos" title="Permanent link">&para;</a></h3>
 <p>Vamos modificar uma única linha da versão anterior.</p>
 <p>Vamos mudar exatamente esse fragmento, os parâmetros da função, de:</p>
@@ -2813,9 +2813,9 @@
 <p>E adicionar type hints normalmente não muda o que acontece do que aconteceria sem elas.</p>
 <p>Mas agora, imagine que você está novamente no meio da criação dessa função, mas com type hints.</p>
 <p>No mesmo ponto, você tenta acionar o preenchimento automático com o <code>Ctrl Space</code> e vê:</p>
-<p><img src="/img/python-types/image02.png"></p>
+<p><img src="/fastapi/img/python-types/image02.png"></p>
 <p>Com isso, você pode rolar, vendo as opções, até encontrar o que "toca uma campainha":</p>
-<p><img src="/img/python-types/image03.png"></p>
+<p><img src="/fastapi/img/python-types/image03.png"></p>
 <h2 id="mais-motivacao">Mais motivação<a class="headerlink" href="#mais-motivacao" title="Permanent link">&para;</a></h2>
 <p>Marque esta função, ela já possui type hints:</p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -2823,7 +2823,7 @@
     <span class="k">return</span> <span class="n">name_with_age</span>
 </code></pre></div>
 <p>Como o editor conhece os tipos de variáveis, você não apenas obtém a conclusão, mas também as verificações de erro:</p>
-<p><img src="/img/python-types/image04.png"></p>
+<p><img src="/fastapi/img/python-types/image04.png"></p>
 <p>Agora você sabe que precisa corrigí-lo, converta <code>age</code> em uma string com <code>str (age)</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_name_with_age</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="hll">    <span class="n">name_with_age</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is this old: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
@@ -2875,7 +2875,7 @@
 </div>
 <p>Isso significa que: "a variável <code>items</code> é uma <code>list</code>, e cada um dos itens desta lista é uma <code>str</code>".</p>
 <p>Ao fazer isso, seu editor pode fornecer suporte mesmo durante o processamento de itens da lista:</p>
-<p><img src="/img/python-types/image05.png"></p>
+<p><img src="/fastapi/img/python-types/image05.png"></p>
 <p>Sem tipos, isso é quase impossível de alcançar.</p>
 <p>Observe que a variável <code>item</code> é um dos elementos da lista <code>items</code>.</p>
 <p>E, ainda assim, o editor sabe que é um <code>str</code> e fornece suporte para isso.</p>
@@ -2956,7 +2956,7 @@
 </span>    <span class="k">return</span> <span class="n">one_person</span><span class="o">.</span><span class="n">name</span>
 </code></pre></div>
 <p>E então, novamente, você recebe todo o suporte do editor:</p>
-<p><img src="/img/python-types/image06.png"></p>
+<p><img src="/fastapi/img/python-types/image06.png"></p>
 <h2 id="modelos-pydantic">Modelos Pydantic<a class="headerlink" href="#modelos-pydantic" title="Permanent link">&para;</a></h2>
 <p><a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank"> Pydantic </a> é uma biblioteca Python para executar a validação de dados.</p>
 <p>Você declara a "forma" dos dados como classes com atributos.</p>
