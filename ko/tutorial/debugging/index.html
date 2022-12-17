@@ -17,7 +17,7 @@
     
     
       
-        <title>Debugging - FastAPI</title>
+        <title>디버깅 - FastAPI</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#debugging" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -174,7 +174,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Debugging
+              디버깅
             
           </span>
         </div>
@@ -1351,7 +1351,7 @@
   
     <li class="md-nav__item">
       <a href="../security/get-current-user/" class="md-nav__link">
-        Get Current User
+        현재 사용자 가져오기
       </a>
     </li>
   
@@ -1365,7 +1365,7 @@
   
     <li class="md-nav__item">
       <a href="../security/simple-oauth2/" class="md-nav__link">
-        Simple OAuth2 with Password and Bearer
+        패스워드와 Bearer를 이용한 간단한 OAuth2
       </a>
     </li>
   
@@ -1521,12 +1521,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Debugging
+          디버깅
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Debugging
+        디버깅
       </a>
       
         
@@ -1545,24 +1545,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#call-uvicorn" class="md-nav__link">
-    Call uvicorn
+  <a href="#uvicorn" class="md-nav__link">
+    uvicorn 호출
   </a>
   
-    <nav class="md-nav" aria-label="Call uvicorn">
+    <nav class="md-nav" aria-label="uvicorn 호출">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#about-__name__-__main__" class="md-nav__link">
-    About __name__ == "__main__"
+  <a href="#__name__-__main__" class="md-nav__link">
+    __name__ == "__main__" 에 대하여
   </a>
   
-    <nav class="md-nav" aria-label="About __name__ == "__main__"">
+    <nav class="md-nav" aria-label="__name__ == "__main__" 에 대하여">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#more-details" class="md-nav__link">
-    More details
+  <a href="#_2" class="md-nav__link">
+    추가 세부사항
   </a>
   
 </li>
@@ -1578,8 +1578,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-your-code-with-your-debugger" class="md-nav__link">
-    Run your code with your debugger
+  <a href="#_3" class="md-nav__link">
+    디버거로 코드 실행
   </a>
   
 </li>
@@ -2332,7 +2332,7 @@
   
     <li class="md-nav__item">
       <a href="../../deployment/docker/" class="md-nav__link">
-        FastAPI in Containers - Docker
+        컨테이너의 FastAPI - 도커
       </a>
     </li>
   
@@ -2492,24 +2492,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#call-uvicorn" class="md-nav__link">
-    Call uvicorn
+  <a href="#uvicorn" class="md-nav__link">
+    uvicorn 호출
   </a>
   
-    <nav class="md-nav" aria-label="Call uvicorn">
+    <nav class="md-nav" aria-label="uvicorn 호출">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#about-__name__-__main__" class="md-nav__link">
-    About __name__ == "__main__"
+  <a href="#__name__-__main__" class="md-nav__link">
+    __name__ == "__main__" 에 대하여
   </a>
   
-    <nav class="md-nav" aria-label="About __name__ == "__main__"">
+    <nav class="md-nav" aria-label="__name__ == "__main__" 에 대하여">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#more-details" class="md-nav__link">
-    More details
+  <a href="#_2" class="md-nav__link">
+    추가 세부사항
   </a>
   
 </li>
@@ -2525,8 +2525,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-your-code-with-your-debugger" class="md-nav__link">
-    Run your code with your debugger
+  <a href="#_3" class="md-nav__link">
+    디버거로 코드 실행
   </a>
   
 </li>
@@ -2545,15 +2545,10 @@
                 
 
 
-<h1 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The current page still doesn't have a translation for this language.</p>
-<p>But you can help translating it: <a class="internal-link" href="https://fastapi.tiangolo.com/contributing/" target="_blank">Contributing</a>.</p>
-</div>
-<p>You can connect the debugger in your editor, for example with Visual Studio Code or PyCharm.</p>
-<h2 id="call-uvicorn">Call <code>uvicorn</code><a class="headerlink" href="#call-uvicorn" title="Permanent link">&para;</a></h2>
-<p>In your FastAPI application, import and run <code>uvicorn</code> directly:</p>
+<h1 id="_1">디버깅<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>예를 들면 Visual Studio Code 또는 PyCharm을 사용하여 편집기에서 디버거를 연결할 수 있습니다.</p>
+<h2 id="uvicorn"><code>uvicorn</code> 호출<a class="headerlink" href="#uvicorn" title="Permanent link">&para;</a></h2>
+<p>FastAPI 애플리케이션에서 <code>uvicorn</code>을 직접 임포트하여 실행합니다</p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="kn">import</span> <span class="nn">uvicorn</span>
 </span><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
 
@@ -2570,8 +2565,8 @@
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
 <span class="hll">    <span class="n">uvicorn</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span>
 </span></code></pre></div>
-<h3 id="about-__name__-__main__">About <code>__name__ == "__main__"</code><a class="headerlink" href="#about-__name__-__main__" title="Permanent link">&para;</a></h3>
-<p>The main purpose of the <code>__name__ == "__main__"</code> is to have some code that is executed when your file is called with:</p>
+<h3 id="__name__-__main__"><code>__name__ == "__main__"</code> 에 대하여<a class="headerlink" href="#__name__-__main__" title="Permanent link">&para;</a></h3>
+<p><code>__name__ == "__main__"</code>의 주요 목적은 다음과 같이 파일이 호출될 때 실행되는 일부 코드를 갖는 것입니다.</p>
 <div class="termy">
 
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>python myapp.py
@@ -2579,12 +2574,12 @@
 
 </div>
 
-<p>but is not called when another file imports it, like in:</p>
+<p>그러나 다음과 같이 다른 파일을 가져올 때는 호출되지 않습니다.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">myapp</span> <span class="kn">import</span> <span class="n">app</span>
 </code></pre></div>
-<h4 id="more-details">More details<a class="headerlink" href="#more-details" title="Permanent link">&para;</a></h4>
-<p>Let's say your file is named <code>myapp.py</code>.</p>
-<p>If you run it with:</p>
+<h4 id="_2">추가 세부사항<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p>파일 이름이 <code>myapp.py</code>라고 가정해 보겠습니다.</p>
+<p>다음과 같이 실행하면</p>
 <div class="termy">
 
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>python myapp.py
@@ -2592,51 +2587,51 @@
 
 </div>
 
-<p>then the internal variable <code>__name__</code> in your file, created automatically by Python, will have as value the string <code>"__main__"</code>.</p>
-<p>So, the section:</p>
+<p>Python에 의해 자동으로 생성된 파일의 내부 변수 <code>__name__</code>은 문자열 <code>"__main__"</code>을 값으로 갖게 됩니다.</p>
+<p>따라서 섹션</p>
 <div class="highlight"><pre><span></span><code>    <span class="n">uvicorn</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span>
 </code></pre></div>
-<p>will run.</p>
+<p>이 실행됩니다.</p>
 <hr />
-<p>This won't happen if you import that module (file).</p>
-<p>So, if you have another file <code>importer.py</code> with:</p>
+<p>해당 모듈(파일)을 가져오면 이런 일이 발생하지 않습니다</p>
+<p>그래서 다음과 같은 다른 파일 <code>importer.py</code>가 있는 경우:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">myapp</span> <span class="kn">import</span> <span class="n">app</span>
 
 <span class="c1"># Some more code</span>
 </code></pre></div>
-<p>in that case, the automatic variable inside of <code>myapp.py</code> will not have the variable <code>__name__</code> with a value of <code>"__main__"</code>.</p>
-<p>So, the line:</p>
+<p>이 경우 <code>myapp.py</code> 내부의 자동 변수에는 값이 <code>"__main__"</code>인 변수 <code>__name__</code>이 없습니다.</p>
+<p>따라서 다음 행</p>
 <div class="highlight"><pre><span></span><code>    <span class="n">uvicorn</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span>
 </code></pre></div>
-<p>will not be executed.</p>
+<p>은 실행되지 않습니다.</p>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>For more information, check <a href="https://docs.python.org/3/library/__main__.html" class="external-link" target="_blank">the official Python docs</a>.</p>
+<p class="admonition-title">정보</p>
+<p>자세한 내용은 <a href="https://docs.python.org/3/library/__main__.html" class="external-link" target="_blank">공식 Python 문서</a>를 확인하세요</p>
 </div>
-<h2 id="run-your-code-with-your-debugger">Run your code with your debugger<a class="headerlink" href="#run-your-code-with-your-debugger" title="Permanent link">&para;</a></h2>
-<p>Because you are running the Uvicorn server directly from your code, you can call your Python program (your FastAPI application) directly from the debugger.</p>
+<h2 id="_3">디버거로 코드 실행<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>코드에서 직접 Uvicorn 서버를 실행하고 있기 때문에 디버거에서 직접 Python 프로그램(FastAPI 애플리케이션)을 호출할 수 있습니다.</p>
 <hr />
-<p>For example, in Visual Studio Code, you can:</p>
+<p>예를 들어 Visual Studio Code에서 다음을 수행할 수 있습니다.</p>
 <ul>
-<li>Go to the "Debug" panel.</li>
+<li>"Debug" 패널로 이동합니다.</li>
 <li>"Add configuration...".</li>
-<li>Select "Python"</li>
-<li>Run the debugger with the option "<code>Python: Current File (Integrated Terminal)</code>".</li>
+<li>"Python"을 선택합니다.</li>
+<li>"<code>Python: Current File (Integrated Terminal)</code>" 옵션으로 디버거를 실행합니다.</li>
 </ul>
-<p>It will then start the server with your <strong>FastAPI</strong> code, stop at your breakpoints, etc.</p>
-<p>Here's how it might look:</p>
-<p><img src="/fastapi/img/tutorial/debugging/image01.png"></p>
+<p>그런 다음 <strong>FastAPI</strong> 코드로 서버를 시작하고 중단점 등에서 중지합니다.</p>
+<p>다음과 같이 표시됩니다.</p>
+<p><img src="https://fastapi.tiangolo.com/img/tutorial/debugging/image01.png"></p>
 <hr />
-<p>If you use Pycharm, you can:</p>
+<p>Pycharm을 사용하는 경우 다음을 수행할 수 있습니다</p>
 <ul>
-<li>Open the "Run" menu.</li>
-<li>Select the option "Debug...".</li>
-<li>Then a context menu shows up.</li>
-<li>Select the file to debug (in this case, <code>main.py</code>).</li>
+<li>"Run" 메뉴를 엽니다</li>
+<li>"Debug..." 옵션을 선택합니다.</li>
+<li>그러면 상황에 맞는 메뉴가 나타납니다.</li>
+<li>디버그할 파일을 선택합니다(이 경우 <code>main.py</code>).</li>
 </ul>
-<p>It will then start the server with your <strong>FastAPI</strong> code, stop at your breakpoints, etc.</p>
-<p>Here's how it might look:</p>
-<p><img src="/fastapi/img/tutorial/debugging/image02.png"></p>
+<p>그런 다음 <strong>FastAPI</strong> 코드로 서버를 시작하고 중단점 등에서 중지합니다.</p>
+<p>다음과 같이 표시됩니다.</p>
+<p><img src="https://fastapi.tiangolo.com/img/tutorial/debugging/image02.png"></p>
 
               
             </article>
