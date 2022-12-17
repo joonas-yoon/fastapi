@@ -254,11 +254,11 @@ UserInDB(
 
 패스워드: `secret`
 
-<img src="/img/tutorial/security/image04.png">
+<img src="https://fastapi.tiangolo.com/img/tutorial/security/image04.png">
 
 시스템에서 인증하면 다음과 같이 표시됩니다:
 
-<img src="/img/tutorial/security/image05.png">
+<img src="https://fastapi.tiangolo.com/img/tutorial/security/image05.png">
 
 ### 자신의 유저 데이터 가져오기
 
@@ -276,7 +276,7 @@ UserInDB(
 }
 ```
 
-<img src="/img/tutorial/security/image06.png">
+<img src="https://fastapi.tiangolo.com/img/tutorial/security/image06.png">
 
 잠금 아이콘을 클릭하고 로그아웃한 다음 동일한 작업을 다시 시도하면 다음과 같은 HTTP 401 오류가 발생합니다.
 
